@@ -1,430 +1,475 @@
-<!DOCTYPE html>
-<html lang="id" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="permissions-policy" content="clipboard-write=(self)">
-<title>Jadwal BetClose Togel Premium</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--b2:#bfdbfe;--b3:#93c5fd;--b4:#60a5fa;--b5:#3b82f6;--b6:#2563eb;--b7:#1d4ed8;--g4:#4ade80;--g5:#22c55e;--g6:#16a34a;--r4:#f87171;--r5:#ef4444;--o4:#fb923c;--o5:#f97316;--p4:#c084fc;--p5:#a855f7;--rs:6px;--rm:10px;--rl:16px;--rx:20px}
-[data-theme="dark"]{--bg1:#060a14;--bg2:#0c1221;--bgc:rgba(12,20,40,.88);--bgs:rgba(18,28,52,.92);--bgi:rgba(255,255,255,.03);--bs:rgba(59,130,246,.08);--ba:rgba(59,130,246,.25);--t1:#f0f4ff;--t2:#94a3c8;--tm:#5b6b8a;--sl:0 8px 32px rgba(0,0,0,.7);--sa:0 4px 20px rgba(59,130,246,.15);--sg:0 4px 20px rgba(34,197,94,.15);--sr:0 4px 20px rgba(239,68,68,.15);--gs:linear-gradient(90deg,transparent,rgba(96,165,250,.2),transparent);--ov:rgba(0,0,0,.75)}
-[data-theme="light"]{--bg1:#eef2ff;--bg2:#fff;--bgc:rgba(255,255,255,.92);--bgs:rgba(255,255,255,.98);--bgi:rgba(0,0,0,.03);--bs:rgba(59,130,246,.12);--ba:rgba(59,130,246,.35);--t1:#1e293b;--t2:#475569;--tm:#94a3b8;--sl:0 8px 32px rgba(0,0,0,.1);--sa:0 4px 20px rgba(59,130,246,.12);--sg:0 4px 20px rgba(34,197,94,.12);--sr:0 4px 20px rgba(239,68,68,.12);--gs:linear-gradient(90deg,transparent,rgba(59,130,246,.12),transparent);--ov:rgba(0,0,0,.4)}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Outfit',sans-serif;background:var(--bg1);color:var(--t1);min-height:100vh;overflow-x:hidden;transition:background .5s,color .5s}
-#bgC{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
-.bgo{position:fixed;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(59,130,246,.07) 0%,transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(37,99,235,.05) 0%,transparent 50%);z-index:1;pointer-events:none}
-[data-theme="light"] .bgo{background:radial-gradient(ellipse at 20% 0%,rgba(59,130,246,.08) 0%,transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(37,99,235,.05) 0%,transparent 50%)}
-.aw{position:relative;z-index:2;padding:20px;max-width:1600px;margin:0 auto}
-.hd{text-align:center;margin-bottom:24px;animation:fd .8s ease}
-@keyframes fd{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
-.ht{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px}
-.hb{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2);border-radius:50px;font-size:.7rem;font-weight:600;color:var(--b4);text-transform:uppercase;letter-spacing:2px}
-.pdot{width:6px;height:6px;background:var(--b4);border-radius:50%;animation:pda 2s ease-in-out infinite}
-@keyframes pda{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
-.ha{display:flex;gap:8px}
-.ib{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rs);color:var(--t2);cursor:pointer;transition:all .25s}
-.ib:hover{border-color:var(--ba);color:var(--b4);transform:translateY(-1px)}
-.ib.ac{background:rgba(59,130,246,.15);border-color:var(--b5);color:var(--b3)}
-.ib svg{width:18px;height:18px;pointer-events:none}
-.hd h1{font-size:clamp(1.6rem,4.5vw,2.8rem);font-weight:900;background:linear-gradient(135deg,#bfdbfe,#60a5fa,#2563eb,#60a5fa,#bfdbfe);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:st 4s linear infinite}
-@keyframes st{0%{background-position:0% center}100%{background-position:200% center}}
-.hs{font-size:.82rem;color:var(--tm);margin-top:4px}
-.nb{background:linear-gradient(135deg,rgba(59,130,246,.12),rgba(37,99,235,.08));border:1px solid rgba(59,130,246,.2);border-radius:var(--rl);padding:14px 20px;margin-bottom:20px;display:flex;align-items:center;gap:16px;animation:fd .8s ease .05s both;backdrop-filter:blur(16px);overflow:hidden;position:relative}
-.nb::before{content:'';position:absolute;inset:0;background:var(--gs);animation:bs 3s ease-in-out infinite}
-@keyframes bs{0%{transform:translateX(-100%)}100%{transform:translateX(200%)}}
-.nicn{font-size:1.8rem;flex-shrink:0;z-index:1;animation:pls 2s ease-in-out infinite}
-@keyframes pls{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
-.nf2{flex:1;z-index:1}
-.nl2{font-size:.65rem;color:var(--b3);text-transform:uppercase;letter-spacing:2px;font-weight:700}
-.nn2{font-size:1.1rem;font-weight:800;margin-top:2px}
-.ncn{font-family:'JetBrains Mono',monospace;font-size:1.4rem;font-weight:700;color:var(--b3);z-index:1;letter-spacing:2px;flex-shrink:0}
-.sb{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;animation:fd .8s ease .1s both}
-.sc{background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rm);padding:12px 20px;min-width:120px;text-align:center;transition:all .3s;position:relative;overflow:hidden}
-.sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;opacity:0;transition:opacity .3s}
-.sc:hover{border-color:var(--ba);transform:translateY(-2px)}.sc:hover::after{opacity:1}
-.sc.b1 .sn{color:var(--b4)}.sc.b1::after{background:linear-gradient(90deg,var(--b6),var(--b4))}
-.sc.g1 .sn{color:var(--g4)}.sc.g1::after{background:linear-gradient(90deg,var(--g6),var(--g4))}
-.sc.o1 .sn{color:var(--o4)}.sc.o1::after{background:linear-gradient(90deg,var(--o5),var(--o4))}
-.sc.r1 .sn{color:var(--r4)}.sc.r1::after{background:linear-gradient(90deg,var(--r5),var(--r4))}
-.sc.p1 .sn{color:var(--p4)}.sc.p1::after{background:linear-gradient(90deg,var(--p5),var(--p4))}
-.sn{font-size:1.5rem;font-weight:800;font-family:'JetBrains Mono',monospace}
-.sl{font-size:.68rem;color:var(--tm);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
-.dr{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:18px;animation:fd .8s ease .15s both}
-.db{background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rm);padding:12px 24px;text-align:center;transition:all .3s;min-width:190px}
-.db:hover{border-color:var(--ba);box-shadow:var(--sa)}
-.dl{font-size:.62rem;color:var(--tm);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;margin-bottom:4px}
-.dv{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--b3)}
-.dv.tm{font-size:1.7rem;letter-spacing:3px}.dv.dt{font-size:.95rem}
-.dz{font-size:.62rem;color:var(--tm);margin-top:2px}
-.ps{max-width:600px;margin:0 auto 20px;animation:fd .8s ease .2s both}
-.ph{display:flex;justify-content:space-between;margin-bottom:7px}
-.pt{font-size:.72rem;color:var(--t2);font-weight:600;text-transform:uppercase;letter-spacing:1px}
-.pp{font-size:.78rem;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--b4)}
-.pk{height:6px;background:rgba(59,130,246,.08);border-radius:10px;overflow:hidden}
-.pf{height:100%;background:linear-gradient(90deg,var(--b7),var(--b5),var(--b3));border-radius:10px;transition:width .8s cubic-bezier(.22,1,.36,1);position:relative}
-.pf::after{content:'';position:absolute;inset:0;background:var(--gs);animation:psh 2s ease-in-out infinite}
-@keyframes psh{0%{transform:translateX(-100%)}100%{transform:translateX(200%)}}
-.cb{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:14px;animation:fd .8s ease .25s both}
-.ct{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rs);color:var(--t2);font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:500;cursor:pointer;transition:all .25s;white-space:nowrap}
-.ct:hover{border-color:var(--ba);color:var(--b4);background:rgba(59,130,246,.05);transform:translateY(-1px)}
-.ct:active{transform:translateY(0)}
-.ct.ac{border-color:var(--b5);color:var(--b3);background:rgba(59,130,246,.1)}
-.ct.dg:hover{border-color:rgba(239,68,68,.4);color:var(--r4);background:rgba(239,68,68,.08)}
-.ct.ba{border-color:var(--p5);color:var(--p4);background:rgba(168,85,247,.1)}
-.ct svg{width:15px;height:15px;flex-shrink:0;pointer-events:none}
-.sf{display:flex;gap:10px;max-width:800px;margin:0 auto 20px;animation:fd .8s ease .3s both}
-.sx{flex:1;position:relative}
-.sx input{width:100%;padding:10px 14px 10px 40px;background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rs);color:var(--t1);font-family:'Outfit',sans-serif;font-size:.88rem;transition:all .3s}
-.sx input:focus{outline:none;border-color:var(--b5);box-shadow:0 0 0 3px rgba(59,130,246,.1)}
-.sx input::placeholder{color:var(--tm)}
-.sx .si{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--tm);pointer-events:none;transition:color .3s}
-.sx input:focus~.si{color:var(--b4)}
-.fp{display:flex;gap:5px;flex-wrap:wrap}
-.pi{padding:8px 14px;background:var(--bgc);border:1px solid var(--bs);border-radius:var(--rs);color:var(--t2);font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:500;cursor:pointer;transition:all .25s;user-select:none}
-.pi:hover{border-color:var(--ba);color:var(--t1)}
-.pi.ac{background:linear-gradient(135deg,rgba(59,130,246,.15),rgba(37,99,235,.1));border-color:var(--b5);color:var(--b3);font-weight:600}
-.bb{display:none;align-items:center;justify-content:center;gap:12px;padding:12px 20px;background:linear-gradient(135deg,rgba(168,85,247,.1),rgba(59,130,246,.08));border:1px solid rgba(168,85,247,.2);border-radius:var(--rm);margin-bottom:16px}
-.bb.vs{display:flex}
-.bc2{font-size:.82rem;font-weight:600;color:var(--p4)}
-.bk{padding:7px 16px;border:none;border-radius:var(--rs);font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s}
-.bdk{background:rgba(34,197,94,.15);color:var(--g4)}.bdk:hover{background:rgba(34,197,94,.25)}
-.bkx{background:rgba(255,255,255,.05);color:var(--tm)}.bkx:hover{background:rgba(239,68,68,.1);color:var(--r4)}
-.ap{position:fixed;bottom:20px;right:20px;z-index:1000;animation:fu .6s ease .5s both}
-@keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.ab{background:var(--bgc);backdrop-filter:blur(24px);border:1px solid var(--bs);border-radius:var(--rl);padding:14px;min-width:250px;box-shadow:var(--sl);transition:all .3s}
-.ab.on{border-color:rgba(59,130,246,.3);box-shadow:var(--sl),0 0 30px rgba(59,130,246,.08)}
-.ah{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;cursor:pointer;padding:4px;margin-left:-4px;margin-top:-4px}
-.at{font-size:.78rem;font-weight:600;color:var(--t2);display:flex;align-items:center;gap:6px;pointer-events:none}
-.bic{font-size:1rem;transition:all .3s}
-.ab.on .bic{animation:rb 1.5s ease-in-out infinite}
-@keyframes rb{0%,100%{transform:rotate(0)}15%{transform:rotate(15deg)}30%{transform:rotate(-15deg)}45%{transform:rotate(10deg)}60%{transform:rotate(-10deg)}75%{transform:rotate(0)}}
-.ttk{width:42px;height:22px;background:rgba(255,255,255,.1);border-radius:11px;position:relative;transition:background .3s;flex-shrink:0;pointer-events:none}
-.ttk.on{background:var(--b6)}
-.tth{position:absolute;top:2px;left:2px;width:18px;height:18px;background:#fff;border-radius:50%;transition:transform .3s cubic-bezier(.68,-.55,.27,1.55);box-shadow:0 1px 4px rgba(0,0,0,.3);pointer-events:none}
-.ttk.on .tth{transform:translateX(20px)}
-.ao{display:flex;flex-direction:column;gap:6px}
-.vr{display:flex;align-items:center;gap:8px}
-.vr svg{width:13px;height:13px;color:var(--tm);flex-shrink:0}
-.vsl{flex:1;height:4px;-webkit-appearance:none;appearance:none;background:rgba(255,255,255,.08);border-radius:2px;outline:none}
-.vsl::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;background:var(--b5);border-radius:50%;cursor:pointer}
-.vsl::-moz-range-thumb{width:13px;height:13px;background:var(--b5);border-radius:50%;cursor:pointer;border:none}
-.vll{font-size:.65rem;font-family:'JetBrains Mono',monospace;color:var(--tm);min-width:28px;text-align:right}
-.sto{display:flex;align-items:center;justify-content:space-between}
-.stl{font-size:.7rem;color:var(--tm);display:flex;align-items:center;gap:4px}
-.stl svg{width:13px;height:13px}
-.mtg{width:34px;height:18px;background:rgba(255,255,255,.1);border-radius:9px;position:relative;cursor:pointer;transition:background .3s;flex-shrink:0}
-.mtg.on{background:var(--b6)}
-.mth2{position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%;transition:transform .3s cubic-bezier(.68,-.55,.27,1.55);box-shadow:0 1px 3px rgba(0,0,0,.2);pointer-events:none}
-.mtg.on .mth2{transform:translateX(16px)}
-.ast{font-size:.62rem;color:var(--tm);margin-top:6px;font-style:italic}
-.ab.on .ast{color:var(--b4);font-style:normal}
-.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-bottom:40px}
-.cg.lv{grid-template-columns:1fr;gap:8px}
-.tc{background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rl);overflow:hidden;transition:all .35s cubic-bezier(.22,1,.36,1);position:relative}
-.tc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--b7),var(--b4),var(--b3),var(--b4),var(--b7));background-size:200% 100%;animation:bsh 3s linear infinite;opacity:.8;z-index:1}
-@keyframes bsh{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.tc:hover{transform:translateY(-3px);box-shadow:var(--sl),var(--sa);border-color:var(--ba)}
-.tc.done{border-color:rgba(34,197,94,.2)}.tc.done::before{background:linear-gradient(90deg,var(--g6),var(--g4),var(--g5));animation:none}
-.tc.done:hover{box-shadow:var(--sl),var(--sg);border-color:rgba(34,197,94,.3)}
-.tc.upc{border-color:rgba(251,146,60,.3)}.tc.upc::before{background:linear-gradient(90deg,var(--o5),var(--o4));animation:bsh 1.5s linear infinite}
-.tc.hl{border-color:rgba(59,130,246,.4);box-shadow:var(--sl),0 0 20px rgba(59,130,246,.1)}.tc.hl::before{background:linear-gradient(90deg,var(--b5),var(--b3),var(--b4));animation:bsh 1s linear infinite}
-.tc.bsl{border-color:rgba(168,85,247,.4);background:rgba(168,85,247,.05)}.tc.bsl::before{background:linear-gradient(90deg,var(--p5),var(--p4))}
-.tc.bm{cursor:pointer}
-.lv .tc{border-radius:var(--rm)}.lv .cy,.lv .ci,.lv .nra{display:none}.lv .cl{padding:6px 16px}.lv .cd{font-size:.9rem}.lv .cn{font-size:.92rem}.lv .rr{margin-top:4px}
-.bck{position:absolute;top:8px;right:8px;width:20px;height:20px;border:2px solid rgba(255,255,255,.15);border-radius:4px;background:rgba(0,0,0,.3);z-index:10;display:none;align-items:center;justify-content:center;cursor:pointer;transition:all .2s}
-[data-theme="light"] .bck{background:rgba(255,255,255,.8);border-color:rgba(0,0,0,.15)}
-.bm .bck{display:flex}
-.bck.ck{background:var(--p5);border-color:var(--p5)}
-.bck.ck::after{content:'';width:6px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
-.nbg{position:absolute;top:8px;left:8px;width:18px;height:18px;background:var(--p5);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.55rem;color:#fff;z-index:10;cursor:pointer;transition:transform .2s;opacity:0}
-.nbg.vs{opacity:1}.nbg:hover{transform:scale(1.2)}
-.ch{padding:14px 16px 10px;text-align:center;position:relative;z-index:2}
-.cn{font-size:1rem;font-weight:700;color:var(--b3);margin-bottom:5px}
-.done .cn{color:var(--g4)}
-.cd{font-family:'JetBrains Mono',monospace;font-size:1rem;font-weight:600;padding:4px 12px;border-radius:var(--rs);display:inline-block;transition:all .3s;letter-spacing:2px}
-.cdc{color:var(--b3);background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.15)}
-.cdw{color:var(--o4);background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.25);animation:cdp 1s ease-in-out infinite}
-.cdcr{color:var(--r4);background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);animation:cdp .6s ease-in-out infinite;font-weight:800}
-.cdbc{color:var(--tm);background:var(--bgi);border:1px solid var(--bs);font-size:.88rem;letter-spacing:3px}
-.cdhl{color:var(--tm);background:var(--bgi);border:1px solid var(--bs);font-size:.72rem;letter-spacing:.5px}
-@keyframes cdp{0%,100%{opacity:1}50%{opacity:.7}}
-.rr{display:none;align-items:center;justify-content:center;gap:8px;margin-top:5px;padding:5px 10px;background:var(--bgi);border-radius:var(--rs);border:1px solid rgba(59,130,246,.1)}
-.rr.vs{display:flex}
-.done .rr{border-color:rgba(34,197,94,.15);background:rgba(34,197,94,.04)}
-.rn{font-family:'JetBrains Mono',monospace;font-size:.88rem;font-weight:700;color:var(--b3)}
-.done .rn{color:var(--g4)}
-.cm2{background:transparent;border:none;cursor:pointer;padding:4px;border-radius:4px;transition:all .2s;display:flex;align-items:center}
-.cm2:hover{background:rgba(255,255,255,.06);transform:scale(1.1)}
-.cm2 svg{width:14px;height:14px;stroke:var(--tm);pointer-events:none}
-.cm2.ok svg{stroke:var(--g4)}
-.cy{padding:0 16px}
-.ir{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--bs);font-size:.8rem}
-.ir:last-child{border-bottom:none}
-.il{color:var(--tm);display:flex;align-items:center;gap:5px}
-.il svg{width:13px;height:13px;stroke:var(--b6)}
-.done .il svg{stroke:var(--g6)}
-.iv{font-weight:500}.iv.tu{color:var(--b4)}.iv.bu{color:var(--g4)}
-.nra{padding:6px 16px;display:none}.nra.vs{display:block}
-.nta{width:100%;padding:6px 10px;background:rgba(168,85,247,.05);border:1px solid rgba(168,85,247,.15);border-radius:var(--rs);color:var(--t1);font-family:'Outfit',sans-serif;font-size:.75rem;resize:none;outline:none;height:36px;transition:all .25s}
-.nta:focus{border-color:var(--p5);box-shadow:0 0 0 2px rgba(168,85,247,.1)}
-.nta::placeholder{color:var(--tm)}
-.cl{display:flex;gap:6px;padding:8px 16px}
-.cl a{flex:1;text-align:center;padding:6px 8px;border-radius:var(--rs);font-size:.75rem;font-weight:600;text-decoration:none;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:4px}
-.lw{background:rgba(59,130,246,.1);color:var(--b4);border:1px solid rgba(59,130,246,.15)}.lw:hover{background:rgba(59,130,246,.2);transform:translateY(-1px)}
-.ll{background:rgba(239,68,68,.1);color:var(--r4);border:1px solid rgba(239,68,68,.15)}.ll:hover{background:rgba(239,68,68,.2);transform:translateY(-1px)}
-.ln2{background:rgba(168,85,247,.1);color:var(--p4);border:1px solid rgba(168,85,247,.15)}.ln2:hover{background:rgba(168,85,247,.2);transform:translateY(-1px)}
-.done .lw{background:rgba(34,197,94,.1);color:var(--g4);border-color:rgba(34,197,94,.15)}
-.ci{padding:10px 16px 12px;background:rgba(0,0,0,.12);border-top:1px solid var(--bs);transition:background .3s}
-[data-theme="light"] .ci{background:rgba(0,0,0,.02)}
-.done .ci{background:rgba(34,197,94,.03);border-top-color:rgba(34,197,94,.1)}
-.ipt{margin-bottom:6px}.ipt:last-of-type{margin-bottom:0}
-.ipt label{display:block;font-size:.68rem;color:var(--tm);margin-bottom:2px;font-weight:500;text-transform:uppercase;letter-spacing:.5px}
-.ipt input{width:100%;padding:7px 10px;background:var(--bgi);border:1px solid rgba(255,255,255,.08);border-radius:var(--rs);color:var(--t1);font-family:'JetBrains Mono',monospace;font-size:.82rem;transition:all .25s}
-[data-theme="light"] .ipt input{border-color:rgba(0,0,0,.1)}
-.ipt input:focus{outline:none;border-color:var(--b5);background:rgba(59,130,246,.03);box-shadow:0 0 0 2px rgba(59,130,246,.08)}
-.done .ipt input{border-color:rgba(34,197,94,.15);background:rgba(34,197,94,.02)}
-.ipt input:disabled{opacity:.5;cursor:not-allowed}
-.br{display:flex;gap:6px;margin-top:8px}
-.bt{flex:1;padding:8px 10px;border:none;border-radius:var(--rs);font-family:'Outfit',sans-serif;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .25s;display:flex;align-items:center;justify-content:center;gap:4px}
-.bt:disabled{opacity:.4;cursor:not-allowed;transform:none!important}
-.bt svg{width:13px;height:13px;pointer-events:none}
-.btc{background:rgba(59,130,246,.12);color:var(--b4);border:1px solid rgba(59,130,246,.2)}.btc:hover:not(:disabled){background:rgba(59,130,246,.2);transform:translateY(-1px)}
-.btd{background:rgba(34,197,94,.12);color:var(--g4);border:1px solid rgba(34,197,94,.2)}.btd:hover:not(:disabled){background:rgba(34,197,94,.2);transform:translateY(-1px)}
-.btr{background:rgba(255,255,255,.05);color:var(--tm);border:1px solid rgba(255,255,255,.08);display:none;width:100%}.btr:hover:not(:disabled){background:rgba(239,68,68,.1);color:var(--r4);border-color:rgba(239,68,68,.2)}
-.stg{display:inline-block;font-size:.58rem;padding:2px 7px;border-radius:50px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-top:5px;background:rgba(34,197,94,.15);color:var(--g4);border:1px solid rgba(34,197,94,.25)}
-.cp{position:fixed;top:16px;left:16px;width:260px;max-width:calc(100vw - 32px);z-index:1000;transition:transform .35s cubic-bezier(.22,1,.36,1)}
-.cp.hid{transform:translateX(-120%)}
-.cpb{background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rm) var(--rm) 0 0;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;user-select:none}
-.cpb:hover{background:var(--bgs)}
-.cpb span{font-size:.75rem;font-weight:600;color:var(--b4)}
-.cpa{font-size:.68rem;color:var(--tm);transition:transform .3s}
-.cpa.sh{transform:rotate(-90deg)}
-.cpy{background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-top:none;border-radius:0 0 var(--rm) var(--rm);overflow:hidden;transition:max-height .4s cubic-bezier(.22,1,.36,1);max-height:0}
-.cpy.sh{max-height:500px}
-.cpta{width:100%;min-height:65px;max-height:100px;padding:8px 10px;background:rgba(0,0,0,.2);border:none;border-bottom:1px solid rgba(255,255,255,.04);color:var(--t1);font-family:'JetBrains Mono',monospace;font-size:.62rem;resize:vertical;outline:none;line-height:1.4}
-[data-theme="light"] .cpta{background:rgba(0,0,0,.03)}
-.cpta::placeholder{color:var(--tm)}
-.cpbt{display:flex;gap:6px;padding:6px 8px}
-.cpbk{flex:1;padding:5px 8px;border:none;border-radius:var(--rs);font-family:'Outfit',sans-serif;font-size:.66rem;font-weight:600;cursor:pointer;transition:all .2s}
-.cpbkk{background:rgba(59,130,246,.15);color:var(--b4)}.cpbkk:hover{background:rgba(59,130,246,.25)}
-.cpbkc{background:rgba(255,255,255,.05);color:var(--tm)}.cpbkc:hover{background:rgba(255,255,255,.1)}
-.cptw{max-height:250px;overflow-y:auto}
-.cptw::-webkit-scrollbar{width:3px}.cptw::-webkit-scrollbar-thumb{background:var(--b6);border-radius:2px}
-.cptbl{width:100%;border-collapse:collapse;font-size:.58rem}
-.cptbl thead{position:sticky;top:0;background:var(--bg2);z-index:5}
-.cptbl th{padding:4px;text-align:left;color:var(--tm);font-weight:600;text-transform:uppercase;border-bottom:1px solid var(--bs);font-size:.52rem}
-.cptbl td{padding:4px;border-bottom:1px solid var(--bs);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.cnm{color:var(--t2);font-weight:500}.cns{font-family:'JetBrains Mono',monospace;font-weight:600}
-.cok{color:var(--g4)}.cng{color:var(--b4)}.cmt2{color:var(--tm)}.cst{text-align:center;font-size:.72rem}
-.cpsr{display:flex;justify-content:space-around;padding:5px 8px;border-top:1px solid var(--bs);font-size:.58rem}
-.cpsi{display:flex;align-items:center;gap:3px}.cpsl{color:var(--tm)}.cpsv{font-weight:700;font-family:'JetBrains Mono',monospace}
-.cpem{padding:14px;text-align:center;color:var(--tm);font-size:.66rem}
-.cptg{position:fixed;top:16px;left:16px;z-index:1001;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--bgc);backdrop-filter:blur(20px);border:1px solid var(--bs);border-radius:var(--rs);cursor:pointer;transition:all .3s;color:var(--t2);opacity:0;pointer-events:none;transform:scale(.8)}
-.cptg.vis{opacity:1;pointer-events:auto;transform:scale(1)}
-.cptg:hover{border-color:var(--ba);color:var(--b4)}
-.cptg svg{width:16px;height:16px;pointer-events:none}
-.hp{position:fixed;bottom:20px;left:20px;width:280px;max-width:calc(100vw - 32px);max-height:400px;z-index:1000;animation:fu .6s ease .7s both}
-.hbx{background:var(--bgc);backdrop-filter:blur(24px);border:1px solid var(--bs);border-radius:var(--rl);box-shadow:var(--sl);overflow:hidden}
-.hhd{padding:10px 14px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
-.hhd:hover{background:var(--bgs)}
-.httl{font-size:.78rem;font-weight:600;color:var(--b4);display:flex;align-items:center;gap:6px}
-.harr{font-size:.68rem;color:var(--tm);transition:transform .3s}
-.harr.sh{transform:rotate(-90deg)}
-.hbd{max-height:300px;overflow-y:auto;transition:max-height .4s cubic-bezier(.22,1,.36,1)}
-.hbd.sh{max-height:0}
-.hbd::-webkit-scrollbar{width:3px}.hbd::-webkit-scrollbar-thumb{background:var(--b6);border-radius:2px}
-.hi2{padding:8px 14px;border-bottom:1px solid var(--bs);font-size:.72rem;transition:background .2s}
-.hi2:hover{background:rgba(59,130,246,.03)}.hi2:last-child{border-bottom:none}
-.hnm{font-weight:600;color:var(--t2)}
-.hac{color:var(--tm);margin-top:2px;font-size:.68rem}
-.hld{color:var(--g4)}.hlr{color:var(--r4)}.hli{color:var(--b4)}
-.htm{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--tm);margin-top:2px}
-.hem{padding:20px;text-align:center;color:var(--tm);font-size:.72rem}
-.ntf{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:9998;display:none;align-items:center;gap:10px;padding:12px 20px;background:var(--bg2);border:1px solid rgba(59,130,246,.3);border-radius:var(--rm);box-shadow:var(--sl),0 0 20px rgba(59,130,246,.1);animation:nia .4s ease;font-size:.82rem;font-weight:500}
-.ntf.vs{display:flex}
-@keyframes nia{from{opacity:0;transform:translateX(-50%) translateY(-20px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
-.ntf .nci{font-size:1.2rem}.ntf .ntx{color:var(--b3);font-weight:600}.ntf .nsb{color:var(--tm);font-size:.72rem}
-.mo{display:none;position:fixed;inset:0;background:var(--ov);backdrop-filter:blur(4px);z-index:5000;justify-content:center;align-items:center;padding:20px}
-.mo.op{display:flex}
-.mbx{background:var(--bg2);border:1px solid var(--bs);border-radius:var(--rx);max-width:600px;width:100%;max-height:80vh;overflow-y:auto;box-shadow:var(--sl);animation:mia .3s ease}
-@keyframes mia{from{opacity:0;transform:scale(.95) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.mhd{padding:18px 22px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--bs)}
-.mtt{font-size:1.05rem;font-weight:700;color:var(--b3)}
-.mxx{background:rgba(255,255,255,.05);border:none;color:var(--tm);width:30px;height:30px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;font-size:1.1rem}
-.mxx:hover{background:rgba(239,68,68,.1);color:var(--r4)}
-.mct{padding:18px 22px}
-.mct textarea{width:100%;min-height:180px;padding:12px;background:rgba(0,0,0,.2);border:1px solid var(--bs);border-radius:var(--rm);color:var(--t1);font-family:'JetBrains Mono',monospace;font-size:.78rem;resize:vertical;outline:none;line-height:1.6}
-[data-theme="light"] .mct textarea{background:rgba(0,0,0,.03)}
-.mct textarea:focus{border-color:var(--b5)}
-.mct textarea::placeholder{color:var(--tm)}
-.mhn{font-size:.7rem;color:var(--tm);margin-top:8px;line-height:1.5}
-.mft{padding:14px 22px 18px;display:flex;gap:10px;justify-content:flex-end}
-.mb{padding:9px 18px;border:none;border-radius:var(--rs);font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .25s}
-.mb:hover{transform:translateY(-1px)}
-.mbp{background:linear-gradient(135deg,var(--b6),var(--b5));color:#fff}
-.mbg{background:rgba(255,255,255,.05);color:var(--t2)}.mbg:hover{background:rgba(255,255,255,.1)}
-.mb.cpd{background:var(--g6)!important;color:#fff!important}
-.rmo .mbx{max-width:460px}
-.rtx{background:rgba(0,0,0,.2);padding:14px;border-radius:var(--rm);font-family:'JetBrains Mono',monospace;font-size:.8rem;line-height:1.7;white-space:pre-wrap;color:var(--t1);border:1px solid var(--bs)}
-[data-theme="light"] .rtx{background:rgba(0,0,0,.03)}
-.cmo .mbx{max-width:400px;text-align:center}
-.cic{font-size:2.8rem;margin-bottom:14px;display:block}
-.cmg{font-size:.95rem;color:var(--t2);line-height:1.6;margin-bottom:6px}
-.cmw{font-size:.78rem;color:var(--r4);margin-bottom:22px;font-weight:500}
-.cmb{display:flex;gap:10px;justify-content:center}
-.cmb .mb{min-width:110px;justify-content:center}
-.mbd{background:linear-gradient(135deg,#dc2626,#ef4444);color:#fff}.mbd:hover{box-shadow:var(--sr)}
-.tw{position:fixed;top:16px;right:16px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none}
-.to{background:var(--bg2);backdrop-filter:blur(20px);border:1px solid var(--bs);padding:10px 16px;border-radius:var(--rm);box-shadow:var(--sl);display:flex;align-items:center;gap:8px;font-size:.8rem;font-weight:500;min-width:240px;max-width:360px;animation:tia .35s ease,toa .35s ease 2.65s forwards;pointer-events:auto}
-.to.success{border-left:3px solid var(--g5)}.to.error{border-left:3px solid var(--r5)}.to.info{border-left:3px solid var(--b5)}.to.warning{border-left:3px solid var(--o5)}
-.to svg{width:16px;height:16px;flex-shrink:0;pointer-events:none}
-.to.success svg{stroke:var(--g4)}.to.error svg{stroke:var(--r4)}.to.info svg{stroke:var(--b4)}.to.warning svg{stroke:var(--o4)}
-@keyframes tia{from{opacity:0;transform:translateX(80px)}to{opacity:1;transform:translateX(0)}}
-@keyframes toa{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(80px)}}
-.shk{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);font-size:.62rem;color:var(--tm);z-index:500;opacity:.4;transition:opacity .3s;white-space:nowrap}
-.shk:hover{opacity:1}
-kbd{display:inline-block;padding:1px 5px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:3px;font-family:'JetBrains Mono',monospace;font-size:.58rem;margin:0 1px}
-[data-theme="light"] kbd{background:rgba(0,0,0,.05);border-color:rgba(0,0,0,.1)}
-::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(59,130,246,.15);border-radius:3px}
-@media(max-width:768px){.aw{padding:12px}.sb{gap:6px}.sc{min-width:90px;padding:8px 12px}.sn{font-size:1.2rem}.cg{grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.sf{flex-direction:column}.fp{justify-content:center;flex-wrap:wrap}.cp{position:relative;top:0;left:0;width:100%;margin-bottom:14px;transition:none}.cp.hid{transform:none;display:none}.cp .cpy{max-height:500px}.cp .cpy.sh{max-height:0}.cptg{display:none}.ap{bottom:12px;right:12px;left:auto}.ab{width:240px;min-width:auto}.hp{display:none}.shk{display:none}.cb{gap:6px}.ct{padding:7px 10px;font-size:.72rem}.db{min-width:150px;padding:10px 14px}.dv.tm{font-size:1.3rem}.nb{flex-wrap:wrap;padding:12px 16px;gap:10px}.ncn{font-size:1.1rem}.ht{justify-content:center}}
-@media(max-width:480px){.cg{grid-template-columns:1fr}.dr{flex-direction:column;align-items:center}.cmb{flex-direction:column}.cmb .mb{min-width:100%}.ap{left:12px;right:12px}.ab{width:auto;min-width:auto}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-</style>
-</head>
-<body>
-<canvas id="bgC"></canvas>
-<div class="bgo"></div>
-<div class="tw" id="tw"></div>
-<div class="ntf" id="ntf"><span class="nci">&#128276;</span><div><div class="ntx" id="ntx">BET CLOSE!</div><div class="nsb" id="nsb"></div></div></div>
-<div class="cptg" id="cptg" onclick="togCmpPanel()" title="Buka Perbandingan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1"></rect><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg></div>
-<div class="cp hid" id="cpWrap"><div class="cpb" onclick="togCmpPanel()"><span>Perbandingan</span><span class="cpa" id="cpa">&#9660;</span></div><div class="cpy sh" id="cpy"><textarea class="cpta" id="cmpIn" placeholder="Paste data hasil..." oninput="debCmp()"></textarea><div class="cpbt"><button class="cpbkk" onclick="runCmp()">Cek</button><button class="cpbkc" onclick="clrCmp()">Clear</button></div><div class="cptw" id="cptw" style="display:none"><table class="cptbl"><thead><tr><th>Pasaran</th><th>Man</th><th>Form</th><th>&#10003;</th></tr></thead><tbody id="cptb"></tbody></table><div class="cpsr" id="cpsr" style="display:none"><div class="cpsi"><span class="cpsl">Sama:</span><span class="cpsv cok" id="csS">0</span></div><div class="cpsi"><span class="cpsl">Beda:</span><span class="cpsv cng" id="csD">0</span></div><div class="cpsi"><span class="cpsl">Kosong:</span><span class="cpsv cmt2" id="csE">0</span></div></div></div><div class="cpem" id="cpem">Paste data, lalu klik Cek</div></div></div>
-<div class="hp"><div class="hbx"><div class="hhd" onclick="togHist()"><span class="httl"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Riwayat</span><span class="harr" id="harr">&#9660;</span></div><div class="hbd" id="hbd"><div class="hem" id="hem">Belum ada aktivitas</div><div id="hl"></div></div></div></div>
-<div class="ap"><div class="ab" id="abx"><div class="ah" onclick="togAlarm()"><div class="at"><span class="bic">&#128276;</span><span>Alarm</span></div><div class="ttk" id="ttk"><div class="tth"></div></div></div><div class="ao"><div class="vr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg><input type="range" class="vsl" id="vsl" min="0" max="100" value="80" oninput="setVol(this.value)"><span class="vll" id="vlb">80%</span></div><div class="sto"><span class="stl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> Beep</span><div class="mtg on" id="bkT" onclick="togBeep(event)"><div class="mth2"></div></div></div><div class="sto"><span class="stl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg> Notif</span><div class="mtg" id="nfT" onclick="togNotif(event)"><div class="mth2"></div></div></div></div><div class="ast" id="astx">Klik untuk mengaktifkan</div></div></div>
-<div class="shk"><kbd>/</kbd> Cari <kbd>Q</kbd> Paste <kbd>T</kbd> Tema <kbd>V</kbd> View <kbd>Esc</kbd> Tutup</div>
-<div class="aw">
-<header class="hd"><div class="ht"><div class="hb"><div class="pdot"></div> Live Tracking</div><div class="ha"><button class="ib" id="thBtn" onclick="togTheme()" title="Tema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button><button class="ib" id="vwBtn" onclick="togView()" title="View"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></button></div></div><h1>JADWAL BETCLOSE TOGEL</h1><p class="hs">Monitoring jadwal tutup &amp; buka pasaran togel real-time</p></header>
-<div class="nb" id="nb"><div class="nicn">&#9200;</div><div class="nf2"><div class="nl2">Selanjutnya Tutup</div><div class="nn2" id="nuN">Loading...</div></div><div class="ncn" id="nuC">--:--:--</div></div>
-<div class="sb"><div class="sc b1"><div class="sn" id="sT">0</div><div class="sl">Total</div></div><div class="sc g1"><div class="sn" id="sD">0</div><div class="sl">Selesai</div></div><div class="sc o1"><div class="sn" id="sP">0</div><div class="sl">Pending</div></div><div class="sc r1"><div class="sn" id="sU">0</div><div class="sl">Segera</div></div><div class="sc p1"><div class="sn" id="sN">0</div><div class="sl">Catatan</div></div></div>
-<div class="ps"><div class="ph"><span class="pt">Progress Hari Ini</span><span class="pp" id="pPc">0%</span></div><div class="pk"><div class="pf" id="pFl" style="width:0%"></div></div></div>
-<div class="dr"><div class="db"><div class="dl">Tanggal</div><div class="dv dt" id="eDt">Loading...</div></div><div class="db"><div class="dl">Waktu</div><div class="dv tm" id="eTm">00:00:00</div><div class="dz">WIB (GMT+7)</div></div></div>
-<div class="bb" id="bBar"><span class="bc2" id="bCnt">0 dipilih</span><button class="bk bdk" onclick="bulkDone()">Done Semua</button><button class="bk bkx" onclick="cancelBulk()">Batal</button></div>
-<div class="cb"><button class="ct" onclick="openQP()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1"></rect></svg> Quick Paste</button><button class="ct" onclick="expData()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> Export</button><button class="ct" id="sBtn" onclick="togSort()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="11" y2="6"></line><line x1="4" y1="12" x2="11" y2="12"></line><line x1="4" y1="18" x2="11" y2="18"></line><polyline points="15 9 18 6 21 9"></polyline><line x1="18" y1="6" x2="18" y2="18"></line></svg> Urutkan</button><button class="ct" id="bkBtn" onclick="togBulk()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg> Pilih Banyak</button><button class="ct dg" onclick="showCC()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg> Hapus</button></div>
-<div class="sf"><div class="sx"><input type="text" id="sIn" placeholder="Cari nama pasaran..." oninput="applyF()"><div class="si"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></div></div><div class="fp"><button class="pi ac" onclick="setF('all',this)">Semua</button><button class="pi" onclick="setF('upcoming',this)">Segera</button><button class="pi" onclick="setF('pending',this)">Pending</button><button class="pi" onclick="setF('done',this)">Done</button><button class="pi" onclick="setF('notes',this)">Catatan</button></div></div>
-<div class="cg" id="grid"></div>
-</div>
-<div class="mo cmo" id="ccMo"><div class="mbx"><div class="mct"><span class="cic">&#9888;</span><div class="cmg">Hapus Semua Data?</div><div class="cmw">Tidak dapat dibatalkan.</div><div class="cmb"><button class="mb mbg" onclick="closeCC()">Batal</button><button class="mb mbd" onclick="doClear()">Ya, Hapus</button></div></div></div></div>
-<div class="mo" id="qpMo" onclick="if(event.target===this)closeQP()"><div class="mbx"><div class="mhd"><span class="mtt">Quick Paste Hasil</span><button class="mxx" onclick="closeQP()">&times;</button></div><div class="mct"><textarea id="qpTx" placeholder="NAMA_PASARAN | PRIZE1 | PRIZE2 | PRIZE3"></textarea><p class="mhn">Pisahkan dengan | , atau tab</p></div><div class="mft"><button class="mb mbg" onclick="closeQP()">Batal</button><button class="mb mbp" onclick="procQP()">Proses</button></div></div></div>
-<div class="mo rmo" id="rsMo" onclick="if(event.target===this)closeRs()"><div class="mbx"><div class="mhd"><span class="mtt">Hasil Pengeluaran</span><button class="mxx" onclick="closeRs()">&times;</button></div><div class="mct"><div class="rtx" id="rsTx"></div></div><div class="mft"><button class="mb mbg" onclick="closeRs()">Tutup</button><button class="mb mbp" id="rsCb" onclick="copyRs()">Copy</button></div></div></div>
-<script>
-/* === PROTEKSI RINGAN - tidak mengganggu fungsi halaman === */
-document.addEventListener('contextmenu',function(e){e.preventDefault()});
-document.addEventListener('keydown',function(e){
-var k=e.key.toLowerCase();
-if(k==='f12'){e.preventDefault();return false}
-if(e.ctrlKey&&e.shiftKey&&(k==='i'||k==='j'||k==='c')){e.preventDefault();return false}
-if(e.ctrlKey&&k==='u'){e.preventDefault();return false}
-if(e.ctrlKey&&k==='s'){e.preventDefault();return false}
-});
+<!DOCTYPE HTML>
+<HTML LANG="ID" DATA-THEME="DARK">
+<HEAD>
+<META CHARSET="UTF-8">
+<META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0">
+<TITLE>JADWAL BETCLOSE TOGEL PREMIUM</TITLE>
+<LINK HREF="HTTPS://FONTS.GOOGLEAPIS.COM/CSS2?FAMILY=OUTFIT:WGHT@300;400;500;600;700;800;900&FAMILY=JETBRAINS+MONO:WGHT@400;500;600;700&DISPLAY=SWAP" REL="STYLESHEET">
+<STYLE>
+:ROOT{--B2:#BFDBFE;--B3:#93C5FD;--B4:#60A5FA;--B5:#3B82F6;--B6:#2563EB;--B7:#1D4ED8;--G4:#4ADE80;--G5:#22C55E;--G6:#16A34A;--R4:#F87171;--R5:#EF4444;--O4:#FB923C;--O5:#F97316;--P4:#C084FC;--P5:#A855F7;--RS:6PX;--RM:10PX;--RL:16PX;--RX:20PX}
+[DATA-THEME="DARK"]{--BG1:#060A14;--BG2:#0C1221;--BGC:RGBA(12,20,40,.88);--BGS:RGBA(18,28,52,.92);--BGI:RGBA(255,255,255,.03);--BS:RGBA(59,130,246,.08);--BA:RGBA(59,130,246,.25);--T1:#F0F4FF;--T2:#94A3C8;--TM:#5B6B8A;--SL:0 8PX 32PX RGBA(0,0,0,.7);--SA:0 4PX 20PX RGBA(59,130,246,.15);--SG:0 4PX 20PX RGBA(34,197,94,.15);--OV:RGBA(0,0,0,.75)}
+[DATA-THEME="LIGHT"]{--BG1:#EEF2FF;--BG2:#FFF;--BGC:RGBA(255,255,255,.92);--BGS:RGBA(255,255,255,.98);--BGI:RGBA(0,0,0,.03);--BS:RGBA(59,130,246,.12);--BA:RGBA(59,130,246,.35);--T1:#1E293B;--T2:#475569;--TM:#94A3B8;--SL:0 8PX 32PX RGBA(0,0,0,.1);--SA:0 4PX 20PX RGBA(59,130,246,.12);--SG:0 4PX 20PX RGBA(34,197,94,.12);--OV:RGBA(0,0,0,.4)}
+*{MARGIN:0;PADDING:0;BOX-SIZING:BORDER-BOX}
+BODY{FONT-FAMILY:'OUTFIT',SANS-SERIF;BACKGROUND:VAR(--BG1);COLOR:VAR(--T1);MIN-HEIGHT:100VH;OVERFLOW-X:HIDDEN;TRANSITION:BACKGROUND .5S,COLOR .5S}
+#BGC{POSITION:FIXED;TOP:0;LEFT:0;WIDTH:100%;HEIGHT:100%;Z-INDEX:0;POINTER-EVENTS:NONE}
+.BGO{POSITION:FIXED;INSET:0;BACKGROUND:RADIAL-GRADIENT(ELLIPSE AT 20% 0%,RGBA(59,130,246,.07) 0%,TRANSPARENT 50%),RADIAL-GRADIENT(ELLIPSE AT 80% 100%,RGBA(37,99,235,.05) 0%,TRANSPARENT 50%);Z-INDEX:1;POINTER-EVENTS:NONE}
+.AW{POSITION:RELATIVE;Z-INDEX:2;PADDING:20PX;MAX-WIDTH:1600PX;MARGIN:0 AUTO}
+.HD{TEXT-ALIGN:CENTER;MARGIN-BOTTOM:24PX;ANIMATION:FD .8S EASE}
+@KEYFRAMES FD{FROM{OPACITY:0;TRANSFORM:TRANSLATEY(-30PX)}TO{OPACITY:1;TRANSFORM:TRANSLATEY(0)}}
+.HT{DISPLAY:FLEX;JUSTIFY-CONTENT:SPACE-BETWEEN;ALIGN-ITEMS:CENTER;MARGIN-BOTTOM:12PX;FLEX-WRAP:WRAP;GAP:8PX}
+.HB{DISPLAY:INLINE-FLEX;ALIGN-ITEMS:CENTER;GAP:6PX;PADDING:5PX 14PX;BACKGROUND:RGBA(59,130,246,.1);BORDER:1PX SOLID RGBA(59,130,246,.2);BORDER-RADIUS:50PX;FONT-SIZE:.7REM;FONT-WEIGHT:600;COLOR:VAR(--B4);TEXT-TRANSFORM:UPPERCASE;LETTER-SPACING:2PX}
+.PDOT{WIDTH:6PX;HEIGHT:6PX;BACKGROUND:VAR(--B4);BORDER-RADIUS:50%;ANIMATION:PDA 2S EASE-IN-OUT INFINITE}
+@KEYFRAMES PDA{0%,100%{OPACITY:1;TRANSFORM:SCALE(1)}50%{OPACITY:.4;TRANSFORM:SCALE(.7)}}
+.HA{DISPLAY:FLEX;GAP:8PX}
+.IB{WIDTH:38PX;HEIGHT:38PX;DISPLAY:FLEX;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(20PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RS);COLOR:VAR(--T2);CURSOR:POINTER;TRANSITION:ALL .25S}
+.IB:HOVER{BORDER-COLOR:VAR(--BA);COLOR:VAR(--B4);TRANSFORM:TRANSLATEY(-1PX)}
+.IB.AC{BACKGROUND:RGBA(59,130,246,.15);BORDER-COLOR:VAR(--B5);COLOR:VAR(--B3)}
+.IB SVG{WIDTH:18PX;HEIGHT:18PX}
+.HD H1{FONT-SIZE:CLAMP(1.6REM,4.5VW,2.8REM);FONT-WEIGHT:900;BACKGROUND:LINEAR-GRADIENT(135DEG,#BFDBFE,#60A5FA,#2563EB,#60A5FA,#BFDBFE);BACKGROUND-SIZE:200% AUTO;-WEBKIT-BACKGROUND-CLIP:TEXT;BACKGROUND-CLIP:TEXT;COLOR:TRANSPARENT;ANIMATION:ST 4S LINEAR INFINITE}
+@KEYFRAMES ST{0%{BACKGROUND-POSITION:0% CENTER}100%{BACKGROUND-POSITION:200% CENTER}}
+.HS{FONT-SIZE:.82REM;COLOR:VAR(--TM);MARGIN-TOP:4PX}
+.NB{BACKGROUND:LINEAR-GRADIENT(135DEG,RGBA(59,130,246,.12),RGBA(37,99,235,.08));BORDER:1PX SOLID RGBA(59,130,246,.2);BORDER-RADIUS:VAR(--RL);PADDING:14PX 20PX;MARGIN-BOTTOM:20PX;DISPLAY:FLEX;ALIGN-ITEMS:CENTER;GAP:16PX;ANIMATION:FD .8S EASE .05S BOTH;BACKDROP-FILTER:BLUR(16PX);OVERFLOW:HIDDEN;POSITION:RELATIVE}
+.NB::BEFORE{CONTENT:'';POSITION:ABSOLUTE;INSET:0;BACKGROUND:LINEAR-GRADIENT(90DEG,TRANSPARENT,RGBA(96,165,250,.2),TRANSPARENT);ANIMATION:BS 3S EASE-IN-OUT INFINITE}
+@KEYFRAMES BS{0%{TRANSFORM:TRANSLATEX(-100%)}100%{TRANSFORM:TRANSLATEX(200%)}}
+.NICN{FONT-SIZE:1.8REM;FLEX-SHRINK:0;Z-INDEX:1;ANIMATION:PLS 2S EASE-IN-OUT INFINITE}
+@KEYFRAMES PLS{0%,100%{TRANSFORM:SCALE(1)}50%{TRANSFORM:SCALE(1.1)}}
+.NF2{FLEX:1;Z-INDEX:1}.NL2{FONT-SIZE:.65REM;COLOR:VAR(--B3);TEXT-TRANSFORM:UPPERCASE;LETTER-SPACING:2PX;FONT-WEIGHT:700}.NN2{FONT-SIZE:1.1REM;FONT-WEIGHT:800;MARGIN-TOP:2PX}.NCN{FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:1.4REM;FONT-WEIGHT:700;COLOR:VAR(--B3);Z-INDEX:1;LETTER-SPACING:2PX;FLEX-SHRINK:0}
+.SB{DISPLAY:FLEX;GAP:10PX;JUSTIFY-CONTENT:CENTER;FLEX-WRAP:WRAP;MARGIN-BOTTOM:20PX;ANIMATION:FD .8S EASE .1S BOTH}
+.SC{BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(20PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RM);PADDING:12PX 20PX;MIN-WIDTH:120PX;TEXT-ALIGN:CENTER;TRANSITION:ALL .3S;POSITION:RELATIVE;OVERFLOW:HIDDEN}
+.SC::AFTER{CONTENT:'';POSITION:ABSOLUTE;BOTTOM:0;LEFT:0;RIGHT:0;HEIGHT:2PX;OPACITY:0;TRANSITION:OPACITY .3S}
+.SC:HOVER{BORDER-COLOR:VAR(--BA);TRANSFORM:TRANSLATEY(-2PX)}.SC:HOVER::AFTER{OPACITY:1}
+.SC.B1 .SN{COLOR:VAR(--B4)}.SC.B1::AFTER{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--B6),VAR(--B4))}
+.SC.G1 .SN{COLOR:VAR(--G4)}.SC.G1::AFTER{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--G6),VAR(--G4))}
+.SC.O1 .SN{COLOR:VAR(--O4)}.SC.O1::AFTER{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--O5),VAR(--O4))}
+.SC.R1 .SN{COLOR:VAR(--R4)}.SC.R1::AFTER{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--R5),VAR(--R4))}
+.SC.P1 .SN{COLOR:VAR(--P4)}.SC.P1::AFTER{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--P5),VAR(--P4))}
+.SN{FONT-SIZE:1.5REM;FONT-WEIGHT:800;FONT-FAMILY:'JETBRAINS MONO',MONOSPACE}
+.SL{FONT-SIZE:.68REM;COLOR:VAR(--TM);TEXT-TRANSFORM:UPPERCASE;LETTER-SPACING:1PX;MARGIN-TOP:2PX}
+.DR{DISPLAY:FLEX;GAP:14PX;JUSTIFY-CONTENT:CENTER;FLEX-WRAP:WRAP;MARGIN-BOTTOM:18PX;ANIMATION:FD .8S EASE .15S BOTH}
+.DB{BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(20PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RM);PADDING:12PX 24PX;TEXT-ALIGN:CENTER;TRANSITION:ALL .3S;MIN-WIDTH:190PX}
+.DB:HOVER{BORDER-COLOR:VAR(--BA);BOX-SHADOW:VAR(--SA)}
+.DL{FONT-SIZE:.62REM;COLOR:VAR(--TM);TEXT-TRANSFORM:UPPERCASE;LETTER-SPACING:1.5PX;FONT-WEIGHT:600;MARGIN-BOTTOM:4PX}
+.DV{FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-WEIGHT:700;COLOR:VAR(--B3)}
+.DV.TM{FONT-SIZE:1.7REM;LETTER-SPACING:3PX}.DV.DT{FONT-SIZE:.95REM}
+.DZ{FONT-SIZE:.62REM;COLOR:VAR(--TM);MARGIN-TOP:2PX}
+.PS{MAX-WIDTH:600PX;MARGIN:0 AUTO 20PX;ANIMATION:FD .8S EASE .2S BOTH}
+.PH{DISPLAY:FLEX;JUSTIFY-CONTENT:SPACE-BETWEEN;MARGIN-BOTTOM:7PX}
+.PT{FONT-SIZE:.72REM;COLOR:VAR(--T2);FONT-WEIGHT:600;TEXT-TRANSFORM:UPPERCASE;LETTER-SPACING:1PX}
+.PP{FONT-SIZE:.78REM;FONT-WEIGHT:700;FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;COLOR:VAR(--B4)}
+.PK{HEIGHT:6PX;BACKGROUND:RGBA(59,130,246,.08);BORDER-RADIUS:10PX;OVERFLOW:HIDDEN}
+.PF{HEIGHT:100%;BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--B7),VAR(--B5),VAR(--B3));BORDER-RADIUS:10PX;TRANSITION:WIDTH .8S CUBIC-BEZIER(.22,1,.36,1);POSITION:RELATIVE}
+.PF::AFTER{CONTENT:'';POSITION:ABSOLUTE;INSET:0;BACKGROUND:LINEAR-GRADIENT(90DEG,TRANSPARENT,RGBA(255,255,255,.15),TRANSPARENT);ANIMATION:PSH 2S EASE-IN-OUT INFINITE}
+@KEYFRAMES PSH{0%{TRANSFORM:TRANSLATEX(-100%)}100%{TRANSFORM:TRANSLATEX(200%)}}
+.CB{DISPLAY:FLEX;GAP:10PX;ALIGN-ITEMS:CENTER;FLEX-WRAP:WRAP;JUSTIFY-CONTENT:CENTER;MARGIN-BOTTOM:14PX;ANIMATION:FD .8S EASE .25S BOTH}
+.CT{DISPLAY:INLINE-FLEX;ALIGN-ITEMS:CENTER;GAP:6PX;PADDING:8PX 14PX;BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(20PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RS);COLOR:VAR(--T2);FONT-SIZE:.78REM;FONT-WEIGHT:500;CURSOR:POINTER;TRANSITION:ALL .25S;WHITE-SPACE:NOWRAP}
+.CT:HOVER{BORDER-COLOR:VAR(--BA);COLOR:VAR(--B4);BACKGROUND:RGBA(59,130,246,.05);TRANSFORM:TRANSLATEY(-1PX)}
+.CT.AC{BORDER-COLOR:VAR(--B5);COLOR:VAR(--B3);BACKGROUND:RGBA(59,130,246,.1)}
+.CT.DG:HOVER{BORDER-COLOR:RGBA(239,68,68,.4);COLOR:VAR(--R4);BACKGROUND:RGBA(239,68,68,.08)}
+.CT.BA{BORDER-COLOR:VAR(--P5);COLOR:VAR(--P4);BACKGROUND:RGBA(168,85,247,.1)}
+.CT SVG{WIDTH:15PX;HEIGHT:15PX;FLEX-SHRINK:0}
+.SF{DISPLAY:FLEX;GAP:10PX;MAX-WIDTH:800PX;MARGIN:0 AUTO 20PX;ANIMATION:FD .8S EASE .3S BOTH}
+.SX{FLEX:1;POSITION:RELATIVE}
+.SX INPUT{WIDTH:100%;PADDING:10PX 14PX 10PX 40PX;BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(20PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RS);COLOR:VAR(--T1);FONT-SIZE:.88REM;TRANSITION:ALL .3S}
+.SX INPUT:FOCUS{OUTLINE:NONE;BORDER-COLOR:VAR(--B5);BOX-SHADOW:0 0 0 3PX RGBA(59,130,246,.1)}
+.SX INPUT::PLACEHOLDER{COLOR:VAR(--TM)}
+.SX .SI{POSITION:ABSOLUTE;LEFT:13PX;TOP:50%;TRANSFORM:TRANSLATEY(-50%);COLOR:VAR(--TM)}
+.FP{DISPLAY:FLEX;GAP:5PX;FLEX-WRAP:WRAP}
+.PI{PADDING:8PX 14PX;BACKGROUND:VAR(--BGC);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RS);COLOR:VAR(--T2);FONT-SIZE:.78REM;FONT-WEIGHT:500;CURSOR:POINTER;TRANSITION:ALL .25S;USER-SELECT:NONE}
+.PI:HOVER{BORDER-COLOR:VAR(--BA);COLOR:VAR(--T1)}
+.PI.AC{BACKGROUND:LINEAR-GRADIENT(135DEG,RGBA(59,130,246,.15),RGBA(37,99,235,.1));BORDER-COLOR:VAR(--B5);COLOR:VAR(--B3);FONT-WEIGHT:600}
+.BB{DISPLAY:NONE;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;GAP:12PX;PADDING:12PX 20PX;BACKGROUND:LINEAR-GRADIENT(135DEG,RGBA(168,85,247,.1),RGBA(59,130,246,.08));BORDER:1PX SOLID RGBA(168,85,247,.2);BORDER-RADIUS:VAR(--RM);MARGIN-BOTTOM:16PX}
+.BB.VS{DISPLAY:FLEX}
+.BC2{FONT-SIZE:.82REM;FONT-WEIGHT:600;COLOR:VAR(--P4)}
+.BK{PADDING:7PX 16PX;BORDER:NONE;BORDER-RADIUS:VAR(--RS);FONT-SIZE:.78REM;FONT-WEIGHT:600;CURSOR:POINTER;TRANSITION:ALL .2S}
+.BDK{BACKGROUND:RGBA(34,197,94,.15);COLOR:VAR(--G4)}.BDK:HOVER{BACKGROUND:RGBA(34,197,94,.25)}
+.BKX{BACKGROUND:RGBA(255,255,255,.05);COLOR:VAR(--TM)}.BKX:HOVER{BACKGROUND:RGBA(239,68,68,.1);COLOR:VAR(--R4)}
+.AP{POSITION:FIXED;BOTTOM:20PX;RIGHT:20PX;Z-INDEX:1000;ANIMATION:FU .6S EASE .5S BOTH}
+@KEYFRAMES FU{FROM{OPACITY:0;TRANSFORM:TRANSLATEY(30PX)}TO{OPACITY:1;TRANSFORM:TRANSLATEY(0)}}
+.AB{BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(24PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RL);PADDING:14PX;MIN-WIDTH:250PX;BOX-SHADOW:VAR(--SL);TRANSITION:ALL .3S}
+.AB.ON{BORDER-COLOR:RGBA(59,130,246,.3);BOX-SHADOW:VAR(--SL),0 0 30PX RGBA(59,130,246,.08)}
+.AH{DISPLAY:FLEX;JUSTIFY-CONTENT:SPACE-BETWEEN;ALIGN-ITEMS:CENTER;MARGIN-BOTTOM:10PX;CURSOR:POINTER;PADDING:4PX;MARGIN-LEFT:-4PX;MARGIN-TOP:-4PX}
+.AT{FONT-SIZE:.78REM;FONT-WEIGHT:600;COLOR:VAR(--T2);DISPLAY:FLEX;ALIGN-ITEMS:CENTER;GAP:6PX;POINTER-EVENTS:NONE}
+.BIC{FONT-SIZE:1REM}.AB.ON .BIC{ANIMATION:RB 1.5S EASE-IN-OUT INFINITE}
+@KEYFRAMES RB{0%,100%{TRANSFORM:ROTATE(0)}15%{TRANSFORM:ROTATE(15DEG)}30%{TRANSFORM:ROTATE(-15DEG)}45%{TRANSFORM:ROTATE(10DEG)}60%{TRANSFORM:ROTATE(-10DEG)}75%{TRANSFORM:ROTATE(0)}}
+.TTK{WIDTH:42PX;HEIGHT:22PX;BACKGROUND:RGBA(255,255,255,.1);BORDER-RADIUS:11PX;POSITION:RELATIVE;TRANSITION:BACKGROUND .3S;FLEX-SHRINK:0;POINTER-EVENTS:NONE}
+.TTK.ON{BACKGROUND:VAR(--B6)}
+.TTH{POSITION:ABSOLUTE;TOP:2PX;LEFT:2PX;WIDTH:18PX;HEIGHT:18PX;BACKGROUND:#FFF;BORDER-RADIUS:50%;TRANSITION:TRANSFORM .3S CUBIC-BEZIER(.68,-.55,.27,1.55);BOX-SHADOW:0 1PX 4PX RGBA(0,0,0,.3);POINTER-EVENTS:NONE}
+.TTK.ON .TTH{TRANSFORM:TRANSLATEX(20PX)}
+.AO{DISPLAY:FLEX;FLEX-DIRECTION:COLUMN;GAP:6PX}
+.VR{DISPLAY:FLEX;ALIGN-ITEMS:CENTER;GAP:8PX}
+.VR SVG{WIDTH:13PX;HEIGHT:13PX;COLOR:VAR(--TM);FLEX-SHRINK:0}
+.VSL{FLEX:1;HEIGHT:4PX;-WEBKIT-APPEARANCE:NONE;APPEARANCE:NONE;BACKGROUND:RGBA(255,255,255,.08);BORDER-RADIUS:2PX;OUTLINE:NONE}
+.VSL::-WEBKIT-SLIDER-THUMB{-WEBKIT-APPEARANCE:NONE;WIDTH:13PX;HEIGHT:13PX;BACKGROUND:VAR(--B5);BORDER-RADIUS:50%;CURSOR:POINTER}
+.VSL::-MOZ-RANGE-THUMB{WIDTH:13PX;HEIGHT:13PX;BACKGROUND:VAR(--B5);BORDER-RADIUS:50%;CURSOR:POINTER;BORDER:NONE}
+.VLL{FONT-SIZE:.65REM;FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;COLOR:VAR(--TM);MIN-WIDTH:28PX;TEXT-ALIGN:RIGHT}
+.STO{DISPLAY:FLEX;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:SPACE-BETWEEN}
+.STL{FONT-SIZE:.7REM;COLOR:VAR(--TM)}
+.MTG{WIDTH:34PX;HEIGHT:18PX;BACKGROUND:RGBA(255,255,255,.1);BORDER-RADIUS:9PX;POSITION:RELATIVE;CURSOR:POINTER;TRANSITION:BACKGROUND .3S;FLEX-SHRINK:0}
+.MTG.ON{BACKGROUND:VAR(--B6)}
+.MTH2{POSITION:ABSOLUTE;TOP:2PX;LEFT:2PX;WIDTH:14PX;HEIGHT:14PX;BACKGROUND:#FFF;BORDER-RADIUS:50%;TRANSITION:TRANSFORM .3S CUBIC-BEZIER(.68,-.55,.27,1.55);BOX-SHADOW:0 1PX 3PX RGBA(0,0,0,.2);POINTER-EVENTS:NONE}
+.MTG.ON .MTH2{TRANSFORM:TRANSLATEX(16PX)}
+.AST{FONT-SIZE:.62REM;COLOR:VAR(--TM);MARGIN-TOP:6PX;FONT-STYLE:ITALIC}
+.AB.ON .AST{COLOR:VAR(--B4);FONT-STYLE:NORMAL}
+.CG{DISPLAY:GRID;GRID-TEMPLATE-COLUMNS:REPEAT(AUTO-FILL,MINMAX(300PX,1FR));GAP:16PX;MARGIN-BOTTOM:40PX}
+.CG.LV{GRID-TEMPLATE-COLUMNS:1FR;GAP:8PX}
+.TC{BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(20PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RL);OVERFLOW:HIDDEN;TRANSITION:ALL .35S CUBIC-BEZIER(.22,1,.36,1);POSITION:RELATIVE}
+.TC::BEFORE{CONTENT:'';POSITION:ABSOLUTE;TOP:0;LEFT:0;RIGHT:0;HEIGHT:3PX;BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--B7),VAR(--B4),VAR(--B3),VAR(--B4),VAR(--B7));BACKGROUND-SIZE:200% 100%;ANIMATION:BSH 3S LINEAR INFINITE;OPACITY:.8;Z-INDEX:1}
+@KEYFRAMES BSH{0%{BACKGROUND-POSITION:200% 0}100%{BACKGROUND-POSITION:-200% 0}}
+.TC:HOVER{TRANSFORM:TRANSLATEY(-3PX);BOX-SHADOW:VAR(--SL),VAR(--SA);BORDER-COLOR:VAR(--BA)}
+.TC.DONE{BORDER-COLOR:RGBA(34,197,94,.2)}.TC.DONE::BEFORE{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--G6),VAR(--G4),VAR(--G5));ANIMATION:NONE}
+.TC.UPC{BORDER-COLOR:RGBA(251,146,60,.3)}.TC.UPC::BEFORE{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--O5),VAR(--O4));ANIMATION:BSH 1.5S LINEAR INFINITE}
+.TC.HL{BORDER-COLOR:RGBA(59,130,246,.4);BOX-SHADOW:VAR(--SL),0 0 20PX RGBA(59,130,246,.1)}.TC.HL::BEFORE{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--B5),VAR(--B3),VAR(--B4));ANIMATION:BSH 1S LINEAR INFINITE}
+.TC.BSL{BORDER-COLOR:RGBA(168,85,247,.4);BACKGROUND:RGBA(168,85,247,.05)}.TC.BSL::BEFORE{BACKGROUND:LINEAR-GRADIENT(90DEG,VAR(--P5),VAR(--P4))}
+.TC.BM{CURSOR:POINTER}
+.LV .TC{BORDER-RADIUS:VAR(--RM)}.LV .CY,.LV .CI,.LV .NRA{DISPLAY:NONE}.LV .CL{PADDING:6PX 16PX}.LV .CD{FONT-SIZE:.9REM}.LV .CN{FONT-SIZE:.92REM}.LV .RR{MARGIN-TOP:4PX}
+.BCK{POSITION:ABSOLUTE;TOP:8PX;RIGHT:8PX;WIDTH:20PX;HEIGHT:20PX;BORDER:2PX SOLID RGBA(255,255,255,.15);BORDER-RADIUS:4PX;BACKGROUND:RGBA(0,0,0,.3);Z-INDEX:10;DISPLAY:NONE;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;CURSOR:POINTER;TRANSITION:ALL .2S}
+.BM .BCK{DISPLAY:FLEX}
+.BCK.CK{BACKGROUND:VAR(--P5);BORDER-COLOR:VAR(--P5)}
+.BCK.CK::AFTER{CONTENT:'';WIDTH:6PX;HEIGHT:10PX;BORDER:SOLID #FFF;BORDER-WIDTH:0 2PX 2PX 0;TRANSFORM:ROTATE(45DEG) TRANSLATE(-1PX,-1PX)}
+.NBG{POSITION:ABSOLUTE;TOP:8PX;LEFT:8PX;WIDTH:18PX;HEIGHT:18PX;BACKGROUND:VAR(--P5);BORDER-RADIUS:50%;DISPLAY:FLEX;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;FONT-SIZE:.55REM;COLOR:#FFF;Z-INDEX:10;CURSOR:POINTER;TRANSITION:TRANSFORM .2S;OPACITY:0}
+.NBG.VS{OPACITY:1}.NBG:HOVER{TRANSFORM:SCALE(1.2)}
+.CH{PADDING:14PX 16PX 10PX;TEXT-ALIGN:CENTER;POSITION:RELATIVE;Z-INDEX:2}
+.CLG{HEIGHT:36PX;WIDTH:AUTO;MAX-WIDTH:110PX;OBJECT-FIT:CONTAIN;MARGIN:0 AUTO 6PX;DISPLAY:BLOCK;BORDER-RADIUS:4PX;FILTER:DROP-SHADOW(0 2PX 4PX RGBA(0,0,0,.15));TRANSITION:TRANSFORM .3S}
+.CLG:HOVER{TRANSFORM:SCALE(1.08)}
+.LV .CLG{HEIGHT:22PX;MAX-WIDTH:65PX;MARGIN:0 AUTO 3PX}
+.LV .CH{PADDING:8PX 16PX 6PX}
+.CN{FONT-SIZE:1REM;FONT-WEIGHT:700;COLOR:VAR(--B3);MARGIN-BOTTOM:5PX}
+.DONE .CN{COLOR:VAR(--G4)}
+.CD{FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:1REM;FONT-WEIGHT:600;PADDING:4PX 12PX;BORDER-RADIUS:VAR(--RS);DISPLAY:INLINE-BLOCK;TRANSITION:ALL .3S;LETTER-SPACING:2PX}
+.CDC{COLOR:VAR(--B3);BACKGROUND:RGBA(59,130,246,.08);BORDER:1PX SOLID RGBA(59,130,246,.15)}
+.CDW{COLOR:VAR(--O4);BACKGROUND:RGBA(249,115,22,.1);BORDER:1PX SOLID RGBA(249,115,22,.25);ANIMATION:CDP 1S EASE-IN-OUT INFINITE}
+.CDCR{COLOR:VAR(--R4);BACKGROUND:RGBA(239,68,68,.12);BORDER:1PX SOLID RGBA(239,68,68,.3);ANIMATION:CDP .6S EASE-IN-OUT INFINITE;FONT-WEIGHT:800}
+.CDBC{COLOR:VAR(--TM);BACKGROUND:VAR(--BGI);BORDER:1PX SOLID VAR(--BS);FONT-SIZE:.88REM;LETTER-SPACING:3PX}
+.CDHL{COLOR:VAR(--TM);BACKGROUND:VAR(--BGI);BORDER:1PX SOLID VAR(--BS);FONT-SIZE:.72REM;LETTER-SPACING:.5PX}
+@KEYFRAMES CDP{0%,100%{OPACITY:1}50%{OPACITY:.7}}
+.RR{DISPLAY:NONE;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;GAP:8PX;MARGIN-TOP:5PX;PADDING:5PX 10PX;BACKGROUND:VAR(--BGI);BORDER-RADIUS:VAR(--RS);BORDER:1PX SOLID RGBA(59,130,246,.1)}
+.RR.VS{DISPLAY:FLEX}
+.DONE .RR{BORDER-COLOR:RGBA(34,197,94,.15);BACKGROUND:RGBA(34,197,94,.04)}
+.RN{FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:.88REM;FONT-WEIGHT:700;COLOR:VAR(--B3)}
+.DONE .RN{COLOR:VAR(--G4)}
+.CM2{BACKGROUND:TRANSPARENT;BORDER:NONE;CURSOR:POINTER;PADDING:4PX;BORDER-RADIUS:4PX;TRANSITION:ALL .2S;DISPLAY:FLEX;ALIGN-ITEMS:CENTER}
+.CM2:HOVER{BACKGROUND:RGBA(255,255,255,.06);TRANSFORM:SCALE(1.1)}
+.CM2 SVG{WIDTH:14PX;HEIGHT:14PX;STROKE:VAR(--TM)}
+.CM2.OK SVG{STROKE:VAR(--G4)}
+.CY{PADDING:0 16PX}
+.IR{DISPLAY:FLEX;JUSTIFY-CONTENT:SPACE-BETWEEN;ALIGN-ITEMS:CENTER;PADDING:6PX 0;BORDER-BOTTOM:1PX SOLID VAR(--BS);FONT-SIZE:.8REM}
+.IR:LAST-CHILD{BORDER-BOTTOM:NONE}
+.IL{COLOR:VAR(--TM);DISPLAY:FLEX;ALIGN-ITEMS:CENTER;GAP:5PX}
+.IL SVG{WIDTH:13PX;HEIGHT:13PX;STROKE:VAR(--B6)}
+.DONE .IL SVG{STROKE:VAR(--G6)}
+.IV{FONT-WEIGHT:500}.IV.TU{COLOR:VAR(--B4)}.IV.BU{COLOR:VAR(--G4)}
+.NRA{PADDING:6PX 16PX;DISPLAY:NONE}.NRA.VS{DISPLAY:BLOCK}
+.NTA{WIDTH:100%;PADDING:6PX 10PX;BACKGROUND:RGBA(168,85,247,.05);BORDER:1PX SOLID RGBA(168,85,247,.15);BORDER-RADIUS:VAR(--RS);COLOR:VAR(--T1);FONT-SIZE:.75REM;RESIZE:NONE;OUTLINE:NONE;HEIGHT:36PX;TRANSITION:ALL .25S}
+.NTA:FOCUS{BORDER-COLOR:VAR(--P5);BOX-SHADOW:0 0 0 2PX RGBA(168,85,247,.1)}
+.NTA::PLACEHOLDER{COLOR:VAR(--TM)}
+.CL{DISPLAY:FLEX;GAP:6PX;PADDING:8PX 16PX}
+.CL A{FLEX:1;TEXT-ALIGN:CENTER;PADDING:6PX 8PX;BORDER-RADIUS:VAR(--RS);FONT-SIZE:.75REM;FONT-WEIGHT:600;TEXT-DECORATION:NONE;TRANSITION:ALL .25S;DISPLAY:FLEX;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;GAP:4PX}
+.LW{BACKGROUND:RGBA(59,130,246,.1);COLOR:VAR(--B4);BORDER:1PX SOLID RGBA(59,130,246,.15)}.LW:HOVER{BACKGROUND:RGBA(59,130,246,.2);TRANSFORM:TRANSLATEY(-1PX)}
+.LL{BACKGROUND:RGBA(239,68,68,.1);COLOR:VAR(--R4);BORDER:1PX SOLID RGBA(239,68,68,.15)}.LL:HOVER{BACKGROUND:RGBA(239,68,68,.2);TRANSFORM:TRANSLATEY(-1PX)}
+.LN2{BACKGROUND:RGBA(168,85,247,.1);COLOR:VAR(--P4);BORDER:1PX SOLID RGBA(168,85,247,.15)}.LN2:HOVER{BACKGROUND:RGBA(168,85,247,.2);TRANSFORM:TRANSLATEY(-1PX)}
+.DONE .LW{BACKGROUND:RGBA(34,197,94,.1);COLOR:VAR(--G4);BORDER-COLOR:RGBA(34,197,94,.15)}
+.CI{PADDING:10PX 16PX 12PX;BACKGROUND:RGBA(0,0,0,.12);BORDER-TOP:1PX SOLID VAR(--BS);TRANSITION:BACKGROUND .3S}
+[DATA-THEME="LIGHT"] .CI{BACKGROUND:RGBA(0,0,0,.02)}
+.DONE .CI{BACKGROUND:RGBA(34,197,94,.03);BORDER-TOP-COLOR:RGBA(34,197,94,.1)}
+.IPT{MARGIN-BOTTOM:6PX}.IPT:LAST-OF-TYPE{MARGIN-BOTTOM:0}
+.IPT LABEL{DISPLAY:BLOCK;FONT-SIZE:.68REM;COLOR:VAR(--TM);MARGIN-BOTTOM:2PX;FONT-WEIGHT:500;TEXT-TRANSFORM:UPPERCASE;LETTER-SPACING:.5PX}
+.IPT INPUT{WIDTH:100%;PADDING:7PX 10PX;BACKGROUND:VAR(--BGI);BORDER:1PX SOLID RGBA(255,255,255,.08);BORDER-RADIUS:VAR(--RS);COLOR:VAR(--T1);FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:.82REM;TRANSITION:ALL .25S}
+[DATA-THEME="LIGHT"] .IPT INPUT{BORDER-COLOR:RGBA(0,0,0,.1)}
+.IPT INPUT:FOCUS{OUTLINE:NONE;BORDER-COLOR:VAR(--B5);BACKGROUND:RGBA(59,130,246,.03);BOX-SHADOW:0 0 0 2PX RGBA(59,130,246,.08)}
+.DONE .IPT INPUT{BORDER-COLOR:RGBA(34,197,94,.15);BACKGROUND:RGBA(34,197,94,.02)}
+.IPT INPUT:DISABLED{OPACITY:.5;CURSOR:NOT-ALLOWED}
+.BR{DISPLAY:FLEX;GAP:6PX;MARGIN-TOP:8PX}
+.BT{FLEX:1;PADDING:8PX 10PX;BORDER:NONE;BORDER-RADIUS:VAR(--RS);FONT-SIZE:.78REM;FONT-WEIGHT:600;CURSOR:POINTER;TRANSITION:ALL .25S;DISPLAY:FLEX;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;GAP:4PX}
+.BT:DISABLED{OPACITY:.4;CURSOR:NOT-ALLOWED}
+.BTC{BACKGROUND:RGBA(59,130,246,.12);COLOR:VAR(--B4);BORDER:1PX SOLID RGBA(59,130,246,.2)}.BTC:HOVER:NOT(:DISABLED){BACKGROUND:RGBA(59,130,246,.2);TRANSFORM:TRANSLATEY(-1PX)}
+.BTD{BACKGROUND:RGBA(34,197,94,.12);COLOR:VAR(--G4);BORDER:1PX SOLID RGBA(34,197,94,.2)}.BTD:HOVER:NOT(:DISABLED){BACKGROUND:RGBA(34,197,94,.2);TRANSFORM:TRANSLATEY(-1PX)}
+.BTR{BACKGROUND:RGBA(255,255,255,.05);COLOR:VAR(--TM);BORDER:1PX SOLID RGBA(255,255,255,.08);DISPLAY:NONE;WIDTH:100%}.BTR:HOVER:NOT(:DISABLED){BACKGROUND:RGBA(239,68,68,.1);COLOR:VAR(--R4);BORDER-COLOR:RGBA(239,68,68,.2)}
+.STG{DISPLAY:INLINE-BLOCK;FONT-SIZE:.58REM;PADDING:2PX 7PX;BORDER-RADIUS:50PX;FONT-WEIGHT:700;TEXT-TRANSFORM:UPPERCASE;LETTER-SPACING:.5PX;MARGIN-TOP:5PX;BACKGROUND:RGBA(34,197,94,.15);COLOR:VAR(--G4);BORDER:1PX SOLID RGBA(34,197,94,.25)}
+.MO{DISPLAY:NONE;POSITION:FIXED;INSET:0;BACKGROUND:VAR(--OV);BACKDROP-FILTER:BLUR(4PX);Z-INDEX:5000;JUSTIFY-CONTENT:CENTER;ALIGN-ITEMS:CENTER;PADDING:20PX}
+.MO.OP{DISPLAY:FLEX}
+.MBX{BACKGROUND:VAR(--BG2);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RX);MAX-WIDTH:600PX;WIDTH:100%;MAX-HEIGHT:80VH;OVERFLOW-Y:AUTO;BOX-SHADOW:VAR(--SL);ANIMATION:MIA .3S EASE}
+@KEYFRAMES MIA{FROM{OPACITY:0;TRANSFORM:SCALE(.95) TRANSLATEY(10PX)}TO{OPACITY:1;TRANSFORM:SCALE(1) TRANSLATEY(0)}}
+.MHD{PADDING:18PX 22PX 14PX;DISPLAY:FLEX;JUSTIFY-CONTENT:SPACE-BETWEEN;ALIGN-ITEMS:CENTER;BORDER-BOTTOM:1PX SOLID VAR(--BS)}
+.MTT{FONT-SIZE:1.05REM;FONT-WEIGHT:700;COLOR:VAR(--B3)}
+.MXX{BACKGROUND:RGBA(255,255,255,.05);BORDER:NONE;COLOR:VAR(--TM);WIDTH:30PX;HEIGHT:30PX;BORDER-RADIUS:50%;CURSOR:POINTER;DISPLAY:FLEX;ALIGN-ITEMS:CENTER;JUSTIFY-CONTENT:CENTER;TRANSITION:ALL .2S;FONT-SIZE:1.2REM}
+.MXX:HOVER{BACKGROUND:RGBA(239,68,68,.1);COLOR:VAR(--R4)}
+.MCT{PADDING:18PX 22PX}
+.MCT TEXTAREA{WIDTH:100%;MIN-HEIGHT:180PX;PADDING:12PX;BACKGROUND:RGBA(0,0,0,.2);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RM);COLOR:VAR(--T1);FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:.78REM;RESIZE:VERTICAL;OUTLINE:NONE;LINE-HEIGHT:1.6}
+[DATA-THEME="LIGHT"] .MCT TEXTAREA{BACKGROUND:RGBA(0,0,0,.03)}
+.MCT TEXTAREA:FOCUS{BORDER-COLOR:VAR(--B5)}
+.MCT TEXTAREA::PLACEHOLDER{COLOR:VAR(--TM)}
+.MHN{FONT-SIZE:.7REM;COLOR:VAR(--TM);MARGIN-TOP:8PX;LINE-HEIGHT:1.5}
+.MFT{PADDING:14PX 22PX 18PX;DISPLAY:FLEX;GAP:10PX;JUSTIFY-CONTENT:FLEX-END}
+.MB{PADDING:9PX 18PX;BORDER:NONE;BORDER-RADIUS:VAR(--RS);FONT-SIZE:.82REM;FONT-WEIGHT:600;CURSOR:POINTER;TRANSITION:ALL .25S}
+.MB:HOVER{TRANSFORM:TRANSLATEY(-1PX)}
+.MBP{BACKGROUND:LINEAR-GRADIENT(135DEG,VAR(--B6),VAR(--B5));COLOR:#FFF}
+.MBG{BACKGROUND:RGBA(255,255,255,.05);COLOR:VAR(--T2)}.MBG:HOVER{BACKGROUND:RGBA(255,255,255,.1)}
+.CMO .MBX{MAX-WIDTH:400PX;TEXT-ALIGN:CENTER}
+.CIC{FONT-SIZE:2.8REM;MARGIN-BOTTOM:14PX;DISPLAY:BLOCK}
+.CMG{FONT-SIZE:.95REM;COLOR:VAR(--T2);LINE-HEIGHT:1.6;MARGIN-BOTTOM:6PX}
+.CMW{FONT-SIZE:.78REM;COLOR:VAR(--R4);MARGIN-BOTTOM:22PX;FONT-WEIGHT:500}
+.CMB{DISPLAY:FLEX;GAP:10PX;JUSTIFY-CONTENT:CENTER}
+.CMB .MB{MIN-WIDTH:110PX;JUSTIFY-CONTENT:CENTER}
+.MBD{BACKGROUND:LINEAR-GRADIENT(135DEG,#DC2626,#EF4444);COLOR:#FFF}
+.NTF{POSITION:FIXED;TOP:16PX;LEFT:50%;TRANSFORM:TRANSLATEX(-50%);Z-INDEX:9998;DISPLAY:NONE;ALIGN-ITEMS:CENTER;GAP:10PX;PADDING:12PX 20PX;BACKGROUND:VAR(--BG2);BORDER:1PX SOLID RGBA(59,130,246,.3);BORDER-RADIUS:VAR(--RM);BOX-SHADOW:VAR(--SL);ANIMATION:NIA .4S EASE;FONT-SIZE:.82REM}
+.NTF.VS{DISPLAY:FLEX}
+@KEYFRAMES NIA{FROM{OPACITY:0;TRANSFORM:TRANSLATEX(-50%) TRANSLATEY(-20PX)}TO{OPACITY:1;TRANSFORM:TRANSLATEX(-50%) TRANSLATEY(0)}}
+.NTF .NCI{FONT-SIZE:1.2REM}.NTF .NTX{COLOR:VAR(--B3);FONT-WEIGHT:600}.NTF .NSB{COLOR:VAR(--TM);FONT-SIZE:.72REM}
+.TW{POSITION:FIXED;TOP:16PX;RIGHT:16PX;Z-INDEX:9999;DISPLAY:FLEX;FLEX-DIRECTION:COLUMN;GAP:8PX;POINTER-EVENTS:NONE}
+.TO{BACKGROUND:VAR(--BG2);BORDER:1PX SOLID VAR(--BS);PADDING:10PX 16PX;BORDER-RADIUS:VAR(--RM);BOX-SHADOW:VAR(--SL);DISPLAY:FLEX;ALIGN-ITEMS:CENTER;GAP:8PX;FONT-SIZE:.8REM;MIN-WIDTH:240PX;MAX-WIDTH:360PX;ANIMATION:TIA .35S EASE,TOA .35S EASE 2.65S FORWARDS;POINTER-EVENTS:AUTO}
+.TO.SUCCESS{BORDER-LEFT:3PX SOLID VAR(--G5)}.TO.ERROR{BORDER-LEFT:3PX SOLID VAR(--R5)}.TO.INFO{BORDER-LEFT:3PX SOLID VAR(--B5)}.TO.WARNING{BORDER-LEFT:3PX SOLID VAR(--O5)}
+.TO SVG{WIDTH:16PX;HEIGHT:16PX;FLEX-SHRINK:0}
+.TO.SUCCESS SVG{STROKE:VAR(--G4)}.TO.ERROR SVG{STROKE:VAR(--R4)}.TO.INFO SVG{STROKE:VAR(--B4)}.TO.WARNING SVG{STROKE:VAR(--O4)}
+@KEYFRAMES TIA{FROM{OPACITY:0;TRANSFORM:TRANSLATEX(80PX)}TO{OPACITY:1;TRANSFORM:TRANSLATEX(0)}}
+@KEYFRAMES TOA{FROM{OPACITY:1;TRANSFORM:TRANSLATEX(0)}TO{OPACITY:0;TRANSFORM:TRANSLATEX(80PX)}}
+.SHK{POSITION:FIXED;BOTTOM:20PX;LEFT:50%;TRANSFORM:TRANSLATEX(-50%);FONT-SIZE:.62REM;COLOR:VAR(--TM);Z-INDEX:500;OPACITY:.4;WHITE-SPACE:NOWRAP}
+.SHK:HOVER{OPACITY:1}
+KBD{DISPLAY:INLINE-BLOCK;PADDING:1PX 5PX;BACKGROUND:RGBA(255,255,255,.06);BORDER:1PX SOLID RGBA(255,255,255,.1);BORDER-RADIUS:3PX;FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:.58REM;MARGIN:0 1PX}
+[DATA-THEME="LIGHT"] KBD{BACKGROUND:RGBA(0,0,0,.05);BORDER-COLOR:RGBA(0,0,0,.1)}
+.HP{POSITION:FIXED;BOTTOM:20PX;LEFT:20PX;WIDTH:280PX;MAX-WIDTH:CALC(100VW - 32PX);MAX-HEIGHT:400PX;Z-INDEX:1000;ANIMATION:FU .6S EASE .7S BOTH}
+.HBX{BACKGROUND:VAR(--BGC);BACKDROP-FILTER:BLUR(24PX);BORDER:1PX SOLID VAR(--BS);BORDER-RADIUS:VAR(--RL);BOX-SHADOW:VAR(--SL);OVERFLOW:HIDDEN}
+.HHD{PADDING:10PX 14PX;DISPLAY:FLEX;JUSTIFY-CONTENT:SPACE-BETWEEN;ALIGN-ITEMS:CENTER;CURSOR:POINTER}
+.HHD:HOVER{BACKGROUND:VAR(--BGS)}
+.HTTL{FONT-SIZE:.78REM;FONT-WEIGHT:600;COLOR:VAR(--B4);DISPLAY:FLEX;ALIGN-ITEMS:CENTER;GAP:6PX}
+.HARR{FONT-SIZE:.68REM;COLOR:VAR(--TM);TRANSITION:TRANSFORM .3S}
+.HARR.SH{TRANSFORM:ROTATE(-90DEG)}
+.HBD{MAX-HEIGHT:300PX;OVERFLOW-Y:AUTO;TRANSITION:MAX-HEIGHT .4S CUBIC-BEZIER(.22,1,.36,1)}
+.HBD.SH{MAX-HEIGHT:0}
+.HBD::-WEBKIT-SCROLLBAR{WIDTH:3PX}.HBD::-WEBKIT-SCROLLBAR-THUMB{BACKGROUND:VAR(--B6);BORDER-RADIUS:2PX}
+.HI2{PADDING:8PX 14PX;BORDER-BOTTOM:1PX SOLID VAR(--BS);FONT-SIZE:.72REM}.HI2:LAST-CHILD{BORDER-BOTTOM:NONE}
+.HNM{FONT-WEIGHT:600;COLOR:VAR(--T2)}.HAC{COLOR:VAR(--TM);MARGIN-TOP:2PX;FONT-SIZE:.68REM}
+.HLD{COLOR:VAR(--G4)}.HLR{COLOR:VAR(--R4)}.HLI{COLOR:VAR(--B4)}
+.HTM2{FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:.6REM;COLOR:VAR(--TM);MARGIN-TOP:2PX}
+.HEM{PADDING:20PX;TEXT-ALIGN:CENTER;COLOR:VAR(--TM);FONT-SIZE:.72REM}
+.RTX{BACKGROUND:RGBA(0,0,0,.2);PADDING:14PX;BORDER-RADIUS:VAR(--RM);FONT-FAMILY:'JETBRAINS MONO',MONOSPACE;FONT-SIZE:.8REM;LINE-HEIGHT:1.7;WHITE-SPACE:PRE-WRAP;COLOR:VAR(--T1);BORDER:1PX SOLID VAR(--BS)}
+[DATA-THEME="LIGHT"] .RTX{BACKGROUND:RGBA(0,0,0,.03)}
+::-WEBKIT-SCROLLBAR{WIDTH:5PX}::-WEBKIT-SCROLLBAR-TRACK{BACKGROUND:TRANSPARENT}::-WEBKIT-SCROLLBAR-THUMB{BACKGROUND:RGBA(59,130,246,.15);BORDER-RADIUS:3PX}
+@media(max-width:768px){.AW{PADDING:12PX}.SB{GAP:6PX}.SC{MIN-WIDTH:90PX;PADDING:8PX 12PX}.SN{FONT-SIZE:1.2REM}.CG{GRID-TEMPLATE-COLUMNS:REPEAT(AUTO-FILL,MINMAX(260PX,1FR));GAP:12PX}.SF{FLEX-DIRECTION:COLUMN}.AP{BOTTOM:12PX;RIGHT:12PX;LEFT:AUTO}.AB{WIDTH:240PX}.HP{DISPLAY:NONE}.SHK{DISPLAY:NONE}.CB{GAP:6PX}.CT{PADDING:7PX 10PX;FONT-SIZE:.72REM}.DB{MIN-WIDTH:150PX}.DV.TM{FONT-SIZE:1.3REM}.NB{FLEX-WRAP:WRAP;PADDING:12PX 16PX;GAP:10PX}.NCN{FONT-SIZE:1.1REM}.HT{JUSTIFY-CONTENT:CENTER}.CLG{HEIGHT:28PX;MAX-WIDTH:85PX}}
+@media(max-width:480px){.CG{GRID-TEMPLATE-COLUMNS:1FR}.DR{FLEX-DIRECTION:COLUMN;ALIGN-ITEMS:CENTER}.CMB{FLEX-DIRECTION:COLUMN}.CMB .MB{MIN-WIDTH:100%}.AP{LEFT:12PX;RIGHT:12PX}.CLG{HEIGHT:24PX;MAX-WIDTH:70PX}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{ANIMATION-DURATION:.01ms!important;TRANSITION-DURATION:.01ms!important}}
+</STYLE>
+</HEAD>
+<BODY>
+<CANVAS ID="BGC"></CANVAS>
+<DIV CLASS="BGO"></DIV>
+<DIV CLASS="TW" ID="TW"></DIV>
+<DIV CLASS="NTF" ID="NTF"><SPAN CLASS="NCI">&#128276;</SPAN><DIV><DIV CLASS="NTX" ID="NTX">BET CLOSE!</DIV><DIV CLASS="NSB" ID="NSB"></DIV></DIV></DIV>
+<DIV CLASS="HP"><DIV CLASS="HBX"><DIV CLASS="HHD" ONCLICK="togHist()"><SPAN CLASS="HTTL">RIWAYAT</SPAN><SPAN CLASS="HARR" ID="HARR">&#9660;</SPAN></DIV><DIV CLASS="HBD" ID="HBD"><DIV CLASS="HEM" ID="HEM">BELUM ADA AKTIVITAS</DIV><DIV ID="HL"></DIV></DIV></DIV></DIV>
+<DIV CLASS="AP"><DIV CLASS="AB" ID="ABX"><DIV CLASS="AH" ONCLICK="togAlarm()"><DIV CLASS="AT"><SPAN CLASS="BIC">&#128276;</SPAN><SPAN>ALARM</SPAN></DIV><DIV CLASS="TTK" ID="TTK"><DIV CLASS="TTH"></DIV></DIV></DIV><DIV CLASS="AO"><DIV CLASS="VR"><SVG VIEWBOX="0 0 24 24" FILL="NONE" STROKE="CURRENTCOLOR" STROKE-WIDTH="2"><POLYGON POINTS="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><PATH D="M19.07 4.93A10 10 0 0 1 0 14.14"/></SVG><INPUT TYPE="RANGE" CLASS="VSL" ID="VSL" MIN="0" MAX="100" VALUE="80" ONINPUT="setVol(this.value)"><SPAN CLASS="VLL" ID="VLB">80%</SPAN></DIV><DIV CLASS="STO"><SPAN CLASS="STL">BEEP</SPAN><DIV CLASS="MTG ON" ID="BKT" ONCLICK="togBeep(event)"><DIV CLASS="MTH2"></DIV></DIV></DIV><DIV CLASS="STO"><SPAN CLASS="STL">NOTIF</SPAN><DIV CLASS="MTG" ID="NFTG" ONCLICK="togNotif(event)"><DIV CLASS="MTH2"></DIV></DIV></DIV></DIV><DIV CLASS="AST" ID="ASTX">KLIK UNTUK MENGAKTIFKAN</DIV></DIV></DIV>
+<DIV CLASS="SHK"><KBD>/</KBD> CARI <KBD>Q</KBD> PASTE <KBD>T</KBD> TEMA <KBD>V</KBD> VIEW <KBD>ESC</KBD> TUTUP</DIV>
+<DIV CLASS="AW">
+<HEADER CLASS="HD"><DIV CLASS="HT"><DIV CLASS="HB"><DIV CLASS="PDOT"></DIV> LIVE TRACKING</DIV><DIV CLASS="HA"><BUTTON CLASS="IB" ID="THBTN" ONCLICK="togTheme()"><SVG VIEWBOX="0 0 24 24" FILL="NONE" STROKE="CURRENTCOLOR" STROKE-WIDTH="2"><PATH D="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></SVG></BUTTON><BUTTON CLASS="IB" ID="VWBTN" ONCLICK="togView()"><SVG VIEWBOX="0 0 24 24" FILL="NONE" STROKE="CURRENTCOLOR" STROKE-WIDTH="2"><RECT X="3" Y="3" WIDTH="7" HEIGHT="7"/><RECT X="14" Y="3" WIDTH="7" HEIGHT="7"/><RECT X="14" Y="14" WIDTH="7" HEIGHT="7"/><RECT X="3" Y="14" WIDTH="7" HEIGHT="7"/></SVG></BUTTON></DIV></DIV><H1>JADWAL BETCLOSE TOGEL</H1><P CLASS="HS">MONITORING JADWAL TUTUP &amp; BUKA PASARAN TOGEL REAL-TIME</P></HEADER>
+<DIV CLASS="NB" ID="NB"><DIV CLASS="NICN">&#9200;</DIV><DIV CLASS="NF2"><DIV CLASS="NL2">SELANJUTNYA TUTUP</DIV><DIV CLASS="NN2" ID="NUN">LOADING...</DIV></DIV><DIV CLASS="NCN" ID="NUC">--:--:--</DIV></DIV>
+<DIV CLASS="SB"><DIV CLASS="SC B1"><DIV CLASS="SN" ID="STC">0</DIV><DIV CLASS="SL">TOTAL</DIV></DIV><DIV CLASS="SC G1"><DIV CLASS="SN" ID="SDC">0</DIV><DIV CLASS="SL">SELESAI</DIV></DIV><DIV CLASS="SC O1"><DIV CLASS="SN" ID="SPC">0</DIV><DIV CLASS="SL">PENDING</DIV></DIV><DIV CLASS="SC R1"><DIV CLASS="SN" ID="SUC">0</DIV><DIV CLASS="SL">SEGERA</DIV></DIV><DIV CLASS="SC P1"><DIV CLASS="SN" ID="SNOC">0</DIV><DIV CLASS="SL">CATATAN</DIV></DIV></DIV>
+<DIV CLASS="PS"><DIV CLASS="PH"><SPAN CLASS="PT">PROGRESS HARI INI</SPAN><SPAN CLASS="PP" ID="PPC">0%</SPAN></DIV><DIV CLASS="PK"><DIV CLASS="PF" ID="PFL" STYLE="WIDTH:0%"></DIV></DIV></DIV>
+<DIV CLASS="DR"><DIV CLASS="DB"><DIV CLASS="DL">TANGGAL</DIV><DIV CLASS="DV DT" ID="EDT">LOADING...</DIV></DIV><DIV CLASS="DB"><DIV CLASS="DL">WAKTU</DIV><DIV CLASS="DV TM" ID="ETM">00:00:00</DIV><DIV CLASS="DZ">WIB (GMT+7)</DIV></DIV></DIV>
+<DIV CLASS="BB" ID="BBAR"><SPAN CLASS="BC2" ID="BCNT">0 DIPILIH</SPAN><BUTTON CLASS="BK BDK" ONCLICK="bulkDone()">DONE SEMUA</BUTTON><BUTTON CLASS="BK BKX" ONCLICK="cancelBulk()">BATAL</BUTTON></DIV>
+<DIV CLASS="CB">
+<BUTTON CLASS="CT" ONCLICK="openQP()">QUICK PASTE</BUTTON>
+<BUTTON CLASS="CT" ONCLICK="expData()">EXPORT</BUTTON>
+<BUTTON CLASS="CT" ID="SBTN" ONCLICK="togSort()">URUTKAN</BUTTON>
+<BUTTON CLASS="CT" ID="BKBTN" ONCLICK="togBulk()">PILIH BANYAK</BUTTON>
+<BUTTON CLASS="CT DG" ONCLICK="showCC()">HAPUS</BUTTON>
+</DIV>
+<DIV CLASS="SF"><DIV CLASS="SX"><INPUT TYPE="TEXT" ID="SIN" PLACEHOLDER="CARI NAMA PASARAN..." ONINPUT="applyF()"><DIV CLASS="SI"><SVG VIEWBOX="0 0 24 24" WIDTH="15" HEIGHT="15" FILL="NONE" STROKE="CURRENTCOLOR" STROKE-WIDTH="2"><CIRCLE CX="11" CY="11" R="8"/><LINE X1="21" Y1="21" X2="16.65" Y2="16.65"/></SVG></DIV></DIV><DIV CLASS="FP"><BUTTON CLASS="PI AC" ONCLICK="setF('ALL',this)">SEMUA</BUTTON><BUTTON CLASS="PI" ONCLICK="setF('UPCOMING',this)">SEGERA</BUTTON><BUTTON CLASS="PI" ONCLICK="setF('PENDING',this)">PENDING</BUTTON><BUTTON CLASS="PI" ONCLICK="setF('DONE',this)">DONE</BUTTON><BUTTON CLASS="PI" ONCLICK="setF('NOTES',this)">CATATAN</BUTTON></DIV></DIV>
+<DIV CLASS="CG" ID="GRID"></DIV>
+</DIV>
+<DIV CLASS="MO CMO" ID="CCMO"><DIV CLASS="MBX"><DIV CLASS="MCT"><SPAN CLASS="CIC">&#9888;</SPAN><DIV CLASS="CMG">HAPUS SEMUA DATA?</DIV><DIV CLASS="CMW">TIDAK DAPAT DIBATALKAN.</DIV><DIV CLASS="CMB"><BUTTON CLASS="MB MBG" ONCLICK="closeCC()">BATAL</BUTTON><BUTTON CLASS="MB MBD" ONCLICK="doClear()">YA, HAPUS</BUTTON></DIV></DIV></DIV></DIV>
+<DIV CLASS="MO" ID="QPMO" ONCLICK="if(event.target===this)closeQP()"><DIV CLASS="MBX"><DIV CLASS="MHD"><SPAN CLASS="MTT">QUICK PASTE HASIL</SPAN><BUTTON CLASS="MXX" ONCLICK="closeQP()">&#10005;</BUTTON></DIV><DIV CLASS="MCT"><TEXTAREA ID="QPTX" PLACEHOLDER="NAMA_PASARAN | PRIZE1 | PRIZE2 | PRIZE3"></TEXTAREA><P CLASS="MHN">PISAHKAN DENGAN | , ATAU TAB</P></DIV><DIV CLASS="MFT"><BUTTON CLASS="MB MBG" ONCLICK="closeQP()">BATAL</BUTTON><BUTTON CLASS="MB MBP" ONCLICK="procQP()">PROSES</BUTTON></DIV></DIV></DIV>
+<DIV CLASS="MO" ID="RSMO" ONCLICK="if(event.target===this)closeRs()"><DIV CLASS="MBX"><DIV CLASS="MHD"><SPAN CLASS="MTT">HASIL PENGELUARAN</SPAN><BUTTON CLASS="MXX" ONCLICK="closeRs()">&#10005;</BUTTON></DIV><DIV CLASS="MCT"><DIV CLASS="RTX" ID="RSTX"></DIV></DIV><DIV CLASS="MFT"><BUTTON CLASS="MB MBG" ONCLICK="closeRs()">TUTUP</BUTTON><BUTTON CLASS="MB MBP" ID="RSCB" ONCLICK="copyRs()">COPY</BUTTON></DIV></DIV></DIV>
+<SCRIPT>
+/* =============================================
+   KEAMANAN: BLOKIR SHORTCUT DEV TOOLS
+   ============================================= */
+document.addEventListener('keydown', function(e) {
+    /* F12 */
+    if (e.keyCode === 123) { e.preventDefault(); e.stopPropagation(); return false; }
+    /* Ctrl+Shift+I (DevTools) */
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 105)) { e.preventDefault(); e.stopPropagation(); return false; }
+    /* Ctrl+Shift+J (Console) */
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 74 || e.keyCode === 106)) { e.preventDefault(); e.stopPropagation(); return false; }
+    /* Ctrl+Shift+C (Inspector) */
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 67 || e.keyCode === 99)) { e.preventDefault(); e.stopPropagation(); return false; }
+    /* Ctrl+U (View Source) */
+    if (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 117)) { e.preventDefault(); e.stopPropagation(); return false; }
+    /* Ctrl+S (Save) */
+    if (e.ctrlKey && (e.keyCode === 83 || e.keyCode === 115)) { e.preventDefault(); e.stopPropagation(); return false; }
+    /* Ctrl+Shift+K (Firefox Console) */
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 75 || e.keyCode === 107)) { e.preventDefault(); e.stopPropagation(); return false; }
+    /* Ctrl+Shift+M (Responsive) */
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 77 || e.keyCode === 109)) { e.preventDefault(); e.stopPropagation(); return false; }
+}, true);
 
-/* === DATA PASARAN === */
-var PD=[{name:"HOKI DRAW 00",days:"Senin s/d Minggu",tutup:"23:59 WIB",buka:"00:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"TOTO MACAU PAGI",days:"Senin s/d Minggu",tutup:"00:00 WIB",buka:"00:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizeType:"price1"},{name:"KENTUCKY MIDDAY",days:"Senin s/d Minggu",tutup:"00:05 WIB",buka:"00:20 WIB",website:"https://www.kylottery.com/apps/",live:null,prizeType:"price1"},{name:"FLORIDA MIDDAY",days:"Senin s/d Minggu",tutup:"00:20 WIB",buka:"00:30 WIB",website:"https://floridalottery.com/",live:"https://www.youtube.com/user/floridalottery",prizeType:"price1"},{name:"HUAHIN 0100",days:"Senin s/d Minggu",tutup:"00:45 WIB",buka:"01:00 WIB",website:"https://huahinlottery.com/",live:"https://www.youtube.com/@huahinlottery5727",prizeType:"price123"},{name:"HOKI DRAW 01",days:"Senin s/d Minggu",tutup:"00:59 WIB",buka:"01:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"NEW YORK MIDDAY",days:"Senin s/d Minggu",tutup:"01:15 WIB",buka:"01:25 WIB",website:"https://nylottery.ny.gov/",live:"https://www.youtube.com/@NewYorkLottery/streams",prizeType:"price1"},{name:"BANGKOK 0130",days:"Senin s/d Minggu",tutup:"01:15 WIB",buka:"01:30 WIB",website:"https://bangkokpoolstoday.com/",live:null,prizeType:"price123"},{name:"CAROLINA DAY",days:"Senin s/d Minggu",tutup:"01:45 WIB",buka:"02:00 WIB",website:"https://www.wral.com/entertainment/lottery/",live:null,prizeType:"price1"},{name:"HOKI DRAW 02",days:"Senin s/d Minggu",tutup:"01:59 WIB",buka:"02:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"BRUNEI 02",days:"Senin s/d Minggu",tutup:"02:30 WIB",buka:"02:45 WIB",website:"https://bruneipools.com/",live:null,prizeType:"price123"},{name:"OREGON 03",days:"Senin s/d Minggu",tutup:"02:50 WIB",buka:"03:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizeType:"price1"},{name:"HOKI DRAW 03",days:"Senin s/d Minggu",tutup:"02:59 WIB",buka:"03:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"HOKI DRAW 04",days:"Senin s/d Minggu",tutup:"03:59 WIB",buka:"04:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"HOKI DRAW 05",days:"Senin s/d Minggu",tutup:"04:59 WIB",buka:"05:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"HOKI DRAW 06",days:"Senin s/d Minggu",tutup:"05:59 WIB",buka:"06:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"OREGON 06",days:"Senin s/d Minggu",tutup:"05:50 WIB",buka:"06:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizeType:"price1"},{name:"HOKI DRAW 07",days:"Senin s/d Minggu",tutup:"06:59 WIB",buka:"07:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"HOKI DRAW 08",days:"Senin s/d Minggu",tutup:"07:59 WIB",buka:"08:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"CALIFORNIA",days:"Senin s/d Minggu",tutup:"08:25 WIB",buka:"08:30 WIB",website:"https://www.calottery.com/draw-games/daily-4",live:null,prizeType:"price1"},{name:"FLORIDA EVENING",days:"Senin s/d Minggu",tutup:"08:35 WIB",buka:"08:45 WIB",website:"https://floridalottery.com/games/draw-games/pick-4",live:"https://www.youtube.com/user/floridalottery",prizeType:"price1"},{name:"OREGON 09",days:"Senin s/d Minggu",tutup:"08:50 WIB",buka:"09:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizeType:"price1"},{name:"HOKI DRAW 09",days:"Senin s/d Minggu",tutup:"08:59 WIB",buka:"09:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"BANGKOK 0930",days:"Senin s/d Minggu",tutup:"09:15 WIB",buka:"09:30 WIB",website:"https://bangkokpoolstoday.com/",live:null,prizeType:"price123"},{name:"NEW YORK EVENING",days:"Senin s/d Minggu",tutup:"09:25 WIB",buka:"09:35 WIB",website:"https://nylottery.ny.gov/",live:"https://www.youtube.com/@NewYorkLottery/streams",prizeType:"price1"},{name:"KENTUCKY EVENING",days:"Senin s/d Minggu",tutup:"09:45 WIB",buka:"10:00 WIB",website:"https://www.kylottery.com/apps/",live:null,prizeType:"price1"},{name:"HOKI DRAW 10",days:"Senin s/d Minggu",tutup:"09:59 WIB",buka:"10:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"CAROLINA EVENING",days:"Senin s/d Minggu",tutup:"10:17 WIB",buka:"10:22 WIB",website:"https://www.wral.com/entertainment/lottery/",live:null,prizeType:"price1"},{name:"TOTO CAMBODIA",days:"Senin s/d Minggu",tutup:"10:45 WIB",buka:"11:00 WIB",website:"https://totocambodialive.com/",live:"https://kick.com/totocambodia",prizeType:"price123"},{name:"HOKI DRAW 11",days:"Senin s/d Minggu",tutup:"10:59 WIB",buka:"11:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"CHELSEA 11",days:"Senin s/d Minggu",tutup:"11:00 WIB",buka:"11:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizeType:"price123"},{name:"OREGON 12",days:"Senin s/d Minggu",tutup:"11:50 WIB",buka:"12:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizeType:"price1"},{name:"HOKI DRAW 12",days:"Senin s/d Minggu",tutup:"11:59 WIB",buka:"12:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"POIPET 12",days:"Senin s/d Minggu",tutup:"12:15 WIB",buka:"12:30 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/PoipetPools",prizeType:"price123"},{name:"BULLSEYE",days:"Senin s/d Minggu",tutup:"13:00 WIB",buka:"13:15 WIB",website:"https://mylotto.co.nz/results/bullseye",live:null,prizeType:"price1"},{name:"HOKI DRAW 13",days:"Senin s/d Minggu",tutup:"12:59 WIB",buka:"13:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"TOTO MACAU SIANG",days:"Senin s/d Minggu",tutup:"13:00 WIB",buka:"13:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizeType:"price1"},{name:"HOKI DRAW 14",days:"Senin s/d Minggu",tutup:"13:59 WIB",buka:"14:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"JAKARTA 1400",days:"Senin s/d Minggu",tutup:"13:55 WIB",buka:"14:10 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"SYDNEY",days:"Senin s/d Minggu",tutup:"13:49 WIB",buka:"14:05 WIB",website:"https://sydneyfunlotto.net/",live:"https://kick.com/sydney-lotto-official",prizeType:"price123"},{name:"BRUNEI 14",days:"Senin s/d Minggu",tutup:"14:30 WIB",buka:"14:45 WIB",website:"https://bruneipools.com/",live:null,prizeType:"price123"},{name:"HOKI DRAW 15",days:"Senin s/d Minggu",tutup:"14:59 WIB",buka:"15:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"CHELSEA 15",days:"Senin s/d Minggu",tutup:"15:00 WIB",buka:"15:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizeType:"price123"},{name:"TOTOMACAU 5D SORE",days:"Senin s/d Minggu",tutup:"15:15 WIB",buka:"15:30 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"TOTO MALI 1530",days:"Senin s/d Minggu",tutup:"15:15 WIB",buka:"15:30 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@TotoMaliLive",prizeType:"price123"},{name:"POIPET 15",days:"Senin s/d Minggu",tutup:"15:15 WIB",buka:"15:30 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/PoipetPools",prizeType:"price123"},{name:"HOKI DRAW 16",days:"Senin s/d Minggu",tutup:"15:59 WIB",buka:"16:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"TOTO MACAU SORE",days:"Senin s/d Minggu",tutup:"16:00 WIB",buka:"16:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizeType:"price1"},{name:"HUAHIN 1630",days:"Senin s/d Minggu",tutup:"16:15 WIB",buka:"16:30 WIB",website:"https://huahinlottery.com/",live:"https://www.youtube.com/@huahinlottery5727",prizeType:"price123"},{name:"HOKI DRAW 17",days:"Senin s/d Minggu",tutup:"16:59 WIB",buka:"17:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"KING KONG4D SORE",days:"Senin s/d Minggu",tutup:"17:00 WIB",buka:"17:15 WIB",website:"https://kingkongpools.id/",live:"https://kick.com/king-kong-pools",prizeType:"price1"},{name:"SINGAPORE",days:"SELASA & JUM'AT LIBUR",tutup:"17:30 WIB",buka:"17:45 WIB",website:"https://www.singaporepools.com.sg/",live:null,prizeType:"price123",activeDays:[1,3,4,6,0]},{name:"HOKI DRAW 18",days:"Senin s/d Minggu",tutup:"17:59 WIB",buka:"18:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"MAGNUM4D",days:"RABU, SABTU & MINGGU",tutup:"18:10 WIB",buka:"18:40 WIB",website:"https://www.magnum4d.my/en",live:null,prizeType:"price123",activeDays:[3,6,0]},{name:"HOKI DRAW 19",days:"Senin s/d Minggu",tutup:"18:59 WIB",buka:"19:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"TOTO MACAU MALAM I",days:"Senin s/d Minggu",tutup:"19:00 WIB",buka:"19:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizeType:"price1"},{name:"CHELSEA 19",days:"Senin s/d Minggu",tutup:"19:00 WIB",buka:"19:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizeType:"price123"},{name:"POIPET 19",days:"Senin s/d Minggu",tutup:"19:30 WIB",buka:"19:45 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/PoipetPools",prizeType:"price123"},{name:"PCSO",days:"Minggu Libur",tutup:"19:50 WIB",buka:"20:10 WIB",website:"https://www.pcso.gov.ph/",live:"https://www.youtube.com/@PCSOGOVPHOfficial/streams",prizeType:"price1",activeDays:[1,2,3,4,5,6]},{name:"HOKI DRAW 20",days:"Senin s/d Minggu",tutup:"19:59 WIB",buka:"20:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"TOTO MALI 2030",days:"Senin s/d Minggu",tutup:"20:15 WIB",buka:"20:30 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@TotoMaliLive",prizeType:"price123"},{name:"HUAHIN 2100",days:"Senin s/d Minggu",tutup:"20:45 WIB",buka:"21:00 WIB",website:"https://huahinlottery.com/",live:"https://www.youtube.com/@huahinlottery5727",prizeType:"price123"},{name:"HOKI DRAW 21",days:"Senin s/d Minggu",tutup:"20:59 WIB",buka:"21:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"CHELSEA 21",days:"Senin s/d Minggu",tutup:"21:00 WIB",buka:"21:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizeType:"price123"},{name:"TOTOMACAU 5D MALAM",days:"Senin s/d Minggu",tutup:"21:15 WIB",buka:"21:25 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"NEVADA",days:"Senin s/d Minggu",tutup:"21:15 WIB",buka:"21:30 WIB",website:"https://www.nevadalottery.us/",live:null,prizeType:"price123"},{name:"BRUNEI 21",days:"Senin s/d Minggu",tutup:"21:30 WIB",buka:"21:45 WIB",website:"https://bruneipools.com/",live:null,prizeType:"price123"},{name:"HOKI DRAW 22",days:"Senin s/d Minggu",tutup:"21:59 WIB",buka:"22:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"TOTO MACAU MALAM II",days:"Senin s/d Minggu",tutup:"22:00 WIB",buka:"22:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizeType:"price1"},{name:"POIPET 22",days:"Senin s/d Minggu",tutup:"22:30 WIB",buka:"22:45 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/PoipetPools",prizeType:"price123"},{name:"HOKI DRAW 23",days:"Senin s/d Minggu",tutup:"22:59 WIB",buka:"23:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/HOKIDRAW",prizeType:"price1"},{name:"HONGKONG",days:"Senin s/d Minggu",tutup:"22:59 WIB",buka:"23:15 WIB",website:"https://hongkongfunlotto.net/",live:"https://kick.com/hongkong-lotto-official",prizeType:"price123"},{name:"TOTO MACAU MALAM III",days:"Senin s/d Minggu",tutup:"23:00 WIB",buka:"23:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizeType:"price1"},{name:"JAKARTA 2330",days:"Senin s/d Minggu",tutup:"23:25 WIB",buka:"23:35 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@TotoMaliLive",prizeType:"price123"},{name:"TOTO MALI 2330",days:"Senin s/d Minggu",tutup:"23:15 WIB",buka:"23:30 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@TotoMaliLive",prizeType:"price123"},{name:"KING KONG4D MALAM",days:"Senin s/d Minggu",tutup:"23:30 WIB",buka:"23:45 WIB",website:"https://kingkongpools.id/",live:"https://kick.com/king-kong-pools",prizeType:"price1"}];
-var cs={},alarmOn=false,alarmVol=0.8,selVoice=null,vLoaded=false,aPlayed={},pSt={};
-var sortByT=false,curFilter='all',cmpD=[],bulkMode=false,bulkSel={},listView=false;
-var beepOn=true,notifOn=false,histShut=false,historyLog=[],audioCtx=null,SK='jtCS_v6';
+/* Blokir klik kanan (context menu) */
+document.addEventListener('contextmenu', function(e) { e.preventDefault(); return false; }, true);
 
-/* Partikel */
-(function(){var c=document.getElementById('bgC'),x=c.getContext('2d'),ps=[];function rs(){c.width=innerWidth;c.height=innerHeight}rs();addEventListener('resize',rs);function P(){this.x=Math.random()*c.width;this.y=Math.random()*c.height;this.s=Math.random()*1.5+.5;this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;this.o=Math.random()*.3+.05;this.h=210+Math.random()*30}P.prototype.up=function(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>c.width||this.y<0||this.y>c.height){this.x=Math.random()*c.width;this.y=Math.random()*c.height}};P.prototype.dr=function(){x.beginPath();x.arc(this.x,this.y,Math.max(.1,this.s),0,Math.PI*2);x.fillStyle='hsla('+this.h+',80%,60%,'+this.o+')';x.fill()};for(var i=0;i<50;i++)ps.push(new P());(function lp(){x.clearRect(0,0,c.width,c.height);for(var i=0;i<ps.length;i++){ps[i].up();ps[i].dr();for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<120){x.beginPath();x.moveTo(ps[i].x,ps[i].y);x.lineTo(ps[j].x,ps[j].y);x.strokeStyle='rgba(59,130,246,'+(0.05*(1-d/120))+')';x.lineWidth=.5;x.stroke()}}}requestAnimationFrame(lp)})();})();
+/* Deteksi dan ganggu DevTools yang terbuka via debugger */
+(function() {
+    var dt = 200;
+    function check() {
+        var start = performance.now();
+        debugger;
+        var end = performance.now();
+        if (end - start > dt) {
+            document.body.innerHTML = '';
+            window.location.replace('about:blank');
+        }
+        setTimeout(check, 1000);
+    }
+    try { check(); } catch(e) {}
+})();
 
+/* =============================================
+   DATA & VARIABEL UTAMA
+   ============================================= */
+var PD=[
+{name:"HOKI DRAW 00",days:"SENIN S/D MINGGU",tutup:"23:59 WIB",buka:"00:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"TOTO MACAU PAGI",days:"SENIN S/D MINGGU",tutup:"00:00 WIB",buka:"00:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizetype:"PRICE1"},
+{name:"KENTUCKY MIDDAY",days:"SENIN S/D MINGGU",tutup:"00:05 WIB",buka:"00:20 WIB",website:"https://www.kylottery.com/apps/",live:null,prizetype:"PRICE1"},
+{name:"FLORIDA MIDDAY",days:"SENIN S/D MINGGU",tutup:"00:20 WIB",buka:"00:30 WIB",website:"https://floridalottery.com/",live:"https://www.youtube.com/user/floridalottery",prizetype:"PRICE1"},
+{name:"HUAHIN 0100",days:"SENIN S/D MINGGU",tutup:"00:45 WIB",buka:"01:00 WIB",website:"https://huahinlottery.com/",live:null,prizetype:"PRICE123"},
+{name:"HOKI DRAW 01",days:"SENIN S/D MINGGU",tutup:"00:59 WIB",buka:"01:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"NEW YORK MIDDAY",days:"SENIN S/D MINGGU",tutup:"01:15 WIB",buka:"01:25 WIB",website:"https://nylottery.ny.gov/",live:null,prizetype:"PRICE1"},
+{name:"BANGKOK 0130",days:"SENIN S/D MINGGU",tutup:"01:15 WIB",buka:"01:30 WIB",website:"https://bangkokpoolstoday.com/",live:null,prizetype:"PRICE123"},
+{name:"CAROLINA DAY",days:"SENIN S/D MINGGU",tutup:"01:45 WIB",buka:"02:00 WIB",website:"https://www.wral.com/entertainment/lottery/",live:null,prizetype:"PRICE1"},
+{name:"HOKI DRAW 02",days:"SENIN S/D MINGGU",tutup:"01:59 WIB",buka:"02:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"BRUNEI 02",days:"SENIN S/D MINGGU",tutup:"02:30 WIB",buka:"02:45 WIB",website:"https://bruneipools.com/",live:null,prizetype:"PRICE123"},
+{name:"OREGON 03",days:"SENIN S/D MINGGU",tutup:"02:50 WIB",buka:"03:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizetype:"PRICE1"},
+{name:"HOKI DRAW 03",days:"SENIN S/D MINGGU",tutup:"02:59 WIB",buka:"03:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"HOKI DRAW 04",days:"SENIN S/D MINGGU",tutup:"03:59 WIB",buka:"04:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"HOKI DRAW 05",days:"SENIN S/D MINGGU",tutup:"04:59 WIB",buka:"05:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"HOKI DRAW 06",days:"SENIN S/D MINGGU",tutup:"05:59 WIB",buka:"06:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"OREGON 06",days:"SENIN S/D MINGGU",tutup:"05:50 WIB",buka:"06:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizetype:"PRICE1"},
+{name:"HOKI DRAW 07",days:"SENIN S/D MINGGU",tutup:"06:59 WIB",buka:"07:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"HOKI DRAW 08",days:"SENIN S/D MINGGU",tutup:"07:59 WIB",buka:"08:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"CALIFORNIA",days:"SENIN S/D MINGGU",tutup:"08:25 WIB",buka:"08:30 WIB",website:"https://www.calottery.com/draw-games/daily-4",live:null,prizetype:"PRICE1"},
+{name:"FLORIDA EVENING",days:"SENIN S/D MINGGU",tutup:"08:35 WIB",buka:"08:45 WIB",website:"https://floridalottery.com/games/draw-games/pick-4",live:"https://www.youtube.com/user/floridalottery",prizetype:"PRICE1"},
+{name:"OREGON 09",days:"SENIN S/D MINGGU",tutup:"08:50 WIB",buka:"09:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizetype:"PRICE1"},
+{name:"HOKI DRAW 09",days:"SENIN S/D MINGGU",tutup:"08:59 WIB",buka:"09:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"BANGKOK 0930",days:"SENIN S/D MINGGU",tutup:"09:15 WIB",buka:"09:30 WIB",website:"https://bangkokpoolstoday.com/",live:null,prizetype:"PRICE123"},
+{name:"NEW YORK EVENING",days:"SENIN S/D MINGGU",tutup:"09:25 WIB",buka:"09:35 WIB",website:"https://nylottery.ny.gov/",live:null,prizetype:"PRICE1"},
+{name:"KENTUCKY EVENING",days:"SENIN S/D MINGGU",tutup:"09:45 WIB",buka:"10:00 WIB",website:"https://www.kylottery.com/apps/",live:null,prizetype:"PRICE1"},
+{name:"HOKI DRAW 10",days:"SENIN S/D MINGGU",tutup:"09:59 WIB",buka:"10:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"CAROLINA EVENING",days:"SENIN S/D MINGGU",tutup:"10:17 WIB",buka:"10:22 WIB",website:"https://www.wral.com/entertainment/lottery/",live:null,prizetype:"PRICE1"},
+{name:"TOTO CAMBODIA",days:"SENIN S/D MINGGU",tutup:"10:45 WIB",buka:"11:00 WIB",website:"https://totocambodialive.com/",live:"https://kick.com/totocambodia",prizetype:"PRICE123"},
+{name:"HOKI DRAW 11",days:"SENIN S/D MINGGU",tutup:"10:59 WIB",buka:"11:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"CHELSEA 11",days:"SENIN S/D MINGGU",tutup:"11:00 WIB",buka:"11:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizetype:"PRICE123"},
+{name:"OREGON 12",days:"SENIN S/D MINGGU",tutup:"11:50 WIB",buka:"12:00 WIB",website:"https://www.oregonlottery.org/pick-4/winning-numbers/",live:null,prizetype:"PRICE1"},
+{name:"HOKI DRAW 12",days:"SENIN S/D MINGGU",tutup:"11:59 WIB",buka:"12:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"POIPET 12",days:"SENIN S/D MINGGU",tutup:"12:15 WIB",buka:"12:30 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/poipetpools",prizetype:"PRICE123"},
+{name:"BULLSEYE",days:"SENIN S/D MINGGU",tutup:"13:00 WIB",buka:"13:15 WIB",website:"https://mylotto.co.nz/results/bullseye",live:null,prizetype:"PRICE1"},
+{name:"HOKI DRAW 13",days:"SENIN S/D MINGGU",tutup:"12:59 WIB",buka:"13:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"TOTO MACAU SIANG",days:"SENIN S/D MINGGU",tutup:"13:00 WIB",buka:"13:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizetype:"PRICE1"},
+{name:"HOKI DRAW 14",days:"SENIN S/D MINGGU",tutup:"13:59 WIB",buka:"14:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"JAKARTA 1400",days:"SENIN S/D MINGGU",tutup:"13:55 WIB",buka:"14:10 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"SYDNEY",days:"SENIN S/D MINGGU",tutup:"13:49 WIB",buka:"14:05 WIB",website:"https://sydneyfunlotto.net/",live:"https://kick.com/sydney-lotto-official",prizetype:"PRICE123"},
+{name:"BRUNEI 14",days:"SENIN S/D MINGGU",tutup:"14:30 WIB",buka:"14:45 WIB",website:"https://bruneipools.com/",live:null,prizetype:"PRICE123"},
+{name:"HOKI DRAW 15",days:"SENIN S/D MINGGU",tutup:"14:59 WIB",buka:"15:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"CHELSEA 15",days:"SENIN S/D MINGGU",tutup:"15:00 WIB",buka:"15:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizetype:"PRICE123"},
+{name:"TOTOMACAU 5D SORE",days:"SENIN S/D MINGGU",tutup:"15:15 WIB",buka:"15:30 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"TOTO MALI 1530",days:"SENIN S/D MINGGU",tutup:"15:15 WIB",buka:"15:30 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@totomalilive",prizetype:"PRICE123"},
+{name:"POIPET 15",days:"SENIN S/D MINGGU",tutup:"15:15 WIB",buka:"15:30 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/poipetpools",prizetype:"PRICE123"},
+{name:"HOKI DRAW 16",days:"SENIN S/D MINGGU",tutup:"15:59 WIB",buka:"16:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"TOTO MACAU SORE",days:"SENIN S/D MINGGU",tutup:"16:00 WIB",buka:"16:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizetype:"PRICE1"},
+{name:"HUAHIN 1630",days:"SENIN S/D MINGGU",tutup:"16:15 WIB",buka:"16:30 WIB",website:"https://huahinlottery.com/",live:null,prizetype:"PRICE123"},
+{name:"HOKI DRAW 17",days:"SENIN S/D MINGGU",tutup:"16:59 WIB",buka:"17:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"KING KONG4D SORE",days:"SENIN S/D MINGGU",tutup:"17:00 WIB",buka:"17:15 WIB",website:"https://kingkongpools.id/",live:"https://kick.com/king-kong-pools",prizetype:"PRICE1"},
+{name:"SINGAPORE",days:"SELASA & JUM'AT LIBUR",tutup:"17:30 WIB",buka:"17:45 WIB",website:"https://www.singaporepools.com.sg/",live:null,prizetype:"PRICE123",activedays:[1,3,4,6,0]},
+{name:"HOKI DRAW 18",days:"SENIN S/D MINGGU",tutup:"17:59 WIB",buka:"18:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"MAGNUM4D",days:"RABU, SABTU & MINGGU",tutup:"18:10 WIB",buka:"18:40 WIB",website:"https://www.magnum4d.my/en",live:null,prizetype:"PRICE123",activedays:[3,6,0]},
+{name:"HOKI DRAW 19",days:"SENIN S/D MINGGU",tutup:"18:59 WIB",buka:"19:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"TOTO MACAU MALAM I",days:"SENIN S/D MINGGU",tutup:"19:00 WIB",buka:"19:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizetype:"PRICE1"},
+{name:"CHELSEA 19",days:"SENIN S/D MINGGU",tutup:"19:00 WIB",buka:"19:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizetype:"PRICE123"},
+{name:"POIPET 19",days:"SENIN S/D MINGGU",tutup:"19:30 WIB",buka:"19:45 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/poipetpools",prizetype:"PRICE123"},
+{name:"PCSO",days:"MINGGU LIBUR",tutup:"19:50 WIB",buka:"20:10 WIB",website:"https://www.pcso.gov.ph/",live:null,prizetype:"PRICE1",activedays:[1,2,3,4,5,6]},
+{name:"HOKI DRAW 20",days:"SENIN S/D MINGGU",tutup:"19:59 WIB",buka:"20:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"TOTO MALI 2030",days:"SENIN S/D MINGGU",tutup:"20:15 WIB",buka:"20:30 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@totomalilive",prizetype:"PRICE123"},
+{name:"HUAHIN 2100",days:"SENIN S/D MINGGU",tutup:"20:45 WIB",buka:"21:00 WIB",website:"https://huahinlottery.com/",live:null,prizetype:"PRICE123"},
+{name:"HOKI DRAW 21",days:"SENIN S/D MINGGU",tutup:"20:59 WIB",buka:"21:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"CHELSEA 21",days:"SENIN S/D MINGGU",tutup:"21:00 WIB",buka:"21:15 WIB",website:"https://chelseapools.co.uk/",live:null,prizetype:"PRICE123"},
+{name:"TOTOMACAU 5D MALAM",days:"SENIN S/D MINGGU",tutup:"21:15 WIB",buka:"21:25 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"NEVADA",days:"SENIN S/D MINGGU",tutup:"21:15 WIB",buka:"21:30 WIB",website:"https://www.nevadalottery.us/",live:null,prizetype:"PRICE123"},
+{name:"BRUNEI 21",days:"SENIN S/D MINGGU",tutup:"21:30 WIB",buka:"21:45 WIB",website:"https://bruneipools.com/",live:null,prizetype:"PRICE123"},
+{name:"HOKI DRAW 22",days:"SENIN S/D MINGGU",tutup:"21:59 WIB",buka:"22:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"TOTO MACAU MALAM II",days:"SENIN S/D MINGGU",tutup:"22:00 WIB",buka:"22:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizetype:"PRICE1"},
+{name:"POIPET 22",days:"SENIN S/D MINGGU",tutup:"22:30 WIB",buka:"22:45 WIB",website:"https://poipetlottery.com/",live:"https://dlive.tv/poipetpools",prizetype:"PRICE123"},
+{name:"HOKI DRAW 23",days:"SENIN S/D MINGGU",tutup:"22:59 WIB",buka:"23:00 WIB",website:"https://hokidraw.com/",live:"https://dlive.tv/u/hokidraw",prizetype:"PRICE1"},
+{name:"HONGKONG",days:"SENIN S/D MINGGU",tutup:"22:59 WIB",buka:"23:15 WIB",website:"https://hongkongfunlotto.net/",live:"https://kick.com/hongkong-lotto-official",prizetype:"PRICE123"},
+{name:"TOTO MACAU MALAM III",days:"SENIN S/D MINGGU",tutup:"23:00 WIB",buka:"23:15 WIB",website:"https://totomacaunew.us/",live:"https://kick.com/live-ttm4d",prizetype:"PRICE1"},
+{name:"JAKARTA 2330",days:"SENIN S/D MINGGU",tutup:"23:25 WIB",buka:"23:35 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@totomalilive",prizetype:"PRICE123"},
+{name:"TOTO MALI 2330",days:"SENIN S/D MINGGU",tutup:"23:15 WIB",buka:"23:30 WIB",website:"https://totomali.com/",live:"https://www.youtube.com/@totomalilive",prizetype:"PRICE123"},
+{name:"KING KONG4D MALAM",days:"SENIN S/D MINGGU",tutup:"23:30 WIB",buka:"23:45 WIB",website:"https://kingkongpools.id/",live:"https://kick.com/king-kong-pools",prizetype:"PRICE1"}
+];
+var LG={"HOKI DRAW 00":"https://hokidraw.com/assets/img/logo.png","TOTO MACAU PAGI":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","KENTUCKY MIDDAY":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/a5fafa0102d98ab3959ceb9bb1045729/kl-logo.png","FLORIDA MIDDAY":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/a3e564ccb04c2b751ad4fa88c06e39c1/1-removebg-preview.png","HUAHIN 0100":"https://huahinlottery.com/assets/img/logo.png","HOKI DRAW 01":"https://hokidraw.com/assets/img/logo.png","NEW YORK MIDDAY":"https://edit.nylottery.ny.gov/sites/default/files/logo-2179655b4229a219a9305b3f0e734bd0.png","BANGKOK 0130":"https://bangkokpoolstoday.com/assets/img/bangkokpools_logo.png","CAROLINA DAY":"https://nclottery.com/Site/GFX/NCEL_Alt.svg","HOKI DRAW 02":"https://hokidraw.com/assets/img/logo.png","BRUNEI 02":"https://bruneipools.com/assets/img/brunei-logo.png","OREGON 03":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/81ec15c616becd5dafbb18ae7ba01828/logo-ol-black-horiz.png","HOKI DRAW 03":"https://hokidraw.com/assets/img/logo.png","HOKI DRAW 04":"https://hokidraw.com/assets/img/logo.png","HOKI DRAW 05":"https://hokidraw.com/assets/img/logo.png","HOKI DRAW 06":"https://hokidraw.com/assets/img/logo.png","OREGON 06":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/81ec15c616becd5dafbb18ae7ba01828/logo-ol-black-horiz.png","HOKI DRAW 07":"https://hokidraw.com/assets/img/logo.png","HOKI DRAW 08":"https://hokidraw.com/assets/img/logo.png","CALIFORNIA":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/7c3b7b0affd7880d2dddf918ba2ac258/calottlogo.png","FLORIDA EVENING":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/a3e564ccb04c2b751ad4fa88c06e39c1/1-removebg-preview.png","OREGON 09":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/81ec15c616becd5dafbb18ae7ba01828/logo-ol-black-horiz.png","HOKI DRAW 09":"https://hokidraw.com/assets/img/logo.png","BANGKOK 0930":"https://bangkokpoolstoday.com/assets/img/bangkokpools_logo.png","NEW YORK EVENING":"https://edit.nylottery.ny.gov/sites/default/files/logo-2179655b4229a219a9305b3f0e734bd0.png","KENTUCKY EVENING":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/a5fafa0102d98ab3959ceb9bb1045729/kl-logo.png","HOKI DRAW 10":"https://hokidraw.com/assets/img/logo.png","CAROLINA EVENING":"https://nclottery.com/Site/GFX/NCEL_Alt.svg","TOTO CAMBODIA":"https://totocambodialive.com/assets/img/logo.png","HOKI DRAW 11":"https://hokidraw.com/assets/img/logo.png","CHELSEA 11":"https://chelseapools.co.uk/assets/img/chelseaPools_logo.png","OREGON 12":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/81ec15c616becd5dafbb18ae7ba01828/logo-ol-black-horiz.png","HOKI DRAW 12":"https://hokidraw.com/assets/img/logo.png","POIPET 12":"https://poipetlottery.com/img/logo.png","BULLSEYE":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/f07d4e2a6517ef1cea9e2a897e4abb98/nz-bullseye.png","HOKI DRAW 13":"https://hokidraw.com/assets/img/logo.png","TOTO MACAU SIANG":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","HOKI DRAW 14":"https://hokidraw.com/assets/img/logo.png","JAKARTA 1400":"https://cdn.areabermain.club/assets/cdn/az7/2024/09/26/20240926/5cec161940fa953c9893b306c3c98ddc/jakarta.webp","SYDNEY":"https://sydneylotto.direct/assets/image/logo_sydney.png","BRUNEI 14":"https://bruneipools.com/assets/img/brunei-logo.png","HOKI DRAW 15":"https://hokidraw.com/assets/img/logo.png","CHELSEA 15":"https://chelseapools.co.uk/assets/img/chelseaPools_logo.png","TOTOMACAU 5D SORE":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","TOTO MALI 1530":"https://totomali.com/assets/img/logo.svg","POIPET 15":"https://poipetlottery.com/img/logo.png","HOKI DRAW 16":"https://hokidraw.com/assets/img/logo.png","TOTO MACAU SORE":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","HUAHIN 1630":"https://huahinlottery.com/assets/img/logo.png","HOKI DRAW 17":"https://hokidraw.com/assets/img/logo.png","KING KONG4D SORE":"https://cdn.areabermain.club/assets/cdn/az9/2024/11/26/20241126/d1f18e378e4a422b41ffe8d03065ce7d/logo-7.png","SINGAPORE":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/07da64b7b63e905cf7e3adde14e57424/sgp.png","HOKI DRAW 18":"https://hokidraw.com/assets/img/logo.png","MAGNUM4D":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/8889f1c5fc738b5148145100c08a0ebc/439-4390693-magnum-pengeluaran-magnum-4d-hari-clipart-removebg-preview.png","HOKI DRAW 19":"https://hokidraw.com/assets/img/logo.png","TOTO MACAU MALAM I":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","CHELSEA 19":"https://chelseapools.co.uk/assets/img/chelseaPools_logo.png","POIPET 19":"https://poipetlottery.com/img/logo.png","PCSO":"https://cdn.areabermain.club/assets/cdn/az4/2024/08/11/20240811/32b1d9cb48d2c0a9f1c7e77853565fa1/pcso.png","HOKI DRAW 20":"https://hokidraw.com/assets/img/logo.png","TOTO MALI 2030":"https://totomali.com/assets/img/logo.svg","HUAHIN 2100":"https://huahinlottery.com/assets/img/logo.png","HOKI DRAW 21":"https://hokidraw.com/assets/img/logo.png","CHELSEA 21":"https://chelseapools.co.uk/assets/img/chelseaPools_logo.png","TOTOMACAU 5D MALAM":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","NEVADA":"https://www.nevadalottery.us/images/src/components/PageHead/images/logo.gif","BRUNEI 21":"https://bruneipools.com/assets/img/brunei-logo.png","HOKI DRAW 22":"https://hokidraw.com/assets/img/logo.png","TOTO MACAU MALAM II":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","POIPET 22":"https://poipetlottery.com/img/logo.png","HOKI DRAW 23":"https://hokidraw.com/assets/img/logo.png","HONGKONG":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/7d2086796fd3d3af9aaed27d19fd9170/hongkong-lotto-1.png","TOTO MACAU MALAM III":"https://cdn.areabermain.club/assets/cdn/az1/2025/09/07/20250907/dc9e0cea8a5e80da56d0b803d30586fe/totomacau-12-photoroom-photoroom.png","JAKARTA 2330":"https://cdn.areabermain.club/assets/cdn/az7/2024/09/26/20240926/5cec161940fa953c9893b306c3c98ddc/jakarta.webp","TOTO MALI 2330":"https://totomali.com/assets/img/logo.svg","KING KONG4D MALAM":"https://cdn.areabermain.club/assets/cdn/az9/2024/11/26/20241126/d1f18e378e4a422b41ffe8d03065ce7d/logo-7.png"};
+var CS={},alarmOn=false,alarmVol=0.8,selVoice=null,vLoaded=false,aPlayed={},pSt={},sortByT=false,curFilter='ALL',bulkMode=false,bulkSel={},listView=false,beepOn=true,notifOn=false,histShut=false,historyLog=[],audioCtx=null,SK='JTCS_V9';
+(function(){var c=document.getElementById('BGC'),x=c.getContext('2d'),ps=[];function rs(){c.width=innerWidth;c.height=innerHeight}rs();addEventListener('resize',rs);function P(){this.x=Math.random()*c.width;this.y=Math.random()*c.height;this.s=Math.random()*1.5+.5;this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;this.o=Math.random()*.3+.05;this.h=210+Math.random()*30}P.prototype.up=function(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>c.width||this.y<0||this.y>c.height){this.x=Math.random()*c.width;this.y=Math.random()*c.height}};P.prototype.dr=function(){x.beginPath();x.arc(this.x,this.y,Math.max(.1,this.s),0,Math.PI*2);x.fillStyle='hsla('+this.h+',80%,60%,'+this.o+')';x.fill()};for(var i=0;i<50;i++)ps.push(new P());(function lp(){x.clearRect(0,0,c.width,c.height);for(var i=0;i<ps.length;i++){ps[i].up();ps[i].dr();for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<120){x.beginPath();x.moveTo(ps[i].x,ps[i].y);x.lineTo(ps[j].x,ps[j].y);x.strokeStyle='rgba(59,130,246,'+(0.05*(1-d/120))+')';x.lineWidth=.5;x.stroke()}}}requestAnimationFrame(lp)})()})();
 function initAudio(){if(!audioCtx)try{audioCtx=new(window.AudioContext||window.webkitAudioContext)}catch(e){}}
 function playBeep(){if(!beepOn)return;try{initAudio();if(audioCtx.state==='suspended')audioCtx.resume();var o=audioCtx.createOscillator(),g=audioCtx.createGain();o.connect(g);g.connect(audioCtx.destination);o.type='sine';o.frequency.setValueAtTime(880,audioCtx.currentTime);o.frequency.exponentialRampToValueAtTime(440,audioCtx.currentTime+.3);g.gain.setValueAtTime(alarmVol*.3,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(.01,audioCtx.currentTime+.5);o.start(audioCtx.currentTime);o.stop(audioCtx.currentTime+.5)}catch(e){}}
-function togTheme(){var t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}updThIc()}
-function updThIc(){var b=document.getElementById('thBtn');if(!b)return;var dk=document.documentElement.getAttribute('data-theme')==='dark';b.innerHTML=dk?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';b.classList.toggle('ac',!dk)}
-function togView(){listView=!listView;document.getElementById('grid').classList.toggle('lv',listView);var b=document.getElementById('vwBtn');b.classList.toggle('ac',listView);b.innerHTML=listView?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>';toast(listView?'Tampilan List':'Tampilan Grid','info')}
-function togNotif(e){e.stopPropagation();if(!('Notification' in window)){toast('Browser tidak mendukung','warning');return}if(notifOn){notifOn=false;document.getElementById('nfT').classList.remove('on');toast('Notifikasi nonaktif','info');return}if(Notification.permission==='granted'){notifOn=true;document.getElementById('nfT').classList.add('on');toast('Notifikasi aktif','success');try{new Notification('BetClose Togel',{body:'Berhasil diaktifkan!'})}catch(ex){}return}if(Notification.permission==='denied'){toast('Izin ditolak. Ubah di Settings browser.','error');return}toast('Meminta izin...','info');Notification.requestPermission().then(function(p){if(p==='granted'){notifOn=true;document.getElementById('nfT').classList.add('on');toast('Notifikasi aktif','success')}else{toast('Izin ditolak','error')}}).catch(function(){toast('Gagal','error')})}
-function togBeep(e){e.stopPropagation();beepOn=!beepOn;document.getElementById('bkT').classList.toggle('on',beepOn);toast(beepOn?'Beep aktif':'Beep nonaktif','info')}
-function showNTF(name,cd){var el=document.getElementById('ntf');document.getElementById('ntx').textContent=name+' BET CLOSE!';document.getElementById('nsb').textContent=cd;el.classList.add('vs');setTimeout(function(){el.classList.remove('vs')},4000)}
-function addHist(n,a,d){var t=new Date();historyLog.unshift({n:n,a:a,d:d,t:String(t.getHours()).padStart(2,'0')+':'+String(t.getMinutes()).padStart(2,'0')+':'+String(t.getSeconds()).padStart(2,'0')});if(historyLog.length>50)historyLog.pop();renderHist();try{localStorage.setItem('jtHist',JSON.stringify(historyLog))}catch(e){}}
-function renderHist(){var l=document.getElementById('hl'),e=document.getElementById('hem');l.innerHTML='';if(!historyLog.length){e.style.display='block';return}e.style.display='none';for(var i=0;i<Math.min(historyLog.length,20);i++){var h=historyLog[i],el=document.createElement('div');el.className='hi2';var c='hli';if(h.a==='DONE')c='hld';else if(h.a==='RESET')c='hlr';el.innerHTML='<div class="hnm">'+h.n+'</div><div class="hac"><span class="'+c+'">'+h.a+'</span> '+h.d+'</div><div class="htm">'+h.t+'</div>';l.appendChild(el)}}
-function togHist(){histShut=!histShut;document.getElementById('hbd').classList.toggle('sh',histShut);document.getElementById('harr').classList.toggle('sh',histShut)}
-function togBulk(){bulkMode=!bulkMode;bulkSel={};document.getElementById('bkBtn').classList.toggle('ba',bulkMode);document.getElementById('bBar').classList.remove('vs');var cards=document.querySelectorAll('.tc');for(var i=0;i<cards.length;i++)cards[i].classList.toggle('bm',bulkMode);toast(bulkMode?'Mode pilih banyak aktif':'Nonaktif','info')}
-function togBSel(idx,e){if(e)e.stopPropagation();if(bulkSel[idx])delete bulkSel[idx];else bulkSel[idx]=true;var c=document.querySelector('[data-idx="'+idx+'"]');if(c)c.classList.toggle('bsl',!!bulkSel[idx]);updBB()}
-function updBB(){var n=Object.keys(bulkSel).length;document.getElementById('bCnt').textContent=n+' dipilih';document.getElementById('bBar').classList.toggle('vs',n>0&&bulkMode)}
-function bulkDone(){var ids=Object.keys(bulkSel),dc=0;for(var i=0;i<ids.length;i++){var idx=parseInt(ids[i]),c=document.querySelector('[data-idx="'+idx+'"]');if(!c||(cs[idx]&&cs[idx].isDone))continue;var p1=c.querySelector('.p1');if(!(p1&&p1.value.trim()))continue;var d=PD[idx];if(d.prizeType==='price123'){var e2=c.querySelector('.p2'),e3=c.querySelector('.p3');if(!e2||!e2.value.trim()||!e3||!e3.value.trim())continue}hDone(idx,true);dc++}if(dc)toast(dc+' pasaran done','success');else toast('Isi prize dulu','warning');cancelBulk()}
-function cancelBulk(){bulkSel={};updBB();var c=document.querySelectorAll('.bsl');for(var i=0;i<c.length;i++)c[i].classList.remove('bsl')}
-function pTM(t){var p=t.split(' ')[0].split(':').map(Number);return p[0]*60+p[1]}
-function isAct(d){if(!d.activeDays)return true;return d.activeDays.indexOf(new Date().getDay())>=0}
-function nxAct(d){if(!d.activeDays)return null;var dn=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'],cd=new Date().getDay();for(var i=1;i<=7;i++){var nd=(cd+i)%7;if(d.activeDays.indexOf(nd)>=0)return dn[nd]}return null}
-function nxActDt(d){if(!d.activeDays)return null;var cd=new Date().getDay();for(var i=1;i<=7;i++){var nd=(cd+i)%7;if(d.activeDays.indexOf(nd)>=0)return{da:i}}return null}
-function calcCD(tutup,buka,data){try{var now=new Date(),cm=now.getHours()*60+now.getMinutes();if(!isAct(data))return{hol:true,nx:nxAct(data)};var tm=pTM(tutup),bm=pTM(buka);if(cm<tm)return{h:Math.floor((tm-cm)/60),m:(tm-cm)%60,s:60-now.getSeconds(),tm:tm-cm,hol:false,bc:false};if(cm>=tm&&cm<bm)return{bc:true,hol:false};var diff,tom=(now.getDay()+1)%7;if(!data.activeDays||data.activeDays.indexOf(tom)>=0)diff=1440-cm+tm;else{var na=nxActDt(data);diff=na?na.da*1440-cm+tm:1440-cm+tm}return{h:Math.floor(diff/60),m:diff%60,s:60-now.getSeconds(),tm:diff,hol:false,bc:false}}catch(e){return{hol:false,bc:false,h:0,m:0,s:0,tm:9999}}}
-function fmtCD(c){if(!c)return'--:--:--';if(c.hol)return'LIBUR - '+c.nx;if(c.bc)return'BET CLOSE';var ss=c.s===60?0:c.s;return String(c.h).padStart(2,'0')+':'+String(c.m).padStart(2,'0')+':'+String(ss).padStart(2,'0')}
+function togTheme(){var t=document.documentElement.getAttribute('data-theme')==='DARK'?'LIGHT':'DARK';document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}updThIc()}
+function updThIc(){var b=document.getElementById('THBTN');if(!b)return;var dk=document.documentElement.getAttribute('data-theme')==='DARK';b.innerHTML=dk?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';b.classList.toggle('ac',!dk)}
+function togView(){listView=!listView;document.getElementById('GRID').classList.toggle('LV',listView);var b=document.getElementById('VWBTN');b.classList.toggle('ac',listView);toast(listView?'LIST VIEW':'GRID VIEW','info')}
+function togNotif(e){e.stopPropagation();if(!('notification' in window)){toast('BROWSER TIDAK MENDUKUNG','warning');return}if(notifOn){notifOn=false;document.getElementById('NFTG').classList.remove('on');toast('NOTIFIKASI NONAKTIF','info');return}if(Notification.permission==='granted'){notifOn=true;document.getElementById('NFTG').classList.add('on');toast('NOTIFIKASI AKTIF','success');return}if(Notification.permission==='denied'){toast('IZIN DITOLAK','error');return}Notification.requestPermission().then(function(p){if(p==='granted'){notifOn=true;document.getElementById('NFTG').classList.add('on');toast('NOTIFIKASI AKTIF','success')}else toast('IZIN DITOLAK','error')}).catch(function(){toast('GAGAL','error')})}
+function togBeep(e){e.stopPropagation();beepOn=!beepOn;document.getElementById('BKT').classList.toggle('on',beepOn);toast(beepOn?'BEEP AKTIF':'BEEP NONAKTIF','info')}
+function showNtf(name,cd){var el=document.getElementById('NTF');document.getElementById('NTX').textContent=name+' BET CLOSE!';document.getElementById('NSB').textContent=cd;el.classList.add('VS');setTimeout(function(){el.classList.remove('VS')},4000)}
+function addHist(n,a,d){var t=new Date();historyLog.unshift({n:n,a:a,d:d,t:String(t.getHours()).padStart(2,'0')+':'+String(t.getMinutes()).padStart(2,'0')+':'+String(t.getSeconds()).padStart(2,'0')});if(historyLog.length>50)historyLog.pop();renderHist();try{localStorage.setItem('jthist',JSON.stringify(historyLog))}catch(e){}}
+function renderHist(){var l=document.getElementById('HL'),e=document.getElementById('HEM');l.innerHTML='';if(!historyLog.length){e.style.display='block';return}e.style.display='none';for(var i=0;i<Math.min(historyLog.length,20);i++){var h=historyLog[i],el=document.createElement('div');el.className='HI2';var c='HLI';if(h.a==='DONE')c='HLD';else if(h.a==='RESET')c='HLR';el.innerHTML='<div class="HNM">'+h.n+'</div><div class="HAC"><span class="'+c+'">'+h.a+'</span> '+h.d+'</div><div class="HTM2">'+h.t+'</div>';l.appendChild(el)}}
+function togHist(){histShut=!histShut;document.getElementById('HBD').classList.toggle('SH',histShut);document.getElementById('HARR').classList.toggle('SH',histShut)}
+function togBulk(){bulkMode=!bulkMode;bulkSel={};document.getElementById('BKBTN').classList.toggle('BA',bulkMode);document.getElementById('BBAR').classList.remove('VS');document.querySelectorAll('.TC').forEach(function(c){c.classList.toggle('BM',bulkMode)});toast(bulkMode?'PILIH BANYAK AKTIF':'NONAKTIF','info')}
+function togBSel(idx,e){if(e)e.stopPropagation();if(bulkSel[idx])delete bulkSel[idx];else bulkSel[idx]=true;var c=document.querySelector('[data-idx="'+idx+'"]');if(c)c.classList.toggle('BSL',!!bulkSel[idx]);updBB()}
+function updBB(){var n=Object.keys(bulkSel).length;document.getElementById('BCNT').textContent=n+' DIPILIH';document.getElementById('BBAR').classList.toggle('VS',n>0&&bulkMode)}
+function bulkDone(){var ids=Object.keys(bulkSel),dc=0;ids.forEach(function(id){var idx=parseInt(id),c=document.querySelector('[data-idx="'+idx+'"]');if(!c||(CS[idx]&&CS[idx].isDone))return;var p1=c.querySelector('.P1');if(!(p1&&p1.value.trim()))return;if(PD[idx].prizetype==='PRICE123'){var e2=c.querySelector('.P2'),e3=c.querySelector('.P3');if(!e2||!e2.value.trim()||!e3||!e3.value.trim())return}hDone(idx,true);dc++});if(dc)toast(dc+' DONE','success');else toast('ISI PRIZE DULU','warning');cancelBulk()}
+function cancelBulk(){bulkSel={};updBB();document.querySelectorAll('.BSL').forEach(function(c){c.classList.remove('BSL')})}
+function ptm(t){var p=t.split(' ')[0].split(':').map(Number);return p[0]*60+p[1]}
+function isAct(d){if(!d.activedays)return true;return d.activedays.indexOf(new Date().getDay())>=0}
+function nxAct(d){if(!d.activedays)return null;var dn=['MINGGU','SENIN','SELASA','RABU','KAMIS','JUMAT','SABTU'],cd=new Date().getDay();for(var i=1;i<=7;i++){if(d.activedays.indexOf((cd+i)%7)>=0)return dn[(cd+i)%7]}return null}
+function nxActDt(d){if(!d.activedays)return null;var cd=new Date().getDay();for(var i=1;i<=7;i++){if(d.activedays.indexOf((cd+i)%7)>=0)return{da:i}}return null}
+function calcCd(tutup,buka,data){try{var now=new Date(),cm=now.getHours()*60+now.getMinutes();if(!isAct(data))return{hol:true,nx:nxAct(data)};var tm=ptm(tutup),bm=ptm(buka);if(cm<tm)return{h:Math.floor((tm-cm)/60),m:(tm-cm)%60,s:60-now.getSeconds(),tm:tm-cm,hol:false,bc:false};if(cm>=tm&&cm<bm)return{bc:true,hol:false};var diff,tom=(now.getDay()+1)%7;if(!data.activedays||data.activedays.indexOf(tom)>=0)diff=1440-cm+tm;else{var na=nxActDt(data);diff=na?na.da*1440-cm+tm:1440-cm+tm}return{h:Math.floor(diff/60),m:diff%60,s:60-now.getSeconds(),tm:diff,hol:false,bc:false}}catch(e){return{hol:false,bc:false,h:0,m:0,s:0,tm:9999}}}
+function fmtCd(c){if(!c)return'--:--:--';if(c.hol)return'LIBUR - '+c.nx;if(c.bc)return'BET CLOSE';var ss=c.s===60?0:c.s;return String(c.h).padStart(2,'0')+':'+String(c.m).padStart(2,'0')+':'+String(ss).padStart(2,'0')}
 function getShio(n){var s={"KUDA":[1,13,25,37,49,61,73,85,97],"ULAR":[2,14,26,38,50,62,74,86,98],"NAGA":[3,15,27,39,51,63,75,87,99],"KELINCI":[4,16,28,40,52,64,76,88,0],"HARIMAU":[5,17,29,41,53,65,77,89],"KERBAU":[6,18,30,42,54,66,78,90],"TIKUS":[7,19,31,43,55,67,79,91],"BABI":[8,20,32,44,56,68,80,92],"ANJING":[9,21,33,45,57,69,81,93],"AYAM":[10,22,34,46,58,70,82,94],"MONYET":[11,23,35,47,59,71,83,95],"KAMBING":[12,24,36,48,60,72,84,96]};var lt=parseInt(String(n).slice(-2));for(var k in s){if(s[k].indexOf(lt)>=0)return k}return"?"}
-function genTxt(p,p1,p2,p3){var sh=getShio(p1),n=new Date(),dn=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'],mn=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'],dt=dn[n.getDay()]+' , '+String(n.getDate()).padStart(2,'0')+' '+mn[n.getMonth()]+' '+n.getFullYear();var t='Hasil Pengeluaran : '+p+'\nHARI '+dt.toUpperCase()+'\nResult Prize 1 : '+p1;if(p2&&p3)t+='\nPrize 1 SHIO   : '+sh+'\nResult Prize 2 : '+p2+'\nResult Prize 3 : '+p3;else t+='\nPrize 1 SHIO   : '+sh;t+='\nSelamat Kepada Pemenang, Salam JP';return t}
+function genTxt(p,p1,p2,p3){var sh=getShio(p1),n=new Date(),dn=['MINGGU','SENIN','SELASA','RABU','KAMIS','JUMAT','SABTU'],mn=['JANUARI','FEBRUARI','MARET','APRIL','MEI','JUNI','JULI','AGUSTUS','SEPTEMBER','OKTOBER','NOVEMBER','DESEMBER'],dt=dn[n.getDay()]+' , '+String(n.getDate()).padStart(2,'0')+' '+mn[n.getMonth()]+' '+n.getFullYear();var t='HASIL PENGELUARAN : '+p+'\nHARI '+dt.toUpperCase()+'\nRESULT PRIZE 1 : '+p1;if(p2&&p3)t+='\n SHIO : '+sh+'\nRESULT PRIZE 2 : '+p2+'\nRESULT PRIZE 3 : '+p3;else t+='\nSHIO : '+sh;t+='\nSELAMAT KEPADA PEMENANG, SALAM JP';return t}
 function normN(n){return String(n).toUpperCase().replace(/\s+/g,'').replace(/[^A-Z0-9]/g,'')}
 function clipCopy(t){var ta=document.createElement('textarea');ta.value=t;ta.style.cssText='position:fixed;top:0;left:0;width:2em;height:2em;padding:0;border:none;outline:none;box-shadow:none;background:transparent';document.body.appendChild(ta);ta.focus();ta.select();try{var r=document.execCommand('copy')}catch(e){r=false}document.body.removeChild(ta);return r}
-function toast(msg,type){type=type||'info';var ic={success:'<polyline points="20 6 9 17 4 12"></polyline>',error:'<circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line>',info:'<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>',warning:'<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line>'};var el=document.createElement('div');el.className='to '+type;el.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'+(ic[type]||ic.info)+'</svg><span>'+msg+'</span>';document.getElementById('tw').appendChild(el);setTimeout(function(){if(el.parentNode)el.remove()},3000)}
-function saveCS(){try{localStorage.setItem(SK,JSON.stringify(cs))}catch(e){}}
-function loadCS(){try{var s=localStorage.getItem(SK);if(s){cs=JSON.parse(s);return true}}catch(e){}return false}
-function showCC(){document.getElementById('ccMo').classList.add('op')}
-function closeCC(){document.getElementById('ccMo').classList.remove('op')}
-function doClear(){closeCC();cs={};historyLog=[];try{localStorage.removeItem(SK);localStorage.removeItem('jtHist')}catch(e){}renderCards();updStats();renderHist();toast('Data dihapus','success')}
+function toast(msg,type){type=type||'info';var ic={success:'<polyline points="20 6 9 17 4 12"/>',error:'<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>',info:'<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>',warning:'<path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>'};var el=document.createElement('div');el.className='TO '+type;el.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">'+(ic[type]||ic.info)+'</svg><span>'+msg+'</span>';document.getElementById('TW').appendChild(el);setTimeout(function(){if(el.parentNode)el.remove()},3000)}
+function saveCS(){try{localStorage.setItem(SK,JSON.stringify(CS))}catch(e){}}
+function loadCS(){try{var s=localStorage.getItem(SK);if(s){CS=JSON.parse(s);return true}}catch(e){}return false}
+function showCC(){document.getElementById('CCMO').classList.add('OP')}
+function closeCC(){document.getElementById('CCMO').classList.remove('OP')}
+function doClear(){closeCC();CS={};historyLog=[];try{localStorage.removeItem(SK);localStorage.removeItem('jthist')}catch(e){}renderCards();updStats();renderHist();toast('DATA DIHAPUS','success')}
 function loadV(){try{var v=speechSynthesis.getVoices();if(!v.length)return;selVoice=v.find(function(x){return x.name.indexOf('Google Bahasa Indonesia')>=0})||v.find(function(x){return x.lang.indexOf('id')===0})||v[0];vLoaded=true}catch(e){}}
-function cvName(n){return String(n).replace(/MACAU/gi,'Makau').replace(/SINGAPORE/gi,'Singapura').replace(/HONGKONG/gi,'Hong Kong').replace(/SYDNEY/gi,'Sidney').replace(/HOKI/gi,'Hoki').replace(/TOTO/gi,'Toto').replace(/KING KONG/gi,'King Kong').replace(/BULLSEYE/gi,'Bulls Eye').replace(/PCSO/gi,'Pe Ce Es O').replace(/(\d{2,4})/g,function(m){return m.split('').join(' ')})}
-function playAl(names){try{if(!alarmOn||!vLoaded||!selVoice)return;if(typeof names==='string')names=[names];var key=new Date().toDateString()+'-'+names.join('-');if(aPlayed[key])return;aPlayed[key]=true;playBeep();showNTF(names[0],'BET CLOSE!');if(notifOn&&Notification.permission==='granted')try{new Notification(names[0]+' BET CLOSE!')}catch(e){}var txt=names.map(cvName).join(', ');var u1=new SpeechSynthesisUtterance(txt);u1.voice=selVoice;u1.lang=selVoice.lang;u1.rate=1;u1.volume=alarmVol;var u2=new SpeechSynthesisUtterance('BET CLOSE');u2.voice=selVoice;u2.lang=selVoice.lang;u2.rate=1;u2.volume=alarmVol;u1.onend=function(){speechSynthesis.speak(u2)};speechSynthesis.speak(u1)}catch(e){}}
-function togAlarm(){alarmOn=!alarmOn;try{localStorage.setItem('alarmOn',String(alarmOn))}catch(e){}document.getElementById('ttk').classList.toggle('on',alarmOn);document.getElementById('abx').classList.toggle('on',alarmOn);document.getElementById('astx').textContent=alarmOn?'Alarm AKTIF':'Klik untuk mengaktifkan';if(alarmOn&&!vLoaded)loadV();toast(alarmOn?'Alarm aktif':'Nonaktif','info')}
-function setVol(v){alarmVol=parseInt(v)/100;try{localStorage.setItem('alarmVol',v)}catch(e){}document.getElementById('vlb').textContent=v+'%'}
-function setF(f,el){curFilter=f;var p=document.querySelectorAll('.pi');for(var i=0;i<p.length;i++)p[i].classList.remove('ac');if(el)el.classList.add('ac');applyF()}
-function updDT(){var n=new Date(),dn=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'],mn=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];document.getElementById('eDt').textContent=dn[n.getDay()]+', '+String(n.getDate()).padStart(2,'0')+' '+mn[n.getMonth()]+' '+n.getFullYear();document.getElementById('eTm').textContent=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0')+':'+String(n.getSeconds()).padStart(2,'0')}
-function updNU(){var best=null,bIdx=-1,bTm=Infinity;for(var i=0;i<PD.length;i++){if(cs[i]&&cs[i].isDone)continue;var cd=calcCD(PD[i].tutup,PD[i].buka,PD[i]);if(cd.hol||cd.bc||cd.tm>=bTm)continue;if(cd.tm<bTm){bTm=cd.tm;best=PD[i];bIdx=i}}if(best){document.getElementById('nuN').textContent=best.name;document.getElementById('nuC').textContent=fmtCD(calcCD(best.tutup,best.buka,best));document.getElementById('nb').style.display='flex';document.querySelectorAll('.tc.hl').forEach(function(c){c.classList.remove('hl')});var c=document.querySelector('[data-idx="'+bIdx+'"]');if(c)c.classList.add('hl')}else{document.getElementById('nb').style.display='none'}}
-function updStats(){var total=PD.length,done=0,up=0,notes=0;for(var i=0;i<total;i++){if(cs[i]&&cs[i].isDone)done++;if(cs[i]&&cs[i].note)notes++;var cd=calcCD(PD[i].tutup,PD[i].buka,PD[i]);if(!cd.hol&&!cd.bc&&cd.tm<=30&&cd.tm>0&&!(cs[i]&&cs[i].isDone))up++}document.getElementById('sT').textContent=total;document.getElementById('sD').textContent=done;document.getElementById('sP').textContent=total-done;document.getElementById('sU').textContent=up;document.getElementById('sN').textContent=notes;var pct=total>0?Math.round(done/total*100):0;document.getElementById('pPc').textContent=pct+'%';document.getElementById('pFl').style.width=pct+'%'}
-function togSort(){sortByT=!sortByT;document.getElementById('sBtn').classList.toggle('ac',sortByT);renderCards();toast(sortByT?'Urutkan waktu':'Default','info')}
-function getIdx(){var idx=[];for(var i=0;i<PD.length;i++)idx.push(i);if(sortByT)idx.sort(function(a,b){var cA=calcCD(PD[a].tutup,PD[a].buka,PD[a]),cB=calcCD(PD[b].tutup,PD[b].buka,PD[b]),mA=cA.bc?9999:(cA.hol?99999:cA.tm),mB=cB.bc?9999:(cB.hol?99999:cB.tm);return mA-mB});return idx}
-function buildCard(d,idx){var isP=d.prizeType==='price123';var inpH=isP?'<div class="ipt"><label>Prize 1</label><input type="text" class="p1" placeholder="Angka" oninput="onInp('+idx+')"></div><div class="ipt"><label>Prize 2</label><input type="text" class="p2" placeholder="Angka" oninput="onInp('+idx+')"></div><div class="ipt"><label>Prize 3</label><input type="text" class="p3" placeholder="Angka" oninput="onInp('+idx+')"></div>':'<div class="ipt"><label>Prize 1</label><input type="text" class="p1" placeholder="Angka" oninput="onInp('+idx+')"></div>';var lv=d.live?'<a href="'+d.live+'" target="_blank" rel="noopener" class="ll"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>Live</a>':'';var el=document.createElement('div');el.className='tc';el.setAttribute('data-idx',String(idx));el.setAttribute('data-tl',d.name.toLowerCase());el.setAttribute('data-st','pending');el.setAttribute('data-hn','0');el.innerHTML='<div class="bck" onclick="togBSel('+idx+',event)"></div><div class="nbg" onclick="togNote('+idx+')">&#9998;</div><div class="ch"><div class="cn">'+d.name+'</div><div class="cd cdc">00:00:00</div><div class="rr"><span class="rn"></span><button class="cm2" onclick="copyNums(this,'+idx+')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div></div><div class="cy"><div class="ir"><span class="il"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Hari</span><span class="iv">'+d.days+'</span></div><div class="ir"><span class="il"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Tutup</span><span class="iv tu">'+d.tutup+'</span></div><div class="ir"><span class="il"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Buka</span><span class="iv bu">'+d.buka+'</span></div></div><div class="nra" id="nR_'+idx+'"><textarea class="nta" placeholder="Tambah catatan..." oninput="onNote('+idx+',this.value)"></textarea></div><div class="cl"><a href="'+d.website+'" target="_blank" rel="noopener" class="lw"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Web</a>'+lv+'<a href="javascript:void(0)" onclick="togNote('+idx+')" class="ln2"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>Catatan</a></div><div class="ci">'+inpH+'<div class="br"><button class="bt btc" onclick="hCopy('+idx+')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy</button><button class="bt btd" onclick="hDone('+idx+')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Done</button></div><button class="bt btr" onclick="hReset('+idx+')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>Reset</button></div>';return el}
-function restoreCard(idx,el){var s=cs[idx];if(!s)return;if(s.prize1){var e=el.querySelector('.p1');if(e)e.value=s.prize1}if(s.prize2){var e=el.querySelector('.p2');if(e)e.value=s.prize2}if(s.prize3){var e=el.querySelector('.p3');if(e)e.value=s.prize3}if(s.note){var nr=el.querySelector('#nR_'+idx);if(nr){nr.classList.add('vs');nr.querySelector('.nta').value=s.note}el.querySelector('.nbg').classList.add('vs');el.setAttribute('data-hn','1')}updRR(idx);if(s.isDone){el.classList.add('done');el.setAttribute('data-st','done');var inputs=el.querySelectorAll('.ci input');for(var i=0;i<inputs.length;i++)inputs[i].disabled=true;var db=el.querySelector('.btd');if(db)db.style.display='none';var rb=el.querySelector('.btr');if(rb)rb.style.display='flex';if(!el.querySelector('.stg')){var tag=document.createElement('span');tag.className='stg';tag.textContent='DONE';el.querySelector('.ch').appendChild(tag)}}}
-function renderCards(){var grid=document.getElementById('grid');grid.innerHTML='';var idx=getIdx();for(var i=0;i<idx.length;i++){var card=buildCard(PD[idx[i]],idx[i]);grid.appendChild(card);restoreCard(idx[i],card)}updCDs();applyF()}
-function updRR(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var d=PD[idx],row=card.querySelector('.rr'),nums=card.querySelector('.rn');var p1=card.querySelector('.p1');p1=p1?p1.value.trim():'';if(!p1){row.classList.remove('vs');return}var txt=p1;if(d.prizeType==='price123'){var p2=card.querySelector('.p2'),p3=card.querySelector('.p3');if(p2&&p3&&p2.value.trim()&&p3.value.trim())txt=p1+','+p2.value.trim()+','+p3.value.trim()}nums.textContent=txt;row.classList.add('vs')}
-function updCDs(){var groups={};var cds=document.querySelectorAll('.cd');for(var i=0;i<cds.length;i++){var el=cds[i],card=el.closest('.tc');if(!card)continue;var idx=parseInt(card.getAttribute('data-idx')),d=PD[idx];if(!d)continue;var cd=calcCD(d.tutup,d.buka,d);var prev=pSt[idx],cur=cd.bc?'bc':cd.hol?'hol':'cd';el.textContent=fmtCD(cd);el.className='cd';card.classList.remove('upc');if(cd.hol)el.classList.add('cdhl');else if(cd.bc){el.classList.add('cdbc');if(prev==='cd'&&cur==='bc'){var t=d.tutup;if(!groups[t])groups[t]=[];groups[t].push(d.name)}}else{if(cd.tm<=15){el.classList.add('cdcr');card.classList.add('upc')}else if(cd.tm<=30){el.classList.add('cdw');card.classList.add('upc')}else el.classList.add('cdc')}pSt[idx]=cur}if(alarmOn){for(var t in groups)playAl(groups[t])}}
-function togNote(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var nr=card.querySelector('#nR_'+idx),badge=card.querySelector('.nbg');if(nr.classList.contains('vs')){nr.classList.remove('vs');badge.classList.remove('vs');card.setAttribute('data-hn','0');if(cs[idx])delete cs[idx].note;saveCS();updStats();applyF()}else{nr.classList.add('vs');nr.querySelector('.nta').focus()}}
-function onNote(idx,val){if(!cs[idx])cs[idx]={};cs[idx].note=val.trim()||null;var card=document.querySelector('[data-idx="'+idx+'"]');if(card){card.querySelector('.nbg').classList.toggle('vs',!!cs[idx].note);card.setAttribute('data-hn',cs[idx].note?'1':'0')}clearTimeout(window._nt);window._nt=setTimeout(function(){saveCS();updStats();applyF()},500)}
-function onInp(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card||card.classList.contains('done'))return;var s=cs[idx]||{};s.isDone=false;s.prize1=card.querySelector('.p1').value;s.prize2=card.querySelector('.p2')?card.querySelector('.p2').value:null;s.prize3=card.querySelector('.p3')?card.querySelector('.p3').value:null;cs[idx]=s;updRR(idx);clearTimeout(window._st);window._st=setTimeout(function(){saveCS();trigCmp();updStats()},500)}
-function hCopy(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var p1=card.querySelector('.p1');p1=p1?p1.value.trim():'';if(!p1){toast('Masukkan Prize 1','warning');return}var d=PD[idx],p2=null,p3=null;if(d.prizeType==='price123'){p2=card.querySelector('.p2');p3=card.querySelector('.p3');p2=p2?p2.value.trim():null;p3=p3?p3.value.trim():null;if(!p2||!p3){toast('Isi semua Prize','warning');return}}var ok=clipCopy(genTxt(d.name,p1,p2,p3));toast(ok?'Berhasil dicopy':'Gagal',ok?'success':'error')}
-function hDone(idx,silent){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var p1=card.querySelector('.p1');p1=p1?p1.value.trim():'';if(!p1){if(!silent)toast('Masukkan Prize 1','warning');return}var d=PD[idx];if(d.prizeType==='price123'){var e2=card.querySelector('.p2'),e3=card.querySelector('.p3');if(!e2||!e2.value.trim()||!e3||!e3.value.trim()){if(!silent)toast('Isi semua Prize','warning');return}}card.classList.add('done');card.setAttribute('data-st','done');var inputs=card.querySelectorAll('.ci input');for(var i=0;i<inputs.length;i++)inputs[i].disabled=true;var db=card.querySelector('.btd');if(db)db.style.display='none';var rb=card.querySelector('.btr');if(rb)rb.style.display='flex';if(!card.querySelector('.stg')){var tag=document.createElement('span');tag.className='stg';tag.textContent='DONE';card.querySelector('.ch').appendChild(tag)}cs[idx]={isDone:true,prize1:card.querySelector('.p1').value,prize2:card.querySelector('.p2')?card.querySelector('.p2').value:null,prize3:card.querySelector('.p3')?card.querySelector('.p3').value:null,note:cs[idx]?cs[idx].note:null};saveCS();trigCmp();updStats();applyF();addHist(d.name,'DONE',cs[idx].prize1);if(!silent)toast(d.name+' selesai','success')}
-function hReset(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;card.classList.remove('done','upc');card.setAttribute('data-st','pending');var tag=card.querySelector('.stg');if(tag)tag.remove();var inputs=card.querySelectorAll('.ci input');for(var i=0;i<inputs.length;i++){inputs[i].disabled=false;inputs[i].value=''}var db=card.querySelector('.btd');if(db)db.style.display='flex';var rb=card.querySelector('.btr');if(rb)rb.style.display='none';card.querySelector('.rr').classList.remove('vs');delete cs[idx];saveCS();trigCmp();updStats();applyF();addHist(PD[idx].name,'RESET','-');toast(PD[idx].name+' direset','info')}
-function copyNums(btn,idx){var card=btn.closest('.tc');if(!card)return;var nums=card.querySelector('.rn');if(!nums||!nums.textContent.trim()){toast('Tidak ada angka','warning');return}var ok=clipCopy(nums.textContent.trim());if(ok){btn.classList.add('ok');toast('Dicopy: '+nums.textContent.trim(),'success');setTimeout(function(){btn.classList.remove('ok')},2000)}else toast('Gagal','error')}
-function applyF(){var q=document.getElementById('sIn');q=q?q.value.toLowerCase().trim():'';var cards=document.querySelectorAll('.tc');for(var i=0;i<cards.length;i++){var c=cards[i],tl=c.getAttribute('data-tl')||'',st=c.getAttribute('data-st')||'pending',hn=c.getAttribute('data-hn')==='1';var cdEl=c.querySelector('.cd'),isUp=false;if(cdEl&&(cdEl.classList.contains('cdw')||cdEl.classList.contains('cdcr')))isUp=true;var mQ=tl.indexOf(q)>=0,mF=curFilter==='all';if(curFilter==='done')mF=st==='done';else if(curFilter==='pending')mF=st==='pending';else if(curFilter==='upcoming')mF=isUp;else if(curFilter==='notes')mF=hn;c.style.display=(mQ&&mF)?'':'none'}}
-function openQP(){document.getElementById('qpMo').classList.add('op')}
-function closeQP(){document.getElementById('qpMo').classList.remove('op')}
-function procQP(){var text=document.getElementById('qpTx').value;if(!text.trim()){toast('Paste data dulu','warning');return}var lines=text.split('\n'),matched=0;for(var li=0;li<lines.length;li++){var line=lines[li].trim();if(!line)continue;var parts=line.split('|');if(parts.length<2)parts=line.split('\t');if(parts.length<2)parts=line.split(',');if(parts.length<2)continue;var query=normN(parts[0].trim()),p1=parts[1]?parts[1].trim():'',p2=parts[2]?parts[2].trim():'',p3=parts[3]?parts[3].trim():'';if(!p1||!/^\d+$/.test(p1))continue;var foundIdx=-1;for(var j=0;j<PD.length;j++){if(normN(PD[j].name)===query||normN(PD[j].name).indexOf(query)>=0){foundIdx=j;break}}if(foundIdx===-1)continue;var card=document.querySelector('[data-idx="'+foundIdx+'"]');if(!card||(cs[foundIdx]&&cs[foundIdx].isDone))continue;var e1=card.querySelector('.p1');if(e1)e1.value=p1;if(PD[foundIdx].prizeType==='price123'){var e2=card.querySelector('.p2'),e3=card.querySelector('.p3');if(e2&&p2)e2.value=p2;if(e3&&p3)e3.value=p3}cs[foundIdx]={isDone:false,prize1:p1,prize2:p2||null,prize3:p3||null};updRR(foundIdx);matched++}saveCS();trigCmp();updStats();closeQP();document.getElementById('qpTx').value='';if(matched)toast(matched+' pasaran diisi','success')}
-function expData(){var dn=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'],mn=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'],n=new Date(),out='JADWAL BETCLOSE TOGEL - '+dn[n.getDay()]+' '+String(n.getDate()).padStart(2,'0')+' '+mn[n.getMonth()]+' '+n.getFullYear()+'\n'+'='.repeat(50)+'\n\n';for(var i=0;i<PD.length;i++){var d=PD[i],s=cs[i];out+=d.name+'\n  Tutup: '+d.tutup+' | Buka: '+d.buka+'\n';if(s&&s.prize1){out+='  Result: '+s.prize1;if(s.prize2&&s.prize3)out+=', '+s.prize2+', '+s.prize3;if(s.isDone)out+=' [DONE]';if(s.note)out+=' | Note: '+s.note;out+='\n'}out+='\n'}var blob=new Blob([out],{type:'text/plain'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='jadwal-togel-'+n.getFullYear()+String(n.getMonth()+1).padStart(2,'0')+String(n.getDate()).padStart(2,'0')+'.txt';a.click();URL.revokeObjectURL(url);toast('Export berhasil','success')}
-function closeRs(){document.getElementById('rsMo').classList.remove('op')}
-function copyRs(){var txt=document.getElementById('rsTx').textContent,btn=document.getElementById('rsCb');var ok=clipCopy(txt);if(ok){btn.textContent='Tersalin!';btn.classList.add('cpd');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('cpd')},2000)}else toast('Gagal','error')}
-var cmpPanelOpen=false;
-function togCmpPanel(){cmpPanelOpen=!cmpPanelOpen;var wrap=document.getElementById('cpWrap'),body=document.getElementById('cpy'),arrow=document.getElementById('cpa'),togBtn=document.getElementById('cptg');if(cmpPanelOpen){wrap.classList.remove('hid');body.classList.remove('sh');arrow.classList.remove('sh');togBtn.classList.remove('vis')}else{wrap.classList.add('hid');body.classList.add('sh');arrow.classList.add('sh');setTimeout(function(){if(window.innerWidth>768)togBtn.classList.add('vis')},350)}}
-function runCmp(){var input=document.getElementById('cmpIn').value;if(!input.trim()){toast('Masukkan data','warning');return}cmpD=parseMD(input);if(!cmpD.length){toast('Data tidak valid','warning');return}renderCmpT()}
-function debCmp(){clearTimeout(window._cmpT);window._cmpT=setTimeout(function(){if(document.getElementById('cmpIn').value.trim())runCmp()},1000)}
-function parseMD(text){var lines=text.split('\n'),res=[],cn=null,cp={};for(var i=0;i<lines.length;i++){var line=lines[i].trim();if(!line)continue;if(line.match(/PRIZE\s*[123]\s*:/i)){var m=line.match(/PRIZE\s*([123])\s*:\s*(\d+)/i);if(m&&cn)cp['prize'+m[1]]=m[2]}else{if(cn)res.push({name:cn,prize1:cp.prize1||null,prize2:cp.prize2||null,prize3:cp.prize3||null});var pts=line.split(/\s+/);if(pts.length>=2&&/^\d{4,}$/.test(pts[pts.length-1])){cn=pts.slice(0,-1).join(' ');cp={prize1:pts[pts.length-1]}}else{cn=line;cp={}}}}if(cn)res.push({name:cn,prize1:cp.prize1||null,prize2:cp.prize2||null,prize3:cp.prize3||null});return res}
-function findM(name){var nm=normN(name);for(var i=0;i<PD.length;i++){if(normN(PD[i].name)===nm)return i}for(var i=0;i<PD.length;i++){if(normN(PD[i].name).indexOf(nm)>=0||nm.indexOf(normN(PD[i].name))>=0)return i}return-1}
-function renderCmpT(notify){var tb=document.getElementById('cptb'),wrap=document.getElementById('cptw'),empty=document.getElementById('cpem'),stats=document.getElementById('cpsr');tb.innerHTML='';var same=0,diff=0,emptyC=0;for(var i=0;i<cmpD.length;i++){var m=cmpD[i],idx=findM(m.name),row=document.createElement('tr');var tdN=document.createElement('td');tdN.className='cnm';tdN.textContent=m.name;var tdM=document.createElement('td');tdM.className='cns';var manTxt='';if(m.prize1&&m.prize2&&m.prize3)manTxt=m.prize1+','+m.prize2+','+m.prize3;else if(m.prize1)manTxt=m.prize1;tdM.textContent=manTxt||'-';var tdF=document.createElement('td');tdF.className='cns';var formTxt='',isSame=false;if(idx>=0&&cs[idx]){if(cs[idx].prize1&&cs[idx].prize2&&cs[idx].prize3)formTxt=cs[idx].prize1+','+cs[idx].prize2+','+cs[idx].prize3;else if(cs[idx].prize1)formTxt=cs[idx].prize1;if(formTxt&&manTxt)isSame=formTxt===manTxt}tdF.textContent=formTxt||'-';var tdS=document.createElement('td');tdS.className='cst';if(manTxt&&(!formTxt||idx<0)){tdS.innerHTML='<span class="cmt2">&#9675;</span>';diff++}else if(!manTxt){tdS.innerHTML='<span class="cmt2">&#9675;</span>';emptyC++}else if(isSame){tdS.innerHTML='<span class="cok">&#10003;</span>';tdM.classList.add('cok');tdF.classList.add('cok');same++}else{tdS.innerHTML='<span class="cng">&#10007;</span>';tdM.classList.add('cng');tdF.classList.add('cng');diff++}row.appendChild(tdN);row.appendChild(tdM);row.appendChild(tdF);row.appendChild(tdS);tb.appendChild(row)}document.getElementById('csS').textContent=same;document.getElementById('csD').textContent=diff;document.getElementById('csE').textContent=emptyC;wrap.style.display='block';empty.style.display='none';stats.style.display='flex';if(notify!==false){if(same>0&&diff===0)toast(same+' sama','success');else if(diff>0)toast(diff+' berbeda','error')}}
-function clrCmp(){document.getElementById('cmpIn').value='';document.getElementById('cptb').innerHTML='';document.getElementById('cptw').style.display='none';document.getElementById('cpem').style.display='block';document.getElementById('cpsr').style.display='none';cmpD=[];toast('Dihapus','info')}
-function trigCmp(){if(cmpD.length>0)renderCmpT(false)}
-function loadHist(){try{var s=localStorage.getItem('jtHist');if(s)historyLog=JSON.parse(s)}catch(e){}}
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeQP();closeRs();closeCC()}if(e.key==='/'&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();document.getElementById('sIn').focus()}}if((e.key==='q'||e.key==='Q')&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();openQP()}}if((e.key==='t'||e.key==='T')&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();togTheme()}}if((e.key==='v'||e.key==='V')&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();togView()}}});
-document.addEventListener('DOMContentLoaded',function(){
-try{
-var th=localStorage.getItem('theme');if(th)document.documentElement.setAttribute('data-theme',th);
-updThIc();
-alarmOn=localStorage.getItem('alarmOn')==='true';
-if(alarmOn){document.getElementById('ttk').classList.add('on');document.getElementById('abx').classList.add('on');document.getElementById('astx').textContent='Alarm AKTIF'}
-var sv=localStorage.getItem('alarmVol')||'80';document.getElementById('vsl').value=sv;document.getElementById('vlb').textContent=sv+'%';alarmVol=parseInt(sv)/100;
-loadV();
-try{if(speechSynthesis.onvoiceschanged!==undefined)speechSynthesis.onvoiceschanged=loadV}catch(e){}
-loadCS();loadHist();renderHist();
-updDT();renderCards();updStats();updNU();
-setInterval(function(){updDT();updCDs();updStats();updNU()},1000);
-var cnt=0;if(cs&&typeof cs==='object')cnt=Object.keys(cs).length;
-if(cnt>0)toast(cnt+' data dimuat','info');
-}catch(e){console.error('Init error:',e);updDT();renderCards();updStats();updNU();setInterval(function(){updDT();updCDs();updStats();updNU()},1000)}
-});
-</script>
-</body>
-</html>
+function playAl(names){try{if(!alarmOn||!vLoaded||!selVoice)return;if(typeof names==='string')names=[names];var key=new Date().toDateString()+'-'+names.join('-');if(aPlayed[key])return;aPlayed[key]=true;playBeep();showNtf(names[0],'BET CLOSE!');if(notifOn&&Notification.permission==='granted')try{new Notification(names[0]+' BET CLOSE!')}catch(e){}var txt=names.join(', ');var u1=new SpeechSynthesisUtterance(txt+' BET CLOSE');u1.voice=selVoice;u1.lang=selVoice.lang;u1.rate=1;u1.volume=alarmVol;speechSynthesis.speak(u1)}catch(e){}}
+function togAlarm(){alarmOn=!alarmOn;try{localStorage.setItem('alarmOn',String(alarmOn))}catch(e){}document.getElementById('TTK').classList.toggle('on',alarmOn);document.getElementById('ABX').classList.toggle('ON',alarmOn);document.getElementById('ASTX').textContent=alarmOn?'ALARM AKTIF':'KLIK UNTUK MENGAKTIFKAN';if(alarmOn&&!vLoaded)loadV();toast(alarmOn?'ALARM AKTIF':'NONAKTIF','info')}
+function setVol(v){alarmVol=parseInt(v)/100;try{localStorage.setItem('alarmVol',v)}catch(e){}document.getElementById('VLB').textContent=v+'%'}
+function setF(f,el){curFilter=f;document.querySelectorAll('.PI').forEach(function(p){p.classList.remove('ac')});if(el)el.classList.add('ac');applyF()}
+function updDt(){var n=new Date(),dn=['MINGGU','SENIN','SELASA','RABU','KAMIS','JUMAT','SABTU'],mn=['JANUARI','FEBRUARI','MARET','APRIL','MEI','JUNI','JULI','AGUSTUS','SEPTEMBER','OKTOBER','NOVEMBER','DESEMBER'];document.getElementById('EDT').textContent=dn[n.getDay()]+', '+String(n.getDate()).padStart(2,'0')+' '+mn[n.getMonth()]+' '+n.getFullYear();document.getElementById('ETM').textContent=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0')+':'+String(n.getSeconds()).padStart(2,'0')}
+function updNu(){var best=null,bidx=-1,btm=Infinity;for(var i=0;i<PD.length;i++){if(CS[i]&&CS[i].isDone)continue;var cd=calcCd(PD[i].tutup,PD[i].buka,PD[i]);if(cd.hol||cd.bc||cd.tm>=btm)continue;if(cd.tm<btm){btm=cd.tm;best=PD[i];bidx=i}}if(best){document.getElementById('NUN').textContent=best.name;document.getElementById('NUC').textContent=fmtCd(calcCd(best.tutup,best.buka,best));document.getElementById('NB').style.display='flex';document.querySelectorAll('.TC.HL').forEach(function(c){c.classList.remove('HL')});var c=document.querySelector('[data-idx="'+bidx+'"]');if(c)c.classList.add('HL')}else document.getElementById('NB').style.display='none'}
+function updStats(){var total=PD.length,done=0,up=0,notes=0;for(var i=0;i<total;i++){if(CS[i]&&CS[i].isDone)done++;if(CS[i]&&CS[i].note)notes++;var cd=calcCd(PD[i].tutup,PD[i].buka,PD[i]);if(!cd.hol&&!cd.bc&&cd.tm<=30&&cd.tm>0&&!(CS[i]&&CS[i].isDone))up++}document.getElementById('STC').textContent=total;document.getElementById('SDC').textContent=done;document.getElementById('SPC').textContent=total-done;document.getElementById('SUC').textContent=up;document.getElementById('SNOC').textContent=notes;var pct=total>0?Math.round(done/total*100):0;document.getElementById('PPC').textContent=pct+'%';document.getElementById('PFL').style.width=pct+'%'}
+function togSort(){sortByT=!sortByT;document.getElementById('SBTN').classList.toggle('ac',sortByT);renderCards();toast(sortByT?'URUTKAN WAKTU':'DEFAULT','info')}
+function getIdx(){var idx=[];for(var i=0;i<PD.length;i++)idx.push(i);if(sortByT)idx.sort(function(a,b){var ca=calcCd(PD[a].tutup,PD[a].buka,PD[a]),cb=calcCd(PD[b].tutup,PD[b].buka,PD[b]),ma=ca.bc?9999:(ca.hol?99999:ca.tm),mb=cb.bc?9999:(cb.hol?99999:cb.tm);return ma-mb});return idx}
+function buildCard(d,idx){var isp=d.prizetype==='PRICE123';var logUrl=LG[d.name]||null;var logH=logUrl?'<img class="CLG" src="'+logUrl+'" alt="'+d.name+'" onerror="this.style.display=\'none\'">':'';
+var inph=isp?'<div class="IPT"><label>PRIZE 1</label><input type="text" class="P1" placeholder="ANGKA" oninput="onInp('+idx+')"></div><div class="IPT"><label>PRIZE 2</label><input type="text" class="P2" placeholder="ANGKA" oninput="onInp('+idx+')"></div><div class="IPT"><label>PRIZE 3</label><input type="text" class="P3" placeholder="ANGKA" oninput="onInp('+idx+')"></div>':'<div class="IPT"><label>PRIZE 1</label><input type="text" class="P1" placeholder="ANGKA" oninput="onInp('+idx+')"></div>';
+var lv=d.live?'<a href="'+d.live+'" target="_blank" rel="noopener" class="LL">LIVE</a>':'';
+var el=document.createElement('div');el.className='TC';el.setAttribute('data-idx',String(idx));el.setAttribute('data-tl',d.name.toLowerCase());el.setAttribute('data-st','PENDING');el.setAttribute('data-hn','0');
+el.innerHTML='<div class="BCK" onclick="togBSel('+idx+',event)"></div><div class="NBG" onclick="togNote('+idx+')">&#9998;</div><div class="CH">'+logH+'<div class="CN">'+d.name+'</div><div class="CD CDC">00:00:00</div><div class="RR"><span class="RN"></span><button class="CM2" onclick="copyNums(this,'+idx+')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-1"/></svg></button></div></div><div class="CY"><div class="IR"><span class="IL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>HARI</span><span class="IV">'+d.days+'</span></div><div class="IR"><span class="IL">TUTUP</span><span class="IV TU">'+d.tutup+'</span></div><div class="IR"><span class="IL">BUKA</span><span class="IV BU">'+d.buka+'</span></div></div><div class="NRA" id="NR_'+idx+'"><textarea class="NTA" placeholder="TAMBAH CATATAN..." oninput="onNote('+idx+',this.value)"></textarea></div><div class="CL"><a href="'+d.website+'" target="_blank" rel="noopener" class="LW">WEB</a>'+lv+'<a href="javascript:void(0)" onclick="togNote('+idx+')" class="LN2">CATATAN</a></div><div class="CI">'+inph+'<div class="BR"><button class="BT BTC" onclick="hCopy('+idx+')">COPY</button><button class="BT BTD" onclick="hDone('+idx+')">DONE</button></div><button class="BT BTR" onclick="hReset('+idx+')">RESET</button></div>';return el}
+function restoreCard(idx,el){var s=CS[idx];if(!s)return;if(s.prize1){var e=el.querySelector('.P1');if(e)e.value=s.prize1}if(s.prize2){var e=el.querySelector('.P2');if(e)e.value=s.prize2}if(s.prize3){var e=el.querySelector('.P3');if(e)e.value=s.prize3}if(s.note){var nr=el.querySelector('#NR_'+idx);if(nr){nr.classList.add('VS');nr.querySelector('.NTA').value=s.note}el.querySelector('.NBG').classList.add('VS');el.setAttribute('data-hn','1')}updRR(idx);if(s.isDone){el.classList.add('DONE');el.setAttribute('data-st','DONE');el.querySelectorAll('.CI input').forEach(function(i){i.disabled=true});var db=el.querySelector('.BTD');if(db)db.style.display='none';var rb=el.querySelector('.BTR');if(rb)rb.style.display='flex';if(!el.querySelector('.STG')){var tag=document.createElement('span');tag.className='STG';tag.textContent='DONE';el.querySelector('.CH').appendChild(tag)}}}
+function renderCards(){var grid=document.getElementById('GRID');grid.innerHTML='';var idx=getIdx();for(var i=0;i<idx.length;i++){var card=buildCard(PD[idx[i]],idx[i]);grid.appendChild(card);restoreCard(idx[i],card)}updCds();applyF()}
+function updRR(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var d=PD[idx],row=card.querySelector('.RR'),nums=card.querySelector('.RN');var p1=card.querySelector('.P1');p1=p1?p1.value.trim():'';if(!p1){row.classList.remove('VS');return}var txt=p1;if(d.prizetype==='PRICE123'){var p2=card.querySelector('.P2'),p3=card.querySelector('.P3');if(p2&&p3&&p2.value.trim()&&p3.value.trim())txt=p1+','+p2.value.trim()+','+p3.value.trim()}nums.textContent=txt;row.classList.add('VS')}
+function updCds(){var groups={};document.querySelectorAll('.CD').forEach(function(el){var card=el.closest('.TC');if(!card)return;var idx=parseInt(card.getAttribute('data-idx')),d=PD[idx];if(!d)return;var cd=calcCd(d.tutup,d.buka,d);var prev=pSt[idx],cur=cd.bc?'BC':cd.hol?'HOL':'CD';el.textContent=fmtCd(cd);el.className='CD';card.classList.remove('UPC');if(cd.hol)el.classList.add('CDHL');else if(cd.bc){el.classList.add('CDBC');if(prev==='CD'&&cur==='BC'){if(!groups[d.tutup])groups[d.tutup]=[];groups[d.tutup].push(d.name)}}else{if(cd.tm<=15){el.classList.add('CDCR');card.classList.add('UPC')}else if(cd.tm<=30){el.classList.add('CDW');card.classList.add('UPC')}else el.classList.add('CDC')}pSt[idx]=cur});if(alarmOn){for(var t in groups)playAl(groups[t])}}
+function togNote(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var nr=card.querySelector('#NR_'+idx),badge=card.querySelector('.NBG');if(nr.classList.contains('VS')){nr.classList.remove('VS');badge.classList.remove('VS');card.setAttribute('data-hn','0');if(CS[idx])delete CS[idx].note;saveCS();updStats();applyF()}else{nr.classList.add('VS');nr.querySelector('.NTA').focus()}}
+function onNote(idx,val){if(!CS[idx])CS[idx]={};CS[idx].note=val.trim()||null;var card=document.querySelector('[data-idx="'+idx+'"]');if(card){card.querySelector('.NBG').classList.toggle('VS',!!CS[idx].note);card.setAttribute('data-hn',CS[idx].note?'1':'0')}clearTimeout(window._nt);window._nt=setTimeout(function(){saveCS();updStats();applyF()},500)}
+function onInp(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card||card.classList.contains('DONE'))return;var s=CS[idx]||{};s.isDone=false;s.prize1=card.querySelector('.P1').value;s.prize2=card.querySelector('.P2')?card.querySelector('.P2').value:null;s.prize3=card.querySelector('.P3')?card.querySelector('.P3').value:null;CS[idx]=s;updRR(idx);clearTimeout(window._st);window._st=setTimeout(function(){saveCS();updStats()},500)}
+function hCopy(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var p1=card.querySelector('.P1');p1=p1?p1.value.trim():'';if(!p1){toast('MASUKKAN PRIZE 1','warning');return}var d=PD[idx],p2=null,p3=null;if(d.prizetype==='PRICE123'){p2=card.querySelector('.P2');p3=card.querySelector('.P3');p2=p2?p2.value.trim():null;p3=p3?p3.value.trim():null;if(!p2||!p3){toast('ISI SEMUA PRIZE','warning');return}}var ok=clipCopy(genTxt(d.name,p1,p2,p3));toast(ok?'BERHASIL DICOPY':'GAGAL',ok?'success':'error')}
+function hDone(idx,silent){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;var p1=card.querySelector('.P1');p1=p1?p1.value.trim():'';if(!p1){if(!silent)toast('MASUKKAN PRIZE 1','warning');return}var d=PD[idx];if(d.prizetype==='PRICE123'){var e2=card.querySelector('.P2'),e3=card.querySelector('.P3');if(!e2||!e2.value.trim()||!e3||!e3.value.trim()){if(!silent)toast('ISI SEMUA PRIZE','warning');return}}card.classList.add('DONE');card.setAttribute('data-st','DONE');card.querySelectorAll('.CI input').forEach(function(i){i.disabled=true});var db=card.querySelector('.BTD');if(db)db.style.display='none';var rb=card.querySelector('.BTR');if(rb)rb.style.display='flex';if(!card.querySelector('.STG')){var tag=document.createElement('span');tag.className='STG';tag.textContent='DONE';card.querySelector('.CH').appendChild(tag)}CS[idx]={isDone:true,prize1:card.querySelector('.P1').value,prize2:card.querySelector('.P2')?card.querySelector('.P2').value:null,prize3:card.querySelector('.P3')?card.querySelector('.P3').value:null,note:CS[idx]?CS[idx].note:null};saveCS();updStats();applyF();addHist(d.name,'DONE',CS[idx].prize1);if(!silent)toast(d.name+' SELESAI','success')}
+function hReset(idx){var card=document.querySelector('[data-idx="'+idx+'"]');if(!card)return;card.classList.remove('DONE','UPC');card.setAttribute('data-st','PENDING');var tag=card.querySelector('.STG');if(tag)tag.remove();card.querySelectorAll('.CI input').forEach(function(i){i.disabled=false;i.value=''});var db=card.querySelector('.BTD');if(db)db.style.display='flex';var rb=card.querySelector('.BTR');if(rb)rb.style.display='none';card.querySelector('.RR').classList.remove('VS');delete CS[idx];saveCS();updStats();applyF();addHist(PD[idx].name,'RESET','-');toast(PD[idx].name+' DIRESET','info')}
+function copyNums(btn,idx){var card=btn.closest('.TC');if(!card)return;var nums=card.querySelector('.RN');if(!nums||!nums.textContent.trim()){toast('TIDAK ADA ANGKA','warning');return}var ok=clipCopy(nums.textContent.trim());if(ok){btn.classList.add('OK');toast('DICOPY: '+nums.textContent.trim(),'success');setTimeout(function(){btn.classList.remove('OK')},2000)}else toast('GAGAL','error')}
+function applyF(){var q=document.getElementById('SIN');q=q?q.value.toLowerCase().trim():'';document.querySelectorAll('.TC').forEach(function(c){var tl=c.getAttribute('data-tl')||'',st=c.getAttribute('data-st')||'PENDING',hn=c.getAttribute('data-hn')==='1';var cdel=c.querySelector('.CD'),isUp=false;if(cdel&&(cdel.classList.contains('CDW')||cdel.classList.contains('CDCR')))isUp=true;var mq=tl.indexOf(q)>=0,mf=curFilter==='ALL';if(curFilter==='DONE')mf=st==='DONE';else if(curFilter==='PENDING')mf=st==='PENDING';else if(curFilter==='UPCOMING')mf=isUp;else if(curFilter==='NOTES')mf=hn;c.style.display=(mq&&mf)?'':'none'})}
+function openQP(){document.getElementById('QPMO').classList.add('OP')}
+function closeQP(){document.getElementById('QPMO').classList.remove('OP')}
+function procQP(){var text=document.getElementById('QPTX').value;if(!text.trim()){toast('PASTE DATA DULU','warning');return}var lines=text.split('\n'),matched=0;lines.forEach(function(line){line=line.trim();if(!line)return;var parts=line.split('|');if(parts.length<2)parts=line.split('\t');if(parts.length<2)parts=line.split(',');if(parts.length<2)return;var query=normN(parts[0].trim()),p1=parts[1]?parts[1].trim():'',p2=parts[2]?parts[2].trim():'',p3=parts[3]?parts[3].trim():'';if(!p1)return;var foundIdx=-1;for(var j=0;j<PD.length;j++){if(normN(PD[j].name)===query||normN(PD[j].name).indexOf(query)>=0){foundIdx=j;break}}if(foundIdx===-1)return;var card=document.querySelector('[data-idx="'+foundIdx+'"]');if(!card||(CS[foundIdx]&&CS[foundIdx].isDone))return;var e1=card.querySelector('.P1');if(e1)e1.value=p1;if(PD[foundIdx].prizetype==='PRICE123'){var e2=card.querySelector('.P2'),e3=card.querySelector('.P3');if(e2&&p2)e2.value=p2;if(e3&&p3)e3.value=p3}CS[foundIdx]={isDone:false,prize1:p1,prize2:p2||null,prize3:p3||null};updRR(foundIdx);matched++});saveCS();updStats();closeQP();document.getElementById('QPTX').value='';if(matched)toast(matched+' PASARAN DIISI','success')}
+function expData(){var dn=['MINGGU','SENIN','SELASA','RABU','KAMIS','JUMAT','SABTU'],mn=['JANUARI','FEBRUARI','MARET','APRIL','MEI','JUNI','JULI','AGUSTUS','SEPTEMBER','OKTOBER','NOVEMBER','DESEMBER'],n=new Date(),out='JADWAL BETCLOSE TOGEL - '+dn[n.getDay()]+' '+String(n.getDate()).padStart(2,'0')+' '+mn[n.getMonth()]+' '+n.getFullYear()+'\n'+'='.repeat(50)+'\n\n';for(var i=0;i<PD.length;i++){var d=PD[i],s=CS[i];out+=d.name+'\n  TUTUP: '+d.tutup+' | BUKA: '+d.buka+'\n';if(s&&s.prize1){out+='  RESULT: '+s.prize1;if(s.prize2&&s.prize3)out+=', '+s.prize2+', '+s.prize3;if(s.isDone)out+=' [DONE]';if(s.note)out+=' | NOTE: '+s.note;out+='\n'}out+='\n'}var blob=new Blob([out],{type:'text/plain'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='JADWAL-TOGEL-'+n.getFullYear()+String(n.getMonth()+1).padStart(2,'0')+String(n.getDate()).padStart(2,'0')+'.txt';a.click();URL.revokeObjectURL(url);toast('EXPORT BERHASIL','success')}
+function closeRs(){document.getElementById('RSMO').classList.remove('OP')}
+function copyRs(){var txt=document.getElementById('RSTX').textContent,btn=document.getElementById('RSCB');var ok=clipCopy(txt);if(ok){btn.textContent='TERSALIN!';btn.style.background='#16A34A';btn.style.color='#fff';setTimeout(function(){btn.textContent='COPY';btn.style.background='';btn.style.color=''},2000)}else toast('GAGAL','error')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeQP();closeRs();closeCC()}if(e.key==='/'&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();document.getElementById('SIN').focus()}}if(e.key==='q'&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();openQP()}}if(e.key==='t'&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();togTheme()}}if(e.key==='v'&&!e.ctrlKey&&!e.metaKey){var a=document.activeElement;if(a&&a.tagName!=='INPUT'&&a.tagName!=='TEXTAREA'){e.preventDefault();togView()}}});
+document.addEventListener('DOMContentLoaded',function(){try{var th=localStorage.getItem('theme');if(th)document.documentElement.setAttribute('data-theme',th.toUpperCase());updThIc();alarmOn=localStorage.getItem('alarmOn')==='true';if(alarmOn){document.getElementById('TTK').classList.add('on');document.getElementById('ABX').classList.add('ON');document.getElementById('ASTX').textContent='ALARM AKTIF'}var sv=localStorage.getItem('alarmVol')||'80';document.getElementById('VSL').value=sv;document.getElementById('VLB').textContent=sv+'%';alarmVol=parseInt(sv)/100;loadV();try{if(speechSynthesis.onvoiceschanged!==undefined)speechSynthesis.onvoiceschanged=loadV}catch(e){}loadCS();try{var hs=localStorage.getItem('jthist');if(hs)historyLog=JSON.parse(hs)}catch(e){}renderHist();updDt();renderCards();updStats();updNu();setInterval(function(){updDt();updCds();updStats();updNu()},1000);var cnt=0;if(CS&&typeof CS==='object')cnt=Object.keys(CS).length;if(cnt>0)toast(cnt+' DATA DIMUAT','info')}catch(e){console.error('INIT ERROR:',e);updDt();renderCards();updStats();updNu();setInterval(function(){updDt();updCds();updStats();updNu()},1000)}});
+</SCRIPT>
+</BODY>
+</HTML>
